@@ -1,6 +1,7 @@
 import React from "react";
 import Box, { BoxProps } from "@mui/material/Box";
 import { blitmap } from "../../blitmap";
+import { toadz } from "../../toadz";
 
 type ResultProps = {
   toadzId?: number;
@@ -8,7 +9,7 @@ type ResultProps = {
   sx?: BoxProps["sx"];
 };
 
-function Result({ blitmapId, sx }: ResultProps) {
+function Result({ blitmapId, toadzId, sx }: ResultProps) {
   return (
     <Box sx={{ padding: "12px", ...sx }}>
       <Box
@@ -19,10 +20,19 @@ function Result({ blitmapId, sx }: ResultProps) {
           marginBottom: "24px",
         }}
       >
-        {blitmapId !== undefined && blitmap[blitmapId].name}
+        {blitmapId !== undefined && blitmap[blitmapId].name}{" "}
+        {toadzId !== undefined && toadz[toadzId].name}
       </Box>
-      <Box sx={{ display: "flex" }}>
-        <Box sx={{ flex: 1 }}></Box>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box sx={{ flex: 1 }}>
+          {toadzId !== undefined && (
+            <img
+              alt={toadz[toadzId].name}
+              src={toadz[toadzId].image}
+              style={{ width: "100%" }}
+            />
+          )}
+        </Box>
         <Box
           sx={{
             fontFamily: "Snap ITC",
@@ -40,7 +50,7 @@ function Result({ blitmapId, sx }: ResultProps) {
             <img
               alt={`blitmap #${blitmapId}`}
               src={blitmap[blitmapId].image}
-              style={{ width: "100%", cursor: "pointer" }}
+              style={{ width: "100%" }}
             />
           )}
         </Box>

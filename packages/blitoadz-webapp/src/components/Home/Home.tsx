@@ -4,10 +4,14 @@ import { useEthers } from "@usedapp/core";
 import WalletConnectSection from "../WalletConnectSection/WalletConnectSection";
 import ColorPaletteSelector from "../ColorPaletteSelector/ColorPaletteSelector";
 import Result from "../Result/Result";
+import ToadzSelector from "../ToadzSelector/ToadzSelector";
 
 function Home() {
   const { account } = useEthers();
   const [selectedBlitmapId, setSelectedBlitmapId] = React.useState<
+    number | undefined
+  >(undefined);
+  const [selectedToadzId, setSelectedToadzId] = React.useState<
     number | undefined
   >(undefined);
 
@@ -50,8 +54,15 @@ function Home() {
       {!account && <WalletConnectSection />}
       {account && (
         <Box sx={{ display: "flex" }}>
-          <Box sx={{ flex: 1 }} />
-          <Result blitmapId={selectedBlitmapId} sx={{ flex: 1 }} />
+          <ToadzSelector
+            onToadzClick={(id) => setSelectedToadzId(id)}
+            sx={{ flex: 1 }}
+          />
+          <Result
+            toadzId={selectedToadzId}
+            blitmapId={selectedBlitmapId}
+            sx={{ flex: 1 }}
+          />
           <ColorPaletteSelector
             onBlitmapClick={(id) => setSelectedBlitmapId(id)}
             sx={{ flex: 1 }}
