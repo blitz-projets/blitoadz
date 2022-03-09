@@ -1,7 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
+import { useEthers } from "@usedapp/core";
+import WalletConnectSection from "../WalletConnectSection/WalletConnectSection";
 
 function Home() {
+  const { account } = useEthers();
+
   return (
     <Box
       sx={{
@@ -35,9 +39,10 @@ function Home() {
             fontWeight: 600,
           }}
         >
-          Flipping the lost Blitmaps
+          Flipping the lost Blitoadz
         </Box>
       </Box>
+      {!account && <WalletConnectSection />}
     </Box>
   );
 }
