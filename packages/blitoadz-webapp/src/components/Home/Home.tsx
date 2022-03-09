@@ -2,9 +2,14 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { useEthers } from "@usedapp/core";
 import WalletConnectSection from "../WalletConnectSection/WalletConnectSection";
+import ColorPaletteSelector from "../ColorPaletteSelector/ColorPaletteSelector";
+import Result from "../Result/Result";
 
 function Home() {
   const { account } = useEthers();
+  const [selectedBlitmapId, setSelectedBlitmapId] = React.useState<
+    number | undefined
+  >(undefined);
 
   return (
     <Box
@@ -43,6 +48,16 @@ function Home() {
         </Box>
       </Box>
       {!account && <WalletConnectSection />}
+      {account && (
+        <Box sx={{ display: "flex" }}>
+          <Box sx={{ flex: 1 }} />
+          <Result blitmapId={selectedBlitmapId} sx={{ flex: 1 }} />
+          <ColorPaletteSelector
+            onBlitmapClick={(id) => setSelectedBlitmapId(id)}
+            sx={{ flex: 1 }}
+          />
+        </Box>
+      )}
     </Box>
   );
 }
