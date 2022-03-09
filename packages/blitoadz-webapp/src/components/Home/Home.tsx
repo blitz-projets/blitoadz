@@ -14,6 +14,7 @@ function Home() {
       <Box
         sx={{
           padding: "48px",
+          textAlign: "center",
         }}
       >
         <Box
@@ -21,9 +22,20 @@ function Home() {
             fontFamily: "Snap ITC",
             marginBottom: "24px",
             fontSize: "96px",
+            lineHeight: "142px",
           }}
         >
           Blitoadz
+        </Box>
+        <Box
+          sx={{
+            marginBottom: "24px",
+            fontSize: "48px",
+            lineHeight: "54px",
+            fontWeight: 600,
+          }}
+        >
+          Flipping the lost Blitmaps
         </Box>
       </Box>
     </Box>
