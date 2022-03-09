@@ -1,8 +1,7 @@
 import metamaskLogo from "./metamask-fox.svg";
 import walletconnectLogo from "./walletconnect-logo.svg";
 import coinbasewalletLogo from "./coinbase-wallet.svg";
-import Button, { ButtonProps } from "@mui/material/Button";
-import Box from "@mui/material/Box";
+import Box, { BoxProps } from "@mui/material/Box";
 
 export enum WALLET_TYPE {
   metamask = "Metamask",
@@ -26,7 +25,7 @@ const logo = (walletType: WALLET_TYPE) => {
 const WalletButton: React.FC<{
   onClick: () => void;
   walletType: WALLET_TYPE;
-  sx?: ButtonProps["sx"];
+  sx?: BoxProps["sx"];
 }> = (props) => {
   const { onClick, walletType, sx } = props;
 
