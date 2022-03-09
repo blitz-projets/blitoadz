@@ -2,6 +2,8 @@ import React from "react";
 import RoutesWrapper from "./routes";
 import { Alert, Snackbar } from "@mui/material";
 import { SnackbarErrorContext } from "./contexts/SnackbarErrorContext";
+import Box from "@mui/material/Box";
+import Header from "./components/Header/Header";
 
 function App() {
   const [snackbarError, setSnackbarError] = React.useState<string | null>(null);
@@ -10,7 +12,10 @@ function App() {
     <SnackbarErrorContext.Provider
       value={{ error: snackbarError, setError: setSnackbarError }}
     >
-      <RoutesWrapper />
+      <Box>
+        <Header />
+        <RoutesWrapper />
+      </Box>
       <Snackbar
         open={!!snackbarError}
         autoHideDuration={6000}
