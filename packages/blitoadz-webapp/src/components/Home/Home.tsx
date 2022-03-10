@@ -5,8 +5,10 @@ import WalletConnectSection from "../WalletConnectSection/WalletConnectSection";
 import ColorPaletteSelector from "../ColorPaletteSelector/ColorPaletteSelector";
 import Result from "../Result/Result";
 import ToadzSelector from "../ToadzSelector/ToadzSelector";
+import { useMediaQuery } from "@mui/material";
 
 function Home() {
+  const isNarrow = useMediaQuery("(max-width:768px)");
   const { account } = useEthers();
   const [selectedBlitmapId, setSelectedBlitmapId] = React.useState<
     number | undefined
@@ -21,12 +23,12 @@ function Home() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        padding: "48px",
+        padding: "24px",
       }}
     >
       <Box
         sx={{
-          padding: "48px",
+          padding: "24px",
           textAlign: "center",
         }}
       >
@@ -34,7 +36,7 @@ function Home() {
           sx={{
             fontFamily: "Snap ITC",
             marginBottom: "24px",
-            fontSize: "96px",
+            fontSize: isNarrow ? "48px" : "96px",
             lineHeight: "142px",
           }}
         >
@@ -43,7 +45,7 @@ function Home() {
         <Box
           sx={{
             marginBottom: "24px",
-            fontSize: "48px",
+            fontSize: isNarrow ? "32px" : "48px",
             lineHeight: "54px",
             fontWeight: 600,
           }}
@@ -53,7 +55,9 @@ function Home() {
       </Box>
       {!account && <WalletConnectSection />}
       {account && (
-        <Box sx={{ display: "flex" }}>
+        <Box
+          sx={{ display: "flex", flexDirection: isNarrow ? "column" : "row" }}
+        >
           <ToadzSelector
             onToadzClick={(id) => setSelectedToadzId(id)}
             sx={{ flex: 1 }}
