@@ -36,7 +36,7 @@ function Header() {
       >
         Blitoadz
       </Link>
-      <Link to="/" className="link-button">
+      <Link to="/faq" className="link-button">
         FAQ
       </Link>
       <Link to="/" className="link-button">
