@@ -39,7 +39,7 @@ function Header() {
       <Link to="/faq" className="link-button">
         FAQ
       </Link>
-      <Link to="/" className="link-button">
+      <Link to="/team" className="link-button">
         Team
       </Link>
     </Box>
