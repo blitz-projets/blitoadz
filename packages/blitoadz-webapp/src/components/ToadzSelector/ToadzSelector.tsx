@@ -40,7 +40,6 @@ function ToadzSelector({ onToadzClick, sx }: ToadzSelectorProps) {
               width: `${100 / ITEM_PER_LINE}%`,
               display: "flex",
               alignItems: "end",
-              padding: "2px",
             }}
           >
             <img
