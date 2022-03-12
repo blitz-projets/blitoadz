@@ -4,6 +4,7 @@ from pathlib import Path
 from string import Template
 
 import numpy as np
+import pandas as pd
 from image_processing.constants import PALETTES_FILE, TOADZ_COMPUTED_DIR, TOADZ_DIR
 from PIL import Image
 
@@ -67,4 +68,17 @@ for toadz in toadz_list:
 
 #%% Dump palettes and traits
 with open(PALETTES_FILE, "w") as f:
-    json.dump(toadz_list, f, indent=2)
+    json.dump(
+        (
+            pd.DataFrame(toadz_list)
+            .assign(
+                tokenId=lambda df: df.file.str.split("/", expand=True)[2]
+                .str.replace(".png", "", regex=True)
+                .astype(int)
+            )
+            .sort_values("tokenId")
+            .to_dict("records")
+        ),
+        f,
+        indent=2,
+    )

@@ -1,0 +1,8702 @@
+[
+  {
+    "image": "https://api.blitmap.com/v1/png/0",
+    "name": "#0 - Genesis",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Genesis (#0)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Genesis (#0)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◣ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x71"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf5"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x68"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/1",
+    "name": "#1 - Rose",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Rose (#1)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Rose (#1)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◢ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x63"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x36"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4d"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/2",
+    "name": "#2 - Boombox",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Boombox (#2)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Boombox (#2)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◢ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x63"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x67"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xbf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc6"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x81"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4d"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/3",
+    "name": "#3 - Node",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Node (#3)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Node (#3)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/4",
+    "name": "#4 - Psychic",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Psychic (#4)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Psychic (#4)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xbf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x40"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xb4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x35"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xf8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x78"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/5",
+    "name": "#5 - Ikura",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Ikura (#5)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Ikura (#5)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◥ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x76"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x14"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x61"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x22"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/6",
+    "name": "#6 - Edition",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Edition (#6)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Edition (#6)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x40"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x70"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x50"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x80"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa8"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x58"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x40"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/7",
+    "name": "#7 - Selected",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Selected (#7)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Selected (#7)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◣ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/8",
+    "name": "#8 - Kraken",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Kraken (#8)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Kraken (#8)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◣ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x14"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3b"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x33"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x61"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/9",
+    "name": "#9 - Totally",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Totally (#9)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Totally (#9)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xea"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x76"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x72"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/10",
+    "name": "#10 - Looney",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Looney (#10)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Looney (#10)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xde"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xda"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x14"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xee"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x34"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1c"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/11",
+    "name": "#11 - Atlantis",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Atlantis (#11)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Atlantis (#11)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◥ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x63"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xee"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x9b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcd"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x66"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/12",
+    "name": "#12 - Otoro",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Otoro (#12)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Otoro (#12)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf6"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x75"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x48"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7a"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/13",
+    "name": "#13 - Jupiter",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Jupiter (#13)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Jupiter (#13)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xae"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x76"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x34"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x22"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/14",
+    "name": "#14 - Overloaded",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Overloaded (#14)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Overloaded (#14)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◢ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xef"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x8c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9c"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/15",
+    "name": "#15 - Mask",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Mask (#15)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Mask (#15)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x8c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x47"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x88"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x80"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x99"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc2"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/16",
+    "name": "#16 - Vanilla",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Vanilla (#16)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Vanilla (#16)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◣ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xeb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf9"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xf6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa8"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x58"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x75"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/17",
+    "name": "#17 - Tamago",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Tamago (#17)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Tamago (#17)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x14"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe8"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x61"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf5"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/18",
+    "name": "#18 - The Cat",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "The Cat (#18)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "The Cat (#18)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb8"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xce"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6f"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x50"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/19",
+    "name": "#19 - Ebi",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Ebi (#19)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Ebi (#19)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◥ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x12"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x75"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/20",
+    "name": "#20 - Eruption",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Eruption (#20)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Eruption (#20)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◥ ◤ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x2b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x61"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/21",
+    "name": "#21 - Night Moon",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Night Moon (#21)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Night Moon (#21)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◥ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x14"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x52"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2b"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x70"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/22",
+    "name": "#22 - Processing",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Processing (#22)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Processing (#22)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◤ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x01"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x71"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x33"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x21"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9f"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/23",
+    "name": "#23 - The Sun",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "The Sun (#23)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "The Sun (#23)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◥ ◢ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xbe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb2"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdc"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x33"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xef"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/24",
+    "name": "#24 - Hillside",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Hillside (#24)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Hillside (#24)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◢ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x34"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xda"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x59"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xce"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/25",
+    "name": "#25 - Ever Lovin",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Ever Lovin (#25)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Ever Lovin (#25)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◣ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x12"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x99"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdb"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/26",
+    "name": "#26 - Cheese",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Cheese (#26)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Cheese (#26)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◥ ◢ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/27",
+    "name": "#27 - Scramble",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Scramble (#27)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Scramble (#27)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◥ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/28",
+    "name": "#28 - Moderator",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Moderator (#28)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Moderator (#28)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◢ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x2f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x6b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x08"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/29",
+    "name": "#29 - Swordy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Swordy (#29)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Swordy (#29)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◣ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x81"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x46"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x37"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/30",
+    "name": "#30 - Healtreey",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Healtreey (#30)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Healtreey (#30)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth II, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x88"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2e"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xdb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x60"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x66"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x46"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/31",
+    "name": "#31 - Mageglovey",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Mageglovey (#31)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Mageglovey (#31)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◢ ◥ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x41"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x8e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x68"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/32",
+    "name": "#32 - Feathery",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Feathery (#32)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Feathery (#32)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◣ ◢ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x91"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x12"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x20"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x48"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x59"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/33",
+    "name": "#33 - Teddy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Teddy (#33)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Teddy (#33)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x72"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfd"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x33"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x30"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6d"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/34",
+    "name": "#34 - Cloudy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Cloudy (#34)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Cloudy (#34)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x85"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x34"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xb0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x54"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcc"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/35",
+    "name": "#35 - Candy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Candy (#35)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Candy (#35)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◣ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4b"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x61"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x40"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x8d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x77"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfa"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/36",
+    "name": "#36 - Chessbirdy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Chessbirdy (#36)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Chessbirdy (#36)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◤ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x97"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xde"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x15"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x36"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x22"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x40"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/37",
+    "name": "#37 - Angrybirby",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Angrybirby (#37)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Angrybirby (#37)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◣ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x47"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x81"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x37"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x46"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/38",
+    "name": "#38 - Burgery",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Burgery (#38)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Burgery (#38)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◣ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x74"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x30"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x31"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4a"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/39",
+    "name": "#39 - Periwinkle",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Periwinkle (#39)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Periwinkle (#39)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◣ ◢ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x78"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x62"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x86"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xca"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xea"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb2"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/40",
+    "name": "#40 - Sprout",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Sprout (#40)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Sprout (#40)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◢ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xb9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xae"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x42"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x42"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xca"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb2"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/41",
+    "name": "#41 - Amai",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Amai (#41)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Amai (#41)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x42"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xc4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x42"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb2"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/42",
+    "name": "#42 - Blit",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Blit (#42)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Blit (#42)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth II, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◣ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/43",
+    "name": "#43 - Rune",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Rune (#43)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Rune (#43)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◣ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xca"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x32"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x97"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x50"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/44",
+    "name": "#44 - Vibe",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Vibe (#44)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Vibe (#44)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◣ ◤ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x0f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x22"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xdb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/45",
+    "name": "#45 - Ride",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Ride (#45)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Ride (#45)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◢ ◣ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x01"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x23"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb6"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/46",
+    "name": "#46 - Andrei",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Andrei (#46)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Andrei (#46)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x37"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x62"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x53"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x04"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xad"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x45"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x53"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x04"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/47",
+    "name": "#47 - Soft Boy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Soft Boy (#47)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Soft Boy (#47)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◢ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x12"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf4"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe5"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x22"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd8"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/48",
+    "name": "#48 - Pizza Time",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Pizza Time (#48)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Pizza Time (#48)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◥ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xcc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xee"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf9"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x07"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x69"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/49",
+    "name": "#49 - Hot Damn",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Hot Damn (#49)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Hot Damn (#49)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◤ ◥ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xda"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x14"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb9"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x54"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x07"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x64"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/50",
+    "name": "#50 - Everything",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Everything (#50)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Everything (#50)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x30"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe9"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x90"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x15"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4e"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/51",
+    "name": "#51 - Illuminate",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Illuminate (#51)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Illuminate (#51)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◥ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x54"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf3"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x30"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x90"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x50"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc6"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/52",
+    "name": "#52 - Six Months",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Six Months (#52)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Six Months (#52)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◥ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x30"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x13"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfd"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x91"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x51"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/53",
+    "name": "#53 - Mana",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Mana (#53)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Mana (#53)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◢ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xb2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x21"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xeb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x51"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xf2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf3"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/54",
+    "name": "#54 - Nude",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Nude (#54)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Nude (#54)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x54"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xae"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc5"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa6"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x88"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa6"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/55",
+    "name": "#55 - Kabuto",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Kabuto (#55)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Kabuto (#55)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x82"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x25"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x52"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x61"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0b"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/56",
+    "name": "#56 - Mori",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Mori (#56)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Mori (#56)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◤ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x49"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x49"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x49"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/57",
+    "name": "#57 - Hand",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Hand (#57)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Hand (#57)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◤ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x68"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x08"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x05"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x23"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/58",
+    "name": "#58 - Gato",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Gato (#58)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Gato (#58)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◢ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x03"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/59",
+    "name": "#59 - Ear",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Ear (#59)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Ear (#59)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◤ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x98"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x37"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa1"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x83"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x52"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb2"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x37"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/60",
+    "name": "#60 - Eye",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Eye (#60)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Eye (#60)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x84"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x6c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xbe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/61",
+    "name": "#61 - Jess",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Jess (#61)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Jess (#61)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd2"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4c"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/62",
+    "name": "#62 - Lay Off Me",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Lay Off Me (#62)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Lay Off Me (#62)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◤ ◥ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xea"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xec"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe8"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x18"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/63",
+    "name": "#63 - Say What",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Say What (#63)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Say What (#63)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0f"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xbe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5b"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x09"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/64",
+    "name": "#64 - Cool Cat",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Cool Cat (#64)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Cool Cat (#64)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◣ ◢ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x21"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xda"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/65",
+    "name": "#65 - Eggplant",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Eggplant (#65)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Eggplant (#65)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x98"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x48"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x98"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/66",
+    "name": "#66 - Sasquatch",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Sasquatch (#66)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Sasquatch (#66)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x15"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x36"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x9a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xac"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x49"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/67",
+    "name": "#67 - Mushroom",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Mushroom (#67)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Mushroom (#67)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◤ ◣ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x6e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/68",
+    "name": "#68 - Dunce",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Dunce (#68)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Dunce (#68)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x46"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x75"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x74"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb5"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa2"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/69",
+    "name": "#69 - Soft",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Soft (#69)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Soft (#69)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x7e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x72"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xac"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd3"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xb1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x95"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xde"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/70",
+    "name": "#70 - End",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "End (#70)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "End (#70)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◤ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x68"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x68"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x8a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x20"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x24"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x85"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/71",
+    "name": "#71 - Embryo",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Embryo (#71)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Embryo (#71)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x45"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x45"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x45"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/72",
+    "name": "#72 - Watching",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Watching (#72)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Watching (#72)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◣ ◤ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xce"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xce"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xce"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/73",
+    "name": "#73 - News",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "News (#73)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "News (#73)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x31"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x68"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x86"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x22"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x11"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x8c"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/74",
+    "name": "#74 - Caffeinate",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Caffeinate (#74)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Caffeinate (#74)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x41"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/75",
+    "name": "#75 - Communion",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Communion (#75)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Communion (#75)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◣ ◥ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x23"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xea"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x33"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x07"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x93"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x9c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x57"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x55"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/76",
+    "name": "#76 - Din-Din",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Din-Din (#76)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Din-Din (#76)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◢ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x52"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7d"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x41"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x07"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x07"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x36"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x09"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/77",
+    "name": "#77 - Warm Vibe",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Warm Vibe (#77)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Warm Vibe (#77)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◥ ◤ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcd"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x64"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x5e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xca"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x56"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x8f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/78",
+    "name": "#78 - The Guy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "The Guy (#78)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "The Guy (#78)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x63"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x08"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xeb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcb"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x17"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xeb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcb"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x63"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xeb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcb"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/79",
+    "name": "#79 - Reset",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Reset (#79)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Reset (#79)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◤ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x70"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x70"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x70"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/80",
+    "name": "#80 - Key",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Key (#80)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Key (#80)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◤ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x62"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x74"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x47"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x33"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x41"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/81",
+    "name": "#81 - Glimpse",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Glimpse (#81)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Glimpse (#81)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◣ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x15"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x15"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb4"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x15"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/82",
+    "name": "#82 - Boysdocry",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Boysdocry (#82)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Boysdocry (#82)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth I, Fire I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x21"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xec"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x96"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x3a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf3"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/83",
+    "name": "#83 - Wave",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Wave (#83)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Wave (#83)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x02"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x05"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xbc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x41"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xba"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x52"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x73"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/84",
+    "name": "#84 - Logo",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Logo (#84)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Logo (#84)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◥ ◥ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/85",
+    "name": "#85 - Melt Man",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Melt Man (#85)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Melt Man (#85)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◢ ◢ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x08"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x77"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd6"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/86",
+    "name": "#86 - Cherrybomb",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Cherrybomb (#86)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Cherrybomb (#86)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◥ ◣ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x9e"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x19"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xcf"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xea"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x35"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x35"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x59"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/87",
+    "name": "#87 - Melony",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Melony (#87)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Melony (#87)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◥ ◣ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x26"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc2"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x74"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4a"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x60"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/88",
+    "name": "#88 - Fishy",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Fishy (#88)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Fishy (#88)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◣ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0f"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x38"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x21"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x54"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xb7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x70"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x58"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x77"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/89",
+    "name": "#89 - Watcher",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Watcher (#89)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Watcher (#89)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth III"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x42"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x30"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x8d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x67"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa8"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/90",
+    "name": "#90 - Glitcho",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Glitcho (#90)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Glitcho (#90)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth II, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◥ ◥ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x05"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x92"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe9"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x04"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x71"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe0"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x06"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xc0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfb"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/91",
+    "name": "#91 - City",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "City (#91)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "City (#91)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◥ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xaf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x4f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xbf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x67"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xd2"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x81"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/92",
+    "name": "#92 - Exe",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Exe (#92)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Exe (#92)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◣ ◢ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x2c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe5"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3b"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/93",
+    "name": "#93 - Sock Cloud",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Sock Cloud (#93)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Sock Cloud (#93)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◣ ◤"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x79"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x51"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x99"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa1"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xf7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe7"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6c"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/94",
+    "name": "#94 - Gate",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Gate (#94)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Gate (#94)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire II, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◢ ◣ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x74"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb8"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xa6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x28"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x6f"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x72"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x39"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x32"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x50"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/95",
+    "name": "#95 - Optimist",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Optimist (#95)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Optimist (#95)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Earth II, Fire I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xe1"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb4"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x7d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x43"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfa"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf5"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xda"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x9c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x57"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x04"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/96",
+    "name": "#96 - Pale Tower",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Pale Tower (#96)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Pale Tower (#96)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◣ ◣ ◤ ◣"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x00"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x47"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x6f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x3d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0b"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xbf"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/97",
+    "name": "#97 - Drink Me",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Drink Me (#97)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Drink Me (#97)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◥ ◥ ◢"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Unattuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xbb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf0"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xdd"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd3"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x4c"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xd9"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xb6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x89"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0xfb"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfe"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xf8"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xfc"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/98",
+    "name": "#98 - Chaos Flow",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Chaos Flow (#98)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Chaos Flow (#98)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Fire I, Earth I, Water I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◤ ◤ ◤ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x59"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x94"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x65"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0a"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x10"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0b"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x9e"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x31"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x0f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xe6"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x87"
+        }
+      ]
+    ]
+  },
+  {
+    "image": "https://api.blitmap.com/v1/png/99",
+    "name": "#99 - Lost Realm",
+    "description": "Blitmap is a community crafted art collection and universe. All data is completely on chain.\n\n[blitmap.com](https://www.blitmap.com)",
+    "attributes": [
+      {
+        "trait_type": "Type",
+        "value": "Original"
+      },
+      {
+        "trait_type": "Composition",
+        "value": "Lost Realm (#99)"
+      },
+      {
+        "trait_type": "Palette",
+        "value": "Lost Realm (#99)"
+      },
+      {
+        "trait_type": "Affinity",
+        "value": "Water I, Fire I, Earth I"
+      },
+      {
+        "trait_type": "Slabs",
+        "value": "◢ ◣ ◢ ◥"
+      },
+      {
+        "trait_type": "Attunement",
+        "value": "Attuned"
+      }
+    ],
+    "colors": [
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x27"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x41"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x92"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x1d"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x5f"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xbd"
+        }
+      ],
+      [
+        {
+          "type": "BigNumber",
+          "hex": "0x44"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xff"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0x74"
+        },
+        {
+          "type": "BigNumber",
+          "hex": "0xa0"
+        }
+      ]
+    ]
+  }
+]
