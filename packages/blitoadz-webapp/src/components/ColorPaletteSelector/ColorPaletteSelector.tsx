@@ -1,6 +1,7 @@
 import React from "react";
 import Box, { BoxProps } from "@mui/material/Box";
 import { blitmap } from "../../blitmap";
+import { useBlitoadzContract } from "../../hooks/useBlitoadzContract";
 
 const blitmapIds: number[] = [];
 
@@ -10,6 +11,7 @@ for (let i = 0; i <= 99; i++) {
 
 type ColorPaletteSelectorProps = {
   onBlitmapClick: (id: number) => void;
+  toadzId?: number;
   sx?: BoxProps["sx"];
 };
 
@@ -17,6 +19,7 @@ const ITEM_PER_LINE = 10;
 
 function ColorPaletteSelector({
   onBlitmapClick,
+  toadzId,
   sx,
 }: ColorPaletteSelectorProps) {
   return (
@@ -33,16 +36,48 @@ function ColorPaletteSelector({
       </Box>
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {blitmapIds.map((id) => (
-          <img
-            key={id}
+          <ColorPaletteSelectorImage
+            id={id}
             onClick={() => onBlitmapClick(id)}
-            alt={`blitmap #${id}`}
-            src={blitmap[id].image}
-            style={{ width: `${100 / ITEM_PER_LINE}%`, cursor: "pointer" }}
+            toadzId={toadzId}
           />
         ))}
       </Box>
     </Box>
+  );
+}
+
+type ColorPaletteSelectorImageProps = {
+  onClick: () => void;
+  id: number;
+  toadzId?: number;
+};
+
+function ColorPaletteSelectorImage({
+  id,
+  onClick,
+  toadzId,
+}: ColorPaletteSelectorImageProps) {
+  const [isAvailable, setIsAvailable] = React.useState<boolean>(true);
+  const { blitoadzExists } = useBlitoadzContract();
+
+  React.useEffect(() => {
+    if (toadzId !== undefined) {
+      blitoadzExists(toadzId, id).then((exists) => setIsAvailable(!exists));
+    }
+  }, [toadzId, blitoadzExists, id]);
+
+  return (
+    <img
+      onClick={onClick}
+      alt={`blitmap #${id}`}
+      src={blitmap[id].image}
+      style={{
+        width: `${100 / ITEM_PER_LINE}%`,
+        cursor: "pointer",
+        filter: isAvailable ? "none" : "grayscale(100%)",
+      }}
+    />
   );
 }
 

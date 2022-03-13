@@ -60,6 +60,7 @@ function Home() {
         >
           <ToadzSelector
             onToadzClick={(id) => setSelectedToadzId(id)}
+            blitmapId={selectedBlitmapId}
             sx={{ flex: 1 }}
           />
           <Result
@@ -69,6 +70,7 @@ function Home() {
           />
           <ColorPaletteSelector
             onBlitmapClick={(id) => setSelectedBlitmapId(id)}
+            toadzId={selectedToadzId}
             sx={{ flex: 1 }}
           />
         </Box>
