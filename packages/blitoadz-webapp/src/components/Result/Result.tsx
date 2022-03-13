@@ -26,7 +26,7 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
     } else {
       setImage(null);
     }
-  }, [blitmapId, toadzId]);
+  }, [blitmapId, toadzId, blitoadzExists, getSvg]);
 
   const minted = React.useMemo(
     () =>

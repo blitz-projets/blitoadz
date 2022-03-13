@@ -1,8 +1,6 @@
 import React from "react";
 import { useSdk } from "./useSdk";
-import { useEthers } from "@usedapp/core";
 import { SnackbarErrorContext } from "../contexts/SnackbarErrorContext";
-import { ethers } from "ethers";
 
 export const useBlitoadzRendererContract = () => {
   const sdk = useSdk();
@@ -28,7 +26,7 @@ export const useBlitoadzRendererContract = () => {
         }
       });
     },
-    []
+    [sdk, setError]
   );
 
   return {

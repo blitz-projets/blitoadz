@@ -37,7 +37,7 @@ export const useBlitoadzContract = () => {
         }
       });
     },
-    [sdk]
+    [sdk, setError]
   );
 
   const waitForBlitoadzMint = React.useCallback(
@@ -90,7 +90,7 @@ export const useBlitoadzContract = () => {
         }
       });
     },
-    [sdk, account, price, waitForBlitoadzMint, minted]
+    [sdk, account, price, waitForBlitoadzMint, minted, setError]
   );
 
   const hasBeenMinted = React.useCallback(
