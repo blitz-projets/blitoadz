@@ -36,6 +36,7 @@ function ToadzSelector({ onToadzClick, sx }: ToadzSelectorProps) {
       >
         {toadzIds.map((id) => (
           <Box
+            key={id}
             sx={{
               width: `${100 / ITEM_PER_LINE}%`,
               display: "flex",

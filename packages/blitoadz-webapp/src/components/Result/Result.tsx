@@ -93,10 +93,11 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
               cursor: "pointer",
               width: "100%",
             }}
-            onClick={() => console.log("mint")}
+            onClick={() => mint(toadzId, blitmapId)}
           >
             Mint
           </button>
+          {isMinting && <Box sx={{ marginTop: "16px" }}>Minting...</Box>}
           {image && (
             <Box
               sx={{
