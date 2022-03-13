@@ -5,7 +5,6 @@ import {
   ethers,
   getNamedAccounts,
   getUnnamedAccounts,
-  network,
 } from "hardhat";
 import { solidity } from "ethereum-waffle";
 import { TAGS } from "../../utils/constants";
@@ -22,7 +21,6 @@ const setup = async () => {
   };
   const constants = {
     MINT_PUBLIC_PRICE: await contracts.Blitoadz.MINT_PUBLIC_PRICE(),
-    MAX_MINT_PER_ADDRESS: await contracts.Blitoadz.MAX_MINT_PER_ADDRESS(),
     TOADZ_COUNT: await contracts.Blitoadz.TOADZ_COUNT(),
     BLITMAP_COUNT: await contracts.Blitoadz.BLITMAP_COUNT(),
     BLITOADZ_COUNT: await contracts.Blitoadz.BLITOADZ_COUNT(),

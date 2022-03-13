@@ -15,8 +15,7 @@ contract ProxyRegistry {
 
 contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     // Constants
-    uint256 public constant MINT_PUBLIC_PRICE = 0.05 ether;
-    uint8 public constant MAX_MINT_PER_ADDRESS = 20;
+    uint256 public constant MINT_PUBLIC_PRICE = 0.056 ether;
     uint8 public constant TOADZ_COUNT = 56;
     uint8 public constant BLITMAP_COUNT = 100;
     uint16 public constant BLITOADZ_COUNT = 5_600;
@@ -143,11 +142,6 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         require(
             msg.value == MINT_PUBLIC_PRICE * toadzIds.length,
             "Price does not match"
-        );
-        require(
-            ERC721A.balanceOf(_msgSender()) + toadzIds.length <=
-                MAX_MINT_PER_ADDRESS,
-            "Blitoadz: the requested quantity exceeds the maximum allowed"
         );
 
         _mint(_msgSender(), toadzIds, blitmapIds);
