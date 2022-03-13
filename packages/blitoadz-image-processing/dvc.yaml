@@ -1,0 +1,10 @@
+stages:
+  parse_svg:
+    cmd: python image_processing/parse_png.py
+    deps:
+    - data/toadz
+    - image_processing/parse_png.py
+    - image_processing/constants.py
+    outs:
+    - data/toadz_computed
+    - data/palettes.json

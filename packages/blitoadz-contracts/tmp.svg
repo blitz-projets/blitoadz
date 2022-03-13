@@ -1,0 +1,13 @@
+<svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        rect {
+        fill: gold;
+        stroke: maroon;
+        stroke-width: 2px;
+        width: 10px;
+        height: 10px;
+        }
+    </style>
+
+    <rect x="5" y="5" width="10" height="10"/>
+</svg>
