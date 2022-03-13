@@ -76,6 +76,8 @@ function ColorPaletteSelectorImage({
         width: `${100 / ITEM_PER_LINE}%`,
         cursor: "pointer",
         filter: isAvailable ? "none" : "grayscale(100%)",
+        opacity: isAvailable ? 1 : 0.2,
+        backgroundColor: "grey !important",
       }}
     />
   );

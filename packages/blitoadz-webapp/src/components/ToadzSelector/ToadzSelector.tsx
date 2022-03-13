@@ -86,6 +86,8 @@ function ToadzSelectorImage({
         width: "100%",
         cursor: "pointer",
         filter: isAvailable ? "none" : "grayscale(100%)",
+        opacity: isAvailable ? 1 : 0.2,
+        backgroundColor: "grey !important",
       }}
     />
   );
