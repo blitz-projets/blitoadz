@@ -55,7 +55,7 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
           )}
         </Box>
       </Box>
-      {blitmapId && toadzId && (
+      {blitmapId !== undefined && toadzId !== undefined && (
         <Box sx={{ marginTop: "24px" }}>
           <button
             style={{

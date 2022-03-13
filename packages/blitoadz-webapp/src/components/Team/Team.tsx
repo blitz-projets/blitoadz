@@ -1,6 +1,9 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { useMediaQuery } from "@mui/material";
+import Georges from "./Georges.png";
+import Clement from "./Clement.png";
+import FocusPoints from "./FocusPoints.png";
 
 function Team() {
   const isNarrow = useMediaQuery("(max-width:768px)");
@@ -56,72 +59,28 @@ function Team() {
         <Box>
           <img
             className="profile-picture"
-            alt="Name 1"
-            src="https://ik.imagekit.io/bayc/assets/ape1.png"
+            alt="FocusPoints"
+            src={FocusPoints}
           />
-          <h2>Name 1</h2>
+          <h2>FocusPoints</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Trying to become a person of value, not success. Walked out of a
+            master’s degree in Innovation to work a 9-5 and have had a bad case
+            of the Mondays, ever since.
           </p>
+          <p>First NFT: blitmap</p>
         </Box>
         <Box marginTop="48px">
-          <img
-            className="profile-picture"
-            alt="Name 1"
-            src="https://ik.imagekit.io/bayc/assets/ape1.png"
-          />
-          <h2>Name 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <img className="profile-picture" alt="Clément" src={Clement} />
+          <h2>Clément</h2>
+          <p>Scientist and engineer, currently experimenting in solidity.</p>
+          <p>First NFT: Chain Dreamers</p>
         </Box>
         <Box marginTop="48px">
-          <img
-            className="profile-picture"
-            alt="Name 1"
-            src="https://ik.imagekit.io/bayc/assets/ape1.png"
-          />
-          <h2>Name 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </Box>
-        <Box marginTop="48px">
-          <img
-            className="profile-picture"
-            alt="Name 1"
-            src="https://ik.imagekit.io/bayc/assets/ape1.png"
-          />
-          <h2>Name 4</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </Box>
-        <Box marginTop="48px">
-          <img
-            className="profile-picture"
-            alt="Name 1"
-            src="https://ik.imagekit.io/bayc/assets/ape1.png"
-          />
-          <h2>Name 5</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+          <img className="profile-picture" alt="Georges" src={Georges} />
+          <h2>Georges</h2>
+          <p>Web developer based in Paris. Love to tell stories.</p>
+          <p>First NFT: Chain Dreamers</p>
         </Box>
       </Box>
     </Box>
