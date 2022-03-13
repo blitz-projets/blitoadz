@@ -1,6 +1,8 @@
 import type { EthSdkConfig } from "@dethcrypto/eth-sdk";
+import { extractContractAddresses } from "../scripts/extract-contract-addresses";
 
 const NETWORK = process.env.REACT_APP_NETWORK || "rinkeby";
+const contracts = extractContractAddresses(NETWORK);
 
 const mainRpc =
   NETWORK === "localhost"
@@ -14,7 +16,7 @@ const etherscanURL =
 
 const config: EthSdkConfig = {
   contracts: {
-    main: {},
+    main: contracts as Record<string, `0x${string}`>,
   },
   etherscanURLs:
     NETWORK !== "localhost"

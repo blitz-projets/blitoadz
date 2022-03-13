@@ -34,6 +34,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "prebuild": "npm run generate-types",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "generate-types": "eth-sdk"
