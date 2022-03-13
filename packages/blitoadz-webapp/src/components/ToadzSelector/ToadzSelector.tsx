@@ -4,7 +4,7 @@ import { toadz } from "../../toadz";
 
 const toadzIds: number[] = [];
 
-for (let i = 1; i <= 56; i++) {
+for (let i = 0; i <= 55; i++) {
   toadzIds.push(i);
 }
 

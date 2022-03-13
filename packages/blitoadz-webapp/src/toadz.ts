@@ -6,8 +6,8 @@ export type ToadsMetadata = {
   image: string;
 };
 
-export const toadz: Record<number, ToadsMetadata> = {
-  1: {
+export const toadz: ToadsMetadata[] = [
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -29,7 +29,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  2: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -51,7 +51,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  3: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -73,7 +73,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  4: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -95,7 +95,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  5: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -117,7 +117,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  6: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -139,7 +139,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  7: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -161,7 +161,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  8: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -183,7 +183,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  9: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -205,7 +205,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  10: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -227,7 +227,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  11: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -249,7 +249,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  12: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -271,7 +271,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  13: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -293,7 +293,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  14: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -315,7 +315,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  15: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -337,7 +337,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  16: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -359,7 +359,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  17: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -381,7 +381,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  18: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -403,7 +403,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  19: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -425,7 +425,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  20: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -447,7 +447,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  21: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -469,7 +469,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  22: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -491,7 +491,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  23: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -513,7 +513,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  24: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -535,7 +535,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  25: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -557,7 +557,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  26: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -579,7 +579,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  27: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -601,7 +601,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  28: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -623,7 +623,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  29: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -645,7 +645,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  30: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -667,7 +667,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  31: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -689,7 +689,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  32: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -711,7 +711,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  33: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -733,7 +733,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  34: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -755,7 +755,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  35: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -777,7 +777,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  36: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -799,7 +799,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  37: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -821,7 +821,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  38: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -843,7 +843,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  39: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -865,7 +865,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  40: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -887,7 +887,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  41: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -909,7 +909,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  42: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -931,7 +931,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  43: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -953,7 +953,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  44: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -975,7 +975,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  45: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -997,7 +997,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  46: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1019,7 +1019,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  47: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1041,7 +1041,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  48: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1063,7 +1063,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  49: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1085,7 +1085,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  50: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1107,7 +1107,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  51: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1129,7 +1129,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  52: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1151,7 +1151,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  53: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1173,7 +1173,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  54: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1195,7 +1195,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  55: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1217,7 +1217,7 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-  56: {
+  {
     description:
       "A small, warty, amphibious creature that resides in the metaverse.",
     external_url: "https://cryptoadz.io",
@@ -1239,4 +1239,4 @@ export const toadz: Record<number, ToadsMetadata> = {
       },
     ],
   },
-};
+];

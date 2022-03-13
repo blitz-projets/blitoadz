@@ -2,6 +2,8 @@ import React from "react";
 import Box, { BoxProps } from "@mui/material/Box";
 import { blitmap } from "../../blitmap";
 import { toadz } from "../../toadz";
+import { useBlitoadzContract } from "../../hooks/useBlitoadzContract";
+import { useBlitoadzRendererContract } from "../../hooks/useBlitoadzRendererContract";
 
 type ResultProps = {
   toadzId?: number;
@@ -10,6 +12,19 @@ type ResultProps = {
 };
 
 function Result({ blitmapId, toadzId, sx }: ResultProps) {
+  const { mint, isMinting } = useBlitoadzContract();
+  const { getSvg } = useBlitoadzRendererContract();
+
+  const [image, setImage] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    if (blitmapId !== undefined && toadzId !== undefined) {
+      getSvg(blitmapId, toadzId).then(setImage);
+    } else {
+      setImage(null);
+    }
+  }, [blitmapId, toadzId]);
+
   return (
     <Box sx={{ padding: "12px", ...sx }}>
       <Box
@@ -21,13 +36,20 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
         }}
       >
         {blitmapId !== undefined && blitmap[blitmapId].name}{" "}
-        {toadzId !== undefined && toadz[toadzId].name}
+        {toadzId !== undefined &&
+          ((toadz[toadzId].attributes.find((attr) => attr.trait_type === "Name")
+            ?.value as string) ||
+            toadz[toadzId].name)}
       </Box>
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <Box sx={{ flex: 1 }}>
           {toadzId !== undefined && (
             <img
-              alt={toadz[toadzId].name}
+              alt={
+                (toadz[toadzId].attributes.find(
+                  (attr) => attr.trait_type === "Name"
+                )?.value as string) || toadz[toadzId].name
+              }
               src={toadz[toadzId].image}
               style={{ width: "100%" }}
             />
@@ -75,6 +97,23 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
           >
             Mint
           </button>
+          {image && (
+            <Box
+              sx={{
+                marginTop: "16px",
+
+                "& .result": {
+                  width: "100%",
+                },
+              }}
+            >
+              <img
+                className="result"
+                src={`data:image/svg+xml;utf8,${image}`}
+                alt="result"
+              />
+            </Box>
+          )}
         </Box>
       )}
     </Box>
