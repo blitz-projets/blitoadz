@@ -12,18 +12,29 @@ type ResultProps = {
 };
 
 function Result({ blitmapId, toadzId, sx }: ResultProps) {
-  const { mint, isMinting } = useBlitoadzContract();
+  const { mint, isMinting, hasBeenMinted, blitoadzExists } =
+    useBlitoadzContract();
   const { getSvg } = useBlitoadzRendererContract();
 
   const [image, setImage] = React.useState<string | null>(null);
+  const [exists, setExists] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     if (blitmapId !== undefined && toadzId !== undefined) {
       getSvg(blitmapId, toadzId).then(setImage);
+      blitoadzExists(toadzId, blitmapId).then(setExists);
     } else {
       setImage(null);
     }
   }, [blitmapId, toadzId]);
+
+  const minted = React.useMemo(
+    () =>
+      blitmapId !== undefined &&
+      toadzId !== undefined &&
+      hasBeenMinted(toadzId, blitmapId),
+    [blitmapId, toadzId, hasBeenMinted]
+  );
 
   return (
     <Box sx={{ padding: "12px", ...sx }}>
@@ -97,11 +108,46 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
           >
             Mint
           </button>
-          {isMinting && <Box sx={{ marginTop: "16px" }}>Minting...</Box>}
+          {exists && !minted && (
+            <Box
+              sx={{
+                marginTop: "24px",
+                fontSize: "24px",
+                fontWeight: 600,
+                textAlign: "center",
+              }}
+            >
+              This pair has already been minted.
+            </Box>
+          )}
+          {isMinting && (
+            <Box
+              sx={{
+                marginTop: "24px",
+                fontSize: "24px",
+                fontWeight: 600,
+                textAlign: "center",
+              }}
+            >
+              Minting...
+            </Box>
+          )}
+          {minted && (
+            <Box
+              sx={{
+                marginTop: "24px",
+                fontSize: "24px",
+                fontWeight: 600,
+                textAlign: "center",
+              }}
+            >
+              Congratulations! Your Blitoadz has been successfully minted
+            </Box>
+          )}
           {image && (
             <Box
               sx={{
-                marginTop: "16px",
+                marginTop: "32px",
 
                 "& .result": {
                   width: "100%",

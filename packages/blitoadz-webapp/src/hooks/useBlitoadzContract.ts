@@ -9,12 +9,12 @@ export const useBlitoadzContract = () => {
   const sdk = useSdk();
 
   const [isMinting, setIsMinting] = React.useState<boolean>(false);
+  const [minted, setMinted] = React.useState<number[]>([]);
   const [price, setPrice] = React.useState<ethers.BigNumber | null>(null);
   const { setError } = React.useContext(SnackbarErrorContext);
 
   React.useEffect(() => {
     if (sdk && !price) {
-      console.log("setPrice");
       sdk.Blitoadz.MINT_PUBLIC_PRICE().then(setPrice);
     }
   }, [sdk, price]);
@@ -37,7 +37,7 @@ export const useBlitoadzContract = () => {
         }
       });
     },
-    []
+    [sdk]
   );
 
   const waitForBlitoadzMint = React.useCallback(
@@ -78,6 +78,7 @@ export const useBlitoadzContract = () => {
               value: price,
             });
             await waitForBlitoadzMint(toadzId, blitmapId);
+            setMinted([...minted, toadzId * 100 + blitmapId]);
             setIsMinting(false);
           } catch (e: unknown) {
             setIsMinting(false);
@@ -89,7 +90,13 @@ export const useBlitoadzContract = () => {
         }
       });
     },
-    [sdk, account, price, waitForBlitoadzMint]
+    [sdk, account, price, waitForBlitoadzMint, minted]
+  );
+
+  const hasBeenMinted = React.useCallback(
+    (toadzId: number, blitmapId: number): boolean =>
+      !!minted.find((id) => id === toadzId * 100 + blitmapId),
+    [minted]
   );
 
   return {
@@ -97,5 +104,6 @@ export const useBlitoadzContract = () => {
     mint,
     isMinting,
     blitoadzExists,
+    hasBeenMinted,
   };
 };
