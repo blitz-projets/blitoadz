@@ -123,6 +123,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
                 !blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId],
                 "Blitoadz already exists"
             );
+            require(toadzId < TOADZ_COUNT, "Toadz id out of range");
+            require(blitmapId < BLITMAP_COUNT, "Blitmap id out of range");
             blitoadz.push(uint8(toadzId % type(uint8).max));
             blitoadz.push(uint8(blitmapId % type(uint8).max));
             blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId] = true;
