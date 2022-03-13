@@ -5,8 +5,8 @@ import { DeployFunction } from "hardhat-deploy/types";
 import { TAGS } from "../utils/constants";
 
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
-  const { deployments, getNamedAccounts, network, ethers } = hre;
-  const { deploy } = deployments;
+  const { deployments, getNamedAccounts, network } = hre;
+  const { deploy, get } = deployments;
   const { deployer } = await getNamedAccounts();
   let openseaAddress;
   let looksrareAddress;
@@ -17,7 +17,8 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     openseaAddress = "0xa5409ec958c83c3f309868babaca7c86dcb077c1";
     looksrareAddress = "0xf42aa99f011a1fa7cda90e5e98b277e306bca83e";
     integersAddress = "0x03abFda4e7cec3484D518848B5e6aa10965F91DD";
-    blitmapAddress = ethers.constants.AddressZero;
+    const Blitmap = await get("Blitmap");
+    blitmapAddress = Blitmap.address;
   } else {
     openseaAddress = "0xf57b2c51ded3a29e6891aba85459d600256cf317";
     looksrareAddress = "0x3f65a762f15d01809cdc6b43d8849ff24949c86a";
@@ -48,3 +49,4 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 };
 export default func;
 func.tags = [TAGS.BLITOADZ];
+func.dependencies = [TAGS.BLITMAP];

@@ -1,10 +1,11 @@
 import fs from "fs";
-import { Palettes, PalettesStorage } from "./types";
+import { Blitmap, Palettes, PalettesStorage } from "./types";
 
 export const MAX_CONTRACT_SIZE = 24_000;
 export const PALETTES_FILE =
   "../../packages/blitoadz-image-processing/data/palettes.json";
 export const PALETTES_ENCODED_FILE = "data/palettes-encoded.json";
+export const BLITMAP_FILE = "data/blitmap.json";
 export const BITS_PER_INDEX = 2;
 
 export const loadPalettes = (): Palettes => {
@@ -27,8 +28,18 @@ export const loadPalettesEncoded = (): PalettesStorage => {
   }
 };
 
+export const loadBlitmap = (): Blitmap[] => {
+  try {
+    return JSON.parse(fs.readFileSync(BLITMAP_FILE, "utf8"));
+  } catch (e) {
+    console.error(e);
+    return [];
+  }
+};
+
 // Deploy constants
 export const TAGS = {
   BLITOADZ: "Blitoadz",
   BLITOADZ_PALETTES: "BlitoadzPalettes",
+  BLITMAP: "Blitmap",
 };

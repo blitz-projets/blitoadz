@@ -36,7 +36,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     function isPublicSaleOpen() public view returns (bool) {
         return
-            block.timestamp > publicSaleStartTimestamp - 1 &&
+            block.timestamp > publicSaleStartTimestamp &&
             publicSaleStartTimestamp != 0;
     }
 
@@ -122,7 +122,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
             uint256 blitmapId = blitmapIds[i];
             require(
                 !blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId],
-                "Toadz already exists"
+                "Blitoadz already exists"
             );
             blitoadz.push(uint8(toadzId % type(uint8).max));
             blitoadz.push(uint8(blitmapId % type(uint8).max));

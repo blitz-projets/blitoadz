@@ -23,7 +23,9 @@ task("fetch-blitmap", "Fetch the lost toadz metadata").setAction(
       )
     );
 
-    console.log(tokenColors[0]);
+    const tokenData = await Promise.all(
+      tokenIds.map(async (tokenId) => await sdk.blitmap.tokenDataOf(tokenId))
+    );
 
     await Promise.all(
       tokenMetadata.map(async (tokenMetadata, index) => {
@@ -47,6 +49,7 @@ task("fetch-blitmap", "Fetch the lost toadz metadata").setAction(
         tokenMetadata.map((data, index) => ({
           ...data,
           colors: tokenColors[index],
+          data: tokenData[index],
         })),
         null,
         2
