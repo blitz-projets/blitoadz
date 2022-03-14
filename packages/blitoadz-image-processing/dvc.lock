@@ -11,12 +11,12 @@ stages:
       md5: 30c5a96820282ff44adeb628eae53f27
       size: 173
     - path: image_processing/parse_png.py
-      md5: db735ff1c387a9626188ed47558352fa
-      size: 1942
+      md5: e9ac9369d13105086e4cd85bbda52127
+      size: 2290
     outs:
     - path: data/palettes.json
-      md5: 443ff095f7d5e9cae52805a11c7722f2
-      size: 675440
+      md5: 4fb426b9fc8343020ee696cfc2792885
+      size: 676831
     - path: data/toadz_computed
       md5: 282cfc7a7a385b9adfc75317db6ef19c.dir
       size: 4174408

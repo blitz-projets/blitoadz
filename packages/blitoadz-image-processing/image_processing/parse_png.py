@@ -14,15 +14,17 @@ RECT = Template("<rect x='$x' y='$y' width='1' height='1' fill='#$fill' />")
 
 #%% Define functions
 def parse_png(png_path):
-    image = Image.open(png_path).convert("P", palette=Image.ADAPTIVE, colors=4)
-    indexes = np.array(image)[::40, ::40].flatten().tolist()
-    colors = (
-        pd.Series({v: k for k, v in image.palette.colors.items()})
-        .sort_index()
-        .map(lambda c: "".join([("0" + format(_c, "x"))[-2:] for _c in c]))
-        .tolist()
+    image = Image.open(png_path).convert("RGB")
+    arr = np.array(image)[::40, ::40, :]
+    return np.unique(
+        np.array(
+            [
+                "".join([("0" + format(_c, "x"))[-2:] for _c in c])
+                for c in arr.reshape((-1, 3)).tolist()
+            ]
+        ),
+        return_inverse=True,
     )
-    return colors, indexes
 
 
 def generate_svg(colors, indexes):
@@ -47,8 +49,8 @@ for file in TOADZ_DIR.glob("**/*.png"):
     toadz_list += [
         {
             "file": str(file),
-            "colors": _colors,
-            "indexes": _indexes,
+            "colors": _colors.tolist(),
+            "indexes": _indexes.tolist(),
         }
     ]
 
