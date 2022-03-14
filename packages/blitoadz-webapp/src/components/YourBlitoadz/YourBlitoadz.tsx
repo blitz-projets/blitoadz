@@ -64,7 +64,7 @@ function YourBlitoadzImage({ id }: YourBlitoadzImageProps) {
 
           "&:hover": { color: "black" },
         },
-        "& .image": { maxWidth: "100px" },
+        "& .image": { maxWidth: "98px" },
       }}
     >
       <a
