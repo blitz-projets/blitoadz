@@ -6,8 +6,9 @@ import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 import config, { CHAIN_ID } from "../../config";
 import { useEthers } from "@usedapp/core";
 
+const supportedChainIds = [CHAIN_ID];
+
 function WalletConnectSection() {
-  const supportedChainIds = [CHAIN_ID];
   const { activate } = useEthers();
   const [open, setOpen] = React.useState<boolean>(false);
 
@@ -20,7 +21,7 @@ function WalletConnectSection() {
       },
     });
     activate(walletlink);
-  }, [activate, supportedChainIds]);
+  }, [activate]);
 
   const openConnectDialog = React.useCallback(
     () => (isMobile ? openConnectDialogMobile() : setOpen(true)),
