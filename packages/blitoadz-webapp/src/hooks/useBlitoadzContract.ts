@@ -2,7 +2,7 @@ import React from "react";
 import { useSdk } from "./useSdk";
 import { useEthers } from "@usedapp/core";
 import { SnackbarErrorContext } from "../contexts/SnackbarErrorContext";
-import { ethers } from "ethers";
+import { UserBlitoadzContext } from "../contexts/UserBlitoadzContext";
 
 export const useBlitoadzContract = () => {
   const { account } = useEthers();
@@ -10,14 +10,33 @@ export const useBlitoadzContract = () => {
 
   const [isMinting, setIsMinting] = React.useState<boolean>(false);
   const [minted, setMinted] = React.useState<number[]>([]);
-  const [price, setPrice] = React.useState<ethers.BigNumber | null>(null);
+  const { userBlitoadzIds, setUserBlitoadzIds } =
+    React.useContext(UserBlitoadzContext);
   const { setError } = React.useContext(SnackbarErrorContext);
 
-  React.useEffect(() => {
-    if (sdk && !price) {
-      sdk.Blitoadz.MINT_PUBLIC_PRICE().then(setPrice);
+  const fetchUserBlitoadz = React.useCallback(async () => {
+    if (sdk && account) {
+      const balance = await sdk.Blitoadz.balanceOf(account);
+      const count = balance.toNumber();
+
+      const promises = [];
+      for (let i = 0; i < count; i++) {
+        promises.push(
+          sdk.Blitoadz.tokenOfOwnerByIndex(account, i)
+            .then((bigId) => bigId.toNumber())
+            .catch(() => null)
+        );
+      }
+
+      const ids = (await Promise.all(promises)).filter(
+        (id) => id !== null
+      ) as number[];
+
+      setUserBlitoadzIds(ids);
+
+      return ids;
     }
-  }, [sdk, price]);
+  }, [sdk, account]);
 
   const blitoadzExists = React.useCallback(
     (toadzId: number, blitmapId: number): Promise<boolean> => {
@@ -70,8 +89,9 @@ export const useBlitoadzContract = () => {
   const mint = React.useCallback(
     (toadzId: number, blitmapId: number): Promise<void> => {
       return new Promise(async (resolve, reject) => {
-        if (sdk && account && price) {
+        if (sdk && account) {
           try {
+            const price = await sdk.Blitoadz.MINT_PUBLIC_PRICE();
             setIsMinting(true);
             await sdk.Blitoadz.mintPublicSale([toadzId], [blitmapId], {
               from: account,
@@ -79,6 +99,7 @@ export const useBlitoadzContract = () => {
             });
             await waitForBlitoadzMint(toadzId, blitmapId);
             setMinted([...minted, toadzId * 100 + blitmapId]);
+            await fetchUserBlitoadz();
             setIsMinting(false);
           } catch (e: unknown) {
             setIsMinting(false);
@@ -90,7 +111,7 @@ export const useBlitoadzContract = () => {
         }
       });
     },
-    [sdk, account, price, waitForBlitoadzMint, minted, setError]
+    [sdk, account, waitForBlitoadzMint, minted, setError, fetchUserBlitoadz]
   );
 
   const hasBeenMinted = React.useCallback(
@@ -99,11 +120,30 @@ export const useBlitoadzContract = () => {
     [minted]
   );
 
+  const extractOriginalIdsFromBlitoadzId = React.useCallback(
+    async (id: number) => {
+      if (sdk) {
+        const [toadzId, blitmapId] = await Promise.all([
+          sdk.Blitoadz.blitoadz(2 * id),
+          sdk.Blitoadz.blitoadz(2 * id + 1),
+        ]);
+
+        return { toadzId, blitmapId };
+      } else {
+        return { toadzId: null, blitmapId: null };
+      }
+    },
+    [sdk]
+  );
+
   return {
     address: sdk?.Blitoadz.address,
     mint,
     isMinting,
     blitoadzExists,
     hasBeenMinted,
+    userBlitoadzIds,
+    fetchUserBlitoadz,
+    extractOriginalIdsFromBlitoadzId,
   };
 };

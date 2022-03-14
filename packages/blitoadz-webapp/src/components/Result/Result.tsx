@@ -90,24 +90,26 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
       </Box>
       {blitmapId !== undefined && toadzId !== undefined && (
         <Box sx={{ marginTop: "24px" }}>
-          <button
-            style={{
-              fontSize: "24px",
-              fontWeight: 700,
-              backgroundColor: "rgb(127, 254, 168)",
-              color: "black",
-              boxShadow: "none",
-              padding: "11px 24px",
-              border: 0,
-              borderRadius: "4px",
-              height: "60px",
-              cursor: "pointer",
-              width: "100%",
-            }}
-            onClick={() => mint(toadzId, blitmapId)}
-          >
-            Mint
-          </button>
+          {!exists && !minted && (
+            <button
+              style={{
+                fontSize: "24px",
+                fontWeight: 700,
+                backgroundColor: "rgb(127, 254, 168)",
+                color: "black",
+                boxShadow: "none",
+                padding: "11px 24px",
+                border: 0,
+                borderRadius: "4px",
+                height: "60px",
+                cursor: "pointer",
+                width: "100%",
+              }}
+              onClick={() => mint(toadzId, blitmapId)}
+            >
+              Mint
+            </button>
+          )}
           {exists && !minted && (
             <Box
               sx={{

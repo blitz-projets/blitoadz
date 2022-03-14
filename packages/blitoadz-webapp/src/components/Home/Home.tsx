@@ -6,16 +6,23 @@ import ColorPaletteSelector from "../ColorPaletteSelector/ColorPaletteSelector";
 import Result from "../Result/Result";
 import ToadzSelector from "../ToadzSelector/ToadzSelector";
 import { useMediaQuery } from "@mui/material";
+import { useBlitoadzContract } from "../../hooks/useBlitoadzContract";
+import YourBlitoadz from "../YourBlitoadz/YourBlitoadz";
 
 function Home() {
   const isNarrow = useMediaQuery("(max-width:768px)");
   const { account } = useEthers();
+  const { userBlitoadzIds, fetchUserBlitoadz } = useBlitoadzContract();
   const [selectedBlitmapId, setSelectedBlitmapId] = React.useState<
     number | undefined
   >(undefined);
   const [selectedToadzId, setSelectedToadzId] = React.useState<
     number | undefined
   >(undefined);
+
+  React.useEffect(() => {
+    fetchUserBlitoadz();
+  }, [fetchUserBlitoadz]);
 
   return (
     <Box
@@ -55,24 +62,27 @@ function Home() {
       </Box>
       {!account && <WalletConnectSection />}
       {account && (
-        <Box
-          sx={{ display: "flex", flexDirection: isNarrow ? "column" : "row" }}
-        >
-          <ToadzSelector
-            onToadzClick={(id) => setSelectedToadzId(id)}
-            blitmapId={selectedBlitmapId}
-            sx={{ flex: 1 }}
-          />
-          <Result
-            toadzId={selectedToadzId}
-            blitmapId={selectedBlitmapId}
-            sx={{ flex: 1 }}
-          />
-          <ColorPaletteSelector
-            onBlitmapClick={(id) => setSelectedBlitmapId(id)}
-            toadzId={selectedToadzId}
-            sx={{ flex: 1 }}
-          />
+        <Box>
+          {userBlitoadzIds.length > 0 && <YourBlitoadz ids={userBlitoadzIds} />}
+          <Box
+            sx={{ display: "flex", flexDirection: isNarrow ? "column" : "row" }}
+          >
+            <ToadzSelector
+              onToadzClick={(id) => setSelectedToadzId(id)}
+              blitmapId={selectedBlitmapId}
+              sx={{ flex: 1 }}
+            />
+            <Result
+              toadzId={selectedToadzId}
+              blitmapId={selectedBlitmapId}
+              sx={{ flex: 1 }}
+            />
+            <ColorPaletteSelector
+              onBlitmapClick={(id) => setSelectedBlitmapId(id)}
+              toadzId={selectedToadzId}
+              sx={{ flex: 1 }}
+            />
+          </Box>
         </Box>
       )}
     </Box>

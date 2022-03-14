@@ -37,6 +37,7 @@ function ColorPaletteSelector({
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {blitmapIds.map((id) => (
           <ColorPaletteSelectorImage
+            key={id}
             id={id}
             onClick={() => onBlitmapClick(id)}
             toadzId={toadzId}

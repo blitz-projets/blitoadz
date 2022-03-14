@@ -4,6 +4,7 @@ import { Alert, Snackbar } from "@mui/material";
 import { SnackbarErrorContext } from "./contexts/SnackbarErrorContext";
 import Box from "@mui/material/Box";
 import Header from "./components/Header/Header";
+import { UserBlitoadzContextProvider } from "./contexts/UserBlitoadzContext";
 
 function App() {
   const [snackbarError, setSnackbarError] = React.useState<string | null>(null);
@@ -12,27 +13,29 @@ function App() {
     <SnackbarErrorContext.Provider
       value={{ error: snackbarError, setError: setSnackbarError }}
     >
-      <Box>
-        <Header />
-        <RoutesWrapper />
-      </Box>
-      <Snackbar
-        open={!!snackbarError}
-        autoHideDuration={6000}
-        onClose={() => setSnackbarError(null)}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
-        }}
-      >
-        <Alert
+      <UserBlitoadzContextProvider>
+        <Box>
+          <Header />
+          <RoutesWrapper />
+        </Box>
+        <Snackbar
+          open={!!snackbarError}
+          autoHideDuration={6000}
           onClose={() => setSnackbarError(null)}
-          severity="error"
-          sx={{ width: "100%" }}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "right",
+          }}
         >
-          {snackbarError}
-        </Alert>
-      </Snackbar>
+          <Alert
+            onClose={() => setSnackbarError(null)}
+            severity="error"
+            sx={{ width: "100%" }}
+          >
+            {snackbarError}
+          </Alert>
+        </Snackbar>
+      </UserBlitoadzContextProvider>
     </SnackbarErrorContext.Provider>
   );
 }

@@ -82,7 +82,7 @@ function FAQ() {
         </Box>
         <Box>
           <h2>
-            Wow wow wow - you say 6,6969 NFTS but CrypToadz actually has 7,025
+            Wow wow wow - you say 6,696 NFTS but CrypToadz actually has 7,025
             Toadz in the full collection?
           </h2>
           <p>
