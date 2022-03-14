@@ -1,9 +1,31 @@
 import React from "react";
+import { isMobile } from "react-device-detect";
 import Box from "@mui/material/Box";
 import WalletConnectDialog from "../WalletConnectDialog/WalletConnectDialog";
+import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
+import config, { CHAIN_ID } from "../../config";
+import { useEthers } from "@usedapp/core";
 
 function WalletConnectSection() {
+  const supportedChainIds = [CHAIN_ID];
+  const { activate } = useEthers();
   const [open, setOpen] = React.useState<boolean>(false);
+
+  const openConnectDialogMobile = React.useCallback(() => {
+    const walletlink = new WalletConnectConnector({
+      supportedChainIds,
+      chainId: CHAIN_ID,
+      rpc: {
+        [CHAIN_ID]: config.app.jsonRpcUri,
+      },
+    });
+    activate(walletlink);
+  }, [activate, supportedChainIds]);
+
+  const openConnectDialog = React.useCallback(
+    () => (isMobile ? openConnectDialogMobile() : setOpen(true)),
+    [openConnectDialogMobile]
+  );
 
   return (
     <Box sx={{ padding: "20px", textAlign: "center" }}>
@@ -24,7 +46,7 @@ function WalletConnectSection() {
             height: "60px",
             cursor: "pointer",
           }}
-          onClick={() => setOpen(true)}
+          onClick={openConnectDialog}
         >
           Connect Wallet
         </button>
