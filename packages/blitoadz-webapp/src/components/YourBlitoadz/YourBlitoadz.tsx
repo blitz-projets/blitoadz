@@ -73,11 +73,13 @@ function YourBlitoadzImage({ id }: YourBlitoadzImageProps) {
         rel="noreferrer"
         className="link"
       >
-        <img
-          className="image"
-          src={`data:image/svg+xml;utf8,${image}`}
-          alt="result"
-        />
+        {image && (
+          <img
+            className="image"
+            src={`data:image/svg+xml;utf8,${image}`}
+            alt="result"
+          />
+        )}
         <Box sx={{ fontSize: "16px", fontWeight: 600, marginTop: "4px" }}>
           #{id}
         </Box>
