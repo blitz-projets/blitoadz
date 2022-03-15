@@ -16,25 +16,29 @@ export const useBlitoadzContract = () => {
 
   const fetchUserBlitoadz = React.useCallback(async () => {
     if (sdk && account) {
-      const balance = await sdk.Blitoadz.balanceOf(account);
-      const count = balance.toNumber();
+      try {
+        const balance = await sdk.Blitoadz.balanceOf(account);
+        const count = balance.toNumber();
 
-      const promises = [];
-      for (let i = 0; i < count; i++) {
-        promises.push(
-          sdk.Blitoadz.tokenOfOwnerByIndex(account, i)
-            .then((bigId) => bigId.toNumber())
-            .catch(() => null)
-        );
+        const promises = [];
+        for (let i = 0; i < count; i++) {
+          promises.push(
+            sdk.Blitoadz.tokenOfOwnerByIndex(account, i)
+              .then((bigId) => bigId.toNumber())
+              .catch(() => null)
+          );
+        }
+
+        const ids = (await Promise.all(promises)).filter(
+          (id) => id !== null
+        ) as number[];
+
+        setUserBlitoadzIds(ids);
+
+        return ids;
+      } catch (e: unknown) {
+        setError((e as { error: Error }).error.message);
       }
-
-      const ids = (await Promise.all(promises)).filter(
-        (id) => id !== null
-      ) as number[];
-
-      setUserBlitoadzIds(ids);
-
-      return ids;
     }
   }, [sdk, account, setUserBlitoadzIds]);
 
