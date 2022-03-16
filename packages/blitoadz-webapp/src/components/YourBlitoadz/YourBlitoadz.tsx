@@ -23,7 +23,7 @@ function YourBlitoadz({ ids }: YourBlitoadzProps) {
           fontWeight: 600,
         }}
       >
-        Your Blitoadz
+        Your blitoadz
       </Box>
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {ids.map((id) => (
