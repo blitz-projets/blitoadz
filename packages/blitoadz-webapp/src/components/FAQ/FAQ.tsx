@@ -37,7 +37,7 @@ function FAQ() {
             fontWeight: 600,
           }}
         >
-          Frequently asked questions for the Blitzverse
+          Frequently asked questions for the blitverse
         </Box>
       </Box>
       <Box
