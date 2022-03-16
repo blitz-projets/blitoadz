@@ -29,7 +29,7 @@ function ToadzSelector({ onToadzClick, blitmapId, sx }: ToadzSelectorProps) {
           textAlign: "center",
         }}
       >
-        Select a CrypToadz
+        Select Cryptoadz composition
       </Box>
       <Box
         sx={{

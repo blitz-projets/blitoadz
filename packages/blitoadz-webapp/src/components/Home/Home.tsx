@@ -57,7 +57,7 @@ function Home() {
             fontWeight: 600,
           }}
         >
-          Flipping the lost Blitoadz
+          Enter the blitzverse
         </Box>
       </Box>
       {!account && <WalletConnectSection />}

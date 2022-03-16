@@ -46,11 +46,11 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
           marginBottom: "24px",
         }}
       >
-        {blitmapId !== undefined && blitmap[blitmapId].name}{" "}
         {toadzId !== undefined &&
           ((toadz[toadzId].attributes.find((attr) => attr.trait_type === "Name")
             ?.value as string) ||
             toadz[toadzId].name)}
+        {blitmapId !== undefined && blitmap[blitmapId].name}{" "}
       </Box>
       <Box
         sx={{

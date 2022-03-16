@@ -33,7 +33,7 @@ function ColorPaletteSelector({
           textAlign: "center",
         }}
       >
-        Select a color palette
+        Select blitmap color palette
       </Box>
       <Box
         sx={{
