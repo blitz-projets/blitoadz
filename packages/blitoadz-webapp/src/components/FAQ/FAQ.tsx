@@ -63,14 +63,14 @@ function FAQ() {
           <h2>What are blitoadz?</h2>
           <p>
             Blitoadz are an on-chain collection of 5,600 unique NFTs. They are,
-            effectively, blitzed Cryptoadz – the offspring of the 100 OG
-            blitmaps and the 56 customized 1/1 Cryptoadz.
+            effectively, blitzed CrypToadz – the offspring of the 100 OG
+            blitmaps and the 56 customized 1/1 CrypToadz.
           </p>
         </Box>
         <Box className="question">
           <h2>
-            Wait – let's take this back a step can you tell me more about
-            blitmap and Cryptoadz?
+            Wait – take this back a step. Tell me more about blitmap and
+            CrypToadz?
           </h2>
           <p>
             Blitmap all started with some pixel art. The NFT collection was
@@ -78,13 +78,13 @@ function FAQ() {
             16 other extremely talented artists in the NFT space. Blitmap
             catered for a unique minting experience, mixing the 100 original
             artworks to create 1,600 siblings and, ultimately, a full collection
-            of 1,700 NFTs. Hashtag blitfam.
+            of 1,700 NFTs - #blitfam.
           </p>
           <p>
-            Cryptoadz - The collection consists of 6,969 NFTs that were stealth
+            The CrypToadz collection consists of 6,969 NFTs that were stealth
             launched in Sept 2021. The project sold out in ~15 minutes (yes, you
             read that correctly) - undoubtedly aided by the huge influence
-            artist and creator GREMPLIN has in the NFT space. Cryptoadz
+            artist and creator GREMPLIN has in the NFT space. CrypToadz
             currently reside in the Swamp.
           </p>
           <p>
@@ -94,15 +94,15 @@ function FAQ() {
         </Box>
         <Box className="question">
           <h2>
-            Wow wow wow - you say 6,696 NFTS but CrypToadz actually has 7,025
-            Toadz in the full collection?
+            Hold on - you say 6,969 NFTs but doesn’t CrypToadz have 7,025 Toadz
+            in the full collection?
           </h2>
           <p>
-            Correct!! The ‘other’ 56 Toadz (numbered 1,000,000 to 56,000,000)
-            were a customized set created separately to the main collection and
-            were not intended to be part of the Cryptoadz mint process. Lacking
-            a sense of belonging in the Swamp, they sought out the blitfam OGs
-            and had a vision of a different future. Enter blitzverse.
+            It does! The ‘other’ 56 Toadz were a special customized set, created
+            separately to the main collection and were not intended to be part
+            of the Cryptoadz mint process . With such prestige, they sought out
+            the blitfam OGs and had a vision of a more expansive future. Enter
+            the blitzverse.
           </p>
         </Box>
         <Box className="question">
@@ -115,53 +115,49 @@ function FAQ() {
         <Box className="question">
           <h2>Can I try before I buy?</h2>
           <p>
-            You can! On our minting page you will effectively be creating your
+            You can! On our home page you will effectively be creating your
+            unique art piece before you mint the
+          </p>
+          <p>
+            You can! On our home page you will effectively be creating your
             unique art piece before you mint the NFT. Steps:
           </p>
           <ul>
-            <li>Choose one of the Cryptoadz compositions on the left.</li>
-            <li>Click on a blitmap colour palette on the right.</li>
+            <li>Choose one of the CrypToadz compositions on the left</li>
+            <li>Click on a blitmap color palette on the right</li>
             <li>
-              Decide if it’s for you before minting or repeating the steps.
+              Decide if it’s for you before minting... or repeating the steps.
               Easy!
             </li>
           </ul>
         </Box>
         <Box className="question">
-          <h2>When Roadmap?</h2>
+          <h2>When ToadMap?</h2>
           <p>
-            Great question. We have a zillion ideas to thrash out and put on
-            paper. What we can say is that it will be community driven, in every
-            sense of the word. Our discord and Twitter page will be best placed
-            for updates and announcements.
+            Great question. We have quite a few ideas to thrash out and put on
+            paper. What we can say is that if & when there is a ToadMap - it
+            will be community driven, in every sense of the word. Our discord
+            and Twitter page will be best placed for updates and announcements.
+            In the meantime, feel free to simply enjoy the art.
           </p>
         </Box>
         <Box className="question">
           <h2>Ok then... can I have some Linkz?</h2>
-          <p>Sure thing:</p>
           <p>
             Twitter:{" "}
-            <a
-              href="https://twitter.com/blitoadz"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://twitter.com/blitoadz" target="_blank">
               https://twitter.com/blitoadz
             </a>
           </p>
           <p>
             Discord:{" "}
-            <a
-              href="https://discord.gg/Zqrp8kewuk"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://discord.gg/Zqrp8kewuk" target="_blank">
               https://discord.gg/Zqrp8kewuk
             </a>
           </p>
           <p>
             Website:{" "}
-            <a href="https://Blitoadz.io" target="_blank" rel="noreferrer">
+            <a href="https://Blitoadz.io" target="_blank">
               https://Blitoadz.io
             </a>
           </p>
@@ -173,64 +169,70 @@ function FAQ() {
             have one?
           </h2>
           <p>
-            We have a PDF doc. Feel free to peruse this for a little more info
-            around the project as a whole. We are agile. Things will be
-            constantly changing and evolving. Again, Discord and Twitter will be
-            your best bet for updates.
+            We have a PDF doc if that helps! Feel free to peruse this for a
+            little more info around the project as a whole. We are agile. Things
+            will be constantly changing and evolving. Again, Discord and Twitter
+            will be your best bet for updates.
           </p>
-          <p>****NEED TO INSERT DOC LATER***</p>
+          <p>
+            <a href="/blitoadz-whitepaper.pdf" target="_blank">
+              Whitepaper
+            </a>
+          </p>
         </Box>
         <Box className="question">
-          <h2>Are you sure Blitoadz are stored on-chain?</h2>
+          <h2>
+            I see blitoadz are stored on-chain.What exactly does thatmean?
+          </h2>
           <p>
-            Yes! All data will be stored fully on-chain. We have actually used
-            the Blitmap contract as a template but had to encode the Cryptoadz
-            artwork (at time of writing, Cryptoadz are not on- chain but we are
-            confident they will be, soon). As a result, all of our artwork will
-            be composable and is open to be used by the community, at will.
+            This means that the metadata and images are all stored on the
+            (Ethereum) blockchain. Therefore, no additional information needs to
+            be retrieved from a centralized server or IPFS. The main advantage
+            of this is permeance and our artwork / smart contract are
+            composable.
           </p>
         </Box>
         <Box className="question">
           <h2>Err, you mention CC0 licensing. What’s that in English?</h2>
           <p>
             Basically, the project will be put in public domain. There’s no
-            copyright. The contract and artwork are free to use how you feel,
-            whether that be a derivative NFT project, clothing range, or opening
-            a tattoo parlor (this is not life advice, hehe).
+            copyright. The contract and artwork are free to use how you feel -
+            whether that be for a derivative NFT project, a new clothing range
+            or even opening / branding a new tattoo parlor (note: this is not
+            life advice - but keep us posted if you follow through)!
           </p>
         </Box>
         <Box className="question">
           <h2>Do original artists get commission?</h2>
           <p>
-            They do! 25% of all mint sales will be paid in commission to the
-            original artists of blitmap and Cryptoadz. We, literally, wouldn’t
-            be here without them.
+            They do! In our smart contract we have allocated 17% of mint sales
+            commission to the 17 blitmap artists and 5.6% to the creator of the
+            56 Cryptoadz. We (literally!) wouldn’t be here without them.
           </p>
+        </Box>
+        <Box className="question">
+          <h2>What's the contract address?</h2>
+          <p>Coming soon...</p>
         </Box>
         <Box className="question">
           <h2>Any other forms of giving back or rewarding holders?</h2>
           <p>
-            There sure is. See our PDF doc (I mean whitepaper) above for some
-            tasters. However, we want to strike a fine balance between growth
-            and simple giveaways. This is where our experience will come in. If
-            you want us to just ‘sweep the floor’ every week, you are looking at
-            the wrong project. We are finally getting to put those college
-            economics lessons to good use!
+            There sure is. See our PDF doc (I mean whitepaper) above for a tad
+            more information. However, we want to strike a balance in what we
+            see as a possible trade-off between sustained growth and continuous
+            giveaways. This is where our experience will come in - finally
+            getting to put those college Economics lessons to good use!
           </p>
         </Box>
         <Box className="question">
           <h2>Are there royalty fees on secondary sales?</h2>
           <p>
-            Yes. There will be a 5% royalty on secondary sales, part of which
+            Yes - there will be a 5% royalty on secondary sales, part of which
             will go to the founding members of the team to incentivize further
             growth. The rest will go directly into a treasury wallet for future
             development and community incentives **you are going to want to
             watch this space**.
           </p>
-        </Box>
-        <Box className="question">
-          <h2>What's the contract address?</h2>
-          <p>***TO BE ADDED LATER***</p>
         </Box>
       </Box>
     </Box>

@@ -40,7 +40,7 @@ export const useBlitoadzContract = () => {
         setError((e as { error: Error }).error.message);
       }
     }
-  }, [sdk, account, setUserBlitoadzIds]);
+  }, [sdk, account, setUserBlitoadzIds, setError]);
 
   const blitoadzExists = React.useCallback(
     (toadzId: number, blitmapId: number): Promise<boolean> => {

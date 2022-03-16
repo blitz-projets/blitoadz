@@ -55,7 +55,7 @@ function Header() {
               color: "black",
             }}
           >
-            <img src={logo} width={28} height={28} />
+            <img src={logo} width={28} height={28} alt="logo" />
           </Link>
           <Link
             to="/"
