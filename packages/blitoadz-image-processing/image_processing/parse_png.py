@@ -5,26 +5,44 @@ from string import Template
 
 import numpy as np
 import pandas as pd
-from image_processing.constants import PALETTES_FILE, TOADZ_COMPUTED_DIR, TOADZ_DIR
+from image_processing.constants import (
+    PALETTES_FILE,
+    TOADZ_COMPUTED_DIR,
+    TOADZ_DIR,
+    TOADZ_DOWNSCALED_DIR,
+    TOADZ_QUANTIZED_DIR,
+    TOADZ_SELECTION_DIR,
+)
 from PIL import Image
 
 #%% Define constants
 RECT = Template("<rect x='$x' y='$y' width='1' height='1' fill='#$fill' />")
+TOADZ_DOWNSCALED_DIR.mkdir(exist_ok=True)
+TOADZ_QUANTIZED_DIR.mkdir(exist_ok=True)
 
 
 #%% Define functions
-def parse_png(png_path):
+def generate_toadz_versions(png_path):
     image = Image.open(png_path).convert("RGB")
     arr = np.array(image)[::40, ::40, :]
-    return np.unique(
-        np.array(
-            [
-                "".join([("0" + format(_c, "x"))[-2:] for _c in c])
-                for c in arr.reshape((-1, 3)).tolist()
-            ]
-        ),
-        return_inverse=True,
+    image_downscaled = Image.fromarray(arr)
+    image_downscaled.convert("P", palette=Image.ADAPTIVE, colors=4).save(
+        TOADZ_QUANTIZED_DIR / png_path.name
     )
+    image_downscaled.save(TOADZ_DOWNSCALED_DIR / png_path.name)
+
+
+def parse_png(png_path):
+    image = Image.open(png_path).convert("P", palette=Image.ADAPTIVE)
+    colors = (
+        pd.Series(image.palette.colors)
+        .sort_values()
+        .index.to_frame()
+        .agg(lambda c: "".join([("0" + format(_c, "x"))[-2:] for _c in c]), axis=1)
+        .tolist()
+    )
+    indexes = np.array(image).flatten().tolist()
+    return colors, indexes
 
 
 def generate_svg(colors, indexes):
@@ -38,19 +56,24 @@ def generate_svg(colors, indexes):
                 ]
             )
         )
-        + "</svg>"
+        + "<style>rect{shape-rendering:crispEdges}</style></svg>"
     )
 
 
-#%% Parse files
+#%% Generate toadz versions
 toadz_list = []
 for file in TOADZ_DIR.glob("**/*.png"):
+    generate_toadz_versions(file)
+
+#%% Parse files
+toadz_list = []
+for file in TOADZ_SELECTION_DIR.glob("**/*.png"):
     _colors, _indexes = parse_png(file)
     toadz_list += [
         {
             "file": str(file),
-            "colors": _colors.tolist(),
-            "indexes": _indexes.tolist(),
+            "colors": _colors,
+            "indexes": _indexes,
         }
     ]
 
@@ -58,7 +81,7 @@ for file in TOADZ_DIR.glob("**/*.png"):
 shutil.rmtree(TOADZ_COMPUTED_DIR, ignore_errors=True)
 for toadz in toadz_list:
     file_name_computed = TOADZ_COMPUTED_DIR / Path(toadz["file"]).relative_to(
-        TOADZ_DIR
+        TOADZ_SELECTION_DIR
     ).with_suffix(".svg")
     file_name_computed.parent.mkdir(exist_ok=True, parents=True)
 
