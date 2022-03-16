@@ -1,47 +1,89 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
+import logo from "./logo.png";
 
 function Header() {
   return (
-    <Box
-      sx={{
-        height: "52px",
-        display: "flex",
-
-        "& .link-button": {
-          padding: "8px 12px",
-          fontSize: "16px",
-          lineHeight: "24px",
-          textDecoration: "none",
-          color: "black",
+    <Box sx={{ padding: "24px" }}>
+      <Box
+        sx={{
           display: "flex",
-          alignItems: "center",
+          borderTop: "2px solid black",
+          borderBottom: "2px solid black",
+          position: "relative",
+          justifyContent: "space-between",
 
-          "&:hover": {
-            backgroundColor: "#f2f2f2",
+          "::before": {
+            content: '""',
+            height: "8px",
+            width: "8px",
+            backgroundColor: "black",
+            position: "absolute",
+            bottom: "-10px",
+            right: "-8px",
           },
-        },
-      }}
-    >
-      <Link
-        to="/"
-        className="link-button"
-        style={{
-          fontFamily: "Snap ITC",
-          fontSize: "24px",
-          textDecoration: "none",
-          color: "black",
+
+          "& .link-button": {
+            padding: "16px 12px",
+            fontSize: "16px",
+            lineHeight: "24px",
+            textDecoration: "none",
+            color: "black",
+            display: "flex",
+            alignItems: "center",
+
+            "&:hover": {
+              backgroundColor: "rgba(0,0,0,0.2)",
+            },
+          },
         }}
       >
-        Blitoadz
-      </Link>
-      <Link to="/faq" className="link-button">
-        FAQ
-      </Link>
-      <Link to="/team" className="link-button">
-        Team
-      </Link>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Link
+            to="/"
+            className="link-button"
+            style={{
+              fontFamily: "Snap ITC",
+              fontSize: "24px",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <img src={logo} width={28} height={28} />
+          </Link>
+          <Link
+            to="/"
+            className="link-button"
+            style={{
+              fontFamily: "Snap ITC",
+              fontSize: "24px",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            Blitoadz
+          </Link>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Link to="/faq" className="link-button">
+            FAQ
+          </Link>
+          <Link to="/team" className="link-button">
+            Team
+          </Link>
+        </Box>
+      </Box>
     </Box>
   );
 }

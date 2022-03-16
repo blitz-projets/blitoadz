@@ -14,7 +14,7 @@ type YourBlitoadzProps = {
 
 function YourBlitoadz({ ids }: YourBlitoadzProps) {
   return (
-    <Box sx={{ padding: "12px" }}>
+    <Box sx={{ padding: "12px", marginBottom: "48px" }}>
       <Box
         sx={{
           fontSize: "32px",
@@ -61,10 +61,23 @@ function YourBlitoadzImage({ id }: YourBlitoadzImageProps) {
           alignItems: "center",
           textDecoration: "none",
           color: "#485fc7",
+          border: "2px solid black",
+          padding: "4px",
+          position: "relative",
+
+          "::before": {
+            content: '""',
+            height: "3px",
+            width: "3px",
+            backgroundColor: "black",
+            position: "absolute",
+            top: "-5px",
+            right: "-5px",
+          },
 
           "&:hover": { color: "black" },
         },
-        "& .image": { maxWidth: "98px" },
+        "& .image": { maxWidth: "86px" },
       }}
     >
       <a

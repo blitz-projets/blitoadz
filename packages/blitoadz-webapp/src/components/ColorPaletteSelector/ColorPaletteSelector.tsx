@@ -27,6 +27,7 @@ function ColorPaletteSelector({
       <Box
         sx={{
           marginBottom: "24px",
+          lineHeight: "32px",
           fontWeight: 600,
           fontSize: "20px",
           textAlign: "center",
@@ -34,7 +35,25 @@ function ColorPaletteSelector({
       >
         Select a color palette
       </Box>
-      <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          border: "2px solid black",
+          padding: "4px",
+          position: "relative",
+
+          "::before": {
+            content: '""',
+            height: "8px",
+            width: "8px",
+            backgroundColor: "black",
+            position: "absolute",
+            top: "-10px",
+            right: "-10px",
+          },
+        }}
+      >
         {blitmapIds.map((id) => (
           <ColorPaletteSelectorImage
             key={id}

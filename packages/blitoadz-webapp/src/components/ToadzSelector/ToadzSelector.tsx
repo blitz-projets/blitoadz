@@ -25,6 +25,7 @@ function ToadzSelector({ onToadzClick, blitmapId, sx }: ToadzSelectorProps) {
           marginBottom: "24px",
           fontWeight: 600,
           fontSize: "20px",
+          lineHeight: "32px",
           textAlign: "center",
         }}
       >
@@ -34,6 +35,19 @@ function ToadzSelector({ onToadzClick, blitmapId, sx }: ToadzSelectorProps) {
         sx={{
           display: "flex",
           flexWrap: "wrap",
+          border: "2px solid black",
+          padding: "4px",
+          position: "relative",
+
+          "::before": {
+            content: '""',
+            height: "8px",
+            width: "8px",
+            backgroundColor: "black",
+            position: "absolute",
+            top: "-10px",
+            right: "-10px",
+          },
         }}
       >
         {toadzIds.map((id) => (

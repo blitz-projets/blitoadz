@@ -32,7 +32,7 @@ function FAQ() {
         <Box
           sx={{
             marginBottom: "24px",
-            fontSize: isNarrow ? "32px" : "48px",
+            fontSize: isNarrow ? "24px" : "32px",
             lineHeight: "54px",
             fontWeight: 600,
           }}
@@ -45,9 +45,21 @@ function FAQ() {
           width: "100%",
           maxWidth: "1185px",
           margin: "auto",
+
+          "& .question": {
+            marginBottom: "48px",
+          },
+
+          "& .question h2": {
+            fontSize: "18px",
+          },
+
+          "& .question p": {
+            fontFamily: "system-ui",
+          },
         }}
       >
-        <Box>
+        <Box className="question">
           <h2>What are blitoadz?</h2>
           <p>
             Blitoadz are an on-chain collection of 5,600 unique NFTs. They are,
@@ -55,7 +67,7 @@ function FAQ() {
             blitmaps and the 56 customized 1/1 Cryptoadz.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>
             Wait – let's take this back a step can you tell me more about
             blitmap and Cryptoadz?
@@ -80,7 +92,7 @@ function FAQ() {
             copyright and related rights - as will blitoadz.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>
             Wow wow wow - you say 6,696 NFTS but CrypToadz actually has 7,025
             Toadz in the full collection?
@@ -93,14 +105,14 @@ function FAQ() {
             and had a vision of a different future. Enter blitzverse.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>How much is this mint gonna cost me?</h2>
           <p>
             Each individual mint will cost 0.056 ETH (+ gas fee which is not
             controllable by us).
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Can I try before I buy?</h2>
           <p>
             You can! On our minting page you will effectively be creating your
@@ -115,7 +127,7 @@ function FAQ() {
             </li>
           </ul>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>When Roadmap?</h2>
           <p>
             Great question. We have a zillion ideas to thrash out and put on
@@ -124,7 +136,7 @@ function FAQ() {
             for updates and announcements.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Ok then... can I have some Linkz?</h2>
           <p>Sure thing:</p>
           <p>
@@ -155,7 +167,7 @@ function FAQ() {
           </p>
           <p>ENS: Blitoadz.ens</p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>
             I always see people in Discord asking about a ‘Whitepaper’. Do you
             have one?
@@ -168,7 +180,7 @@ function FAQ() {
           </p>
           <p>****NEED TO INSERT DOC LATER***</p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Are you sure Blitoadz are stored on-chain?</h2>
           <p>
             Yes! All data will be stored fully on-chain. We have actually used
@@ -178,7 +190,7 @@ function FAQ() {
             be composable and is open to be used by the community, at will.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Err, you mention CC0 licensing. What’s that in English?</h2>
           <p>
             Basically, the project will be put in public domain. There’s no
@@ -187,7 +199,7 @@ function FAQ() {
             a tattoo parlor (this is not life advice, hehe).
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Do original artists get commission?</h2>
           <p>
             They do! 25% of all mint sales will be paid in commission to the
@@ -195,7 +207,7 @@ function FAQ() {
             be here without them.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Any other forms of giving back or rewarding holders?</h2>
           <p>
             There sure is. See our PDF doc (I mean whitepaper) above for some
@@ -206,7 +218,7 @@ function FAQ() {
             economics lessons to good use!
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>Are there royalty fees on secondary sales?</h2>
           <p>
             Yes. There will be a 5% royalty on secondary sales, part of which
@@ -216,7 +228,7 @@ function FAQ() {
             watch this space**.
           </p>
         </Box>
-        <Box>
+        <Box className="question">
           <h2>What's the contract address?</h2>
           <p>***TO BE ADDED LATER***</p>
         </Box>

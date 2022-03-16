@@ -32,6 +32,7 @@ const WalletButton: React.FC<{
   return (
     <Box
       sx={{
+        fontFamily: "system-ui",
         padding: "8px",
         ...sx,
       }}

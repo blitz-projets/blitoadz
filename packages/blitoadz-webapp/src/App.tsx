@@ -5,6 +5,7 @@ import { SnackbarErrorContext } from "./contexts/SnackbarErrorContext";
 import Box from "@mui/material/Box";
 import Header from "./components/Header/Header";
 import { UserBlitoadzContextProvider } from "./contexts/UserBlitoadzContext";
+import background from "./background.png";
 
 function App() {
   const [snackbarError, setSnackbarError] = React.useState<string | null>(null);
@@ -14,7 +15,13 @@ function App() {
       value={{ error: snackbarError, setError: setSnackbarError }}
     >
       <UserBlitoadzContextProvider>
-        <Box>
+        <Box
+          sx={{
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+          }}
+        >
           <Header />
           <RoutesWrapper />
         </Box>

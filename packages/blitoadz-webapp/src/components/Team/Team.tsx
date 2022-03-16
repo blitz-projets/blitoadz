@@ -54,6 +54,10 @@ function Team() {
             borderRadius: "50%",
             width: "200px",
           },
+
+          "& p": {
+            fontFamily: "system-ui",
+          },
         }}
       >
         <Box>
