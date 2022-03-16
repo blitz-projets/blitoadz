@@ -190,7 +190,7 @@ function FAQ() {
         </Box>
         <Box className="question">
           <h2>
-            I see blitoadz are stored on-chain.What exactly does thatmean?
+            I see blitoadz are stored on-chain. What exactly does that mean?
           </h2>
           <p>
             This means that the metadata and images are all stored on the
