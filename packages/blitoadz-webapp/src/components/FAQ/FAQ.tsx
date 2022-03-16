@@ -57,6 +57,10 @@ function FAQ() {
           "& .question p": {
             fontFamily: "system-ui",
           },
+
+          "& .question li": {
+            fontFamily: "system-ui",
+          },
         }}
       >
         <Box className="question">
@@ -114,10 +118,6 @@ function FAQ() {
         </Box>
         <Box className="question">
           <h2>Can I try before I buy?</h2>
-          <p>
-            You can! On our home page you will effectively be creating your
-            unique art piece before you mint the
-          </p>
           <p>
             You can! On our home page you will effectively be creating your
             unique art piece before you mint the NFT. Steps:
