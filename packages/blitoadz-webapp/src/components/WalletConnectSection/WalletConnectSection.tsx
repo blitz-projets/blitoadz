@@ -46,7 +46,6 @@ function WalletConnectSection() {
             boxShadow: "none",
             padding: "11px 24px",
             borderRadius: "4px",
-            height: "60px",
             cursor: "pointer",
             border: "1px solid black",
           }}
