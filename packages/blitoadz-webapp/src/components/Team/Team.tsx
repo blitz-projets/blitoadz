@@ -34,13 +34,23 @@ function Team() {
         </Box>
         <Box
           sx={{
-            marginBottom: "24px",
+            marginBottom: "48px",
             fontSize: isNarrow ? "32px" : "48px",
             lineHeight: "54px",
             fontWeight: 600,
           }}
         >
           The Blitoadz team
+        </Box>
+        <Box
+          sx={{
+            fontFamily: "system-ui",
+            marginBottom: "12px",
+          }}
+        >
+          We are a small team with a big vision to drive change. Brought
+          together by a single act of kindness. Perhaps there is a backstory
+          here.
         </Box>
       </Box>
       <Box
@@ -67,11 +77,7 @@ function Team() {
             src={FocusPoints}
           />
           <h2>FocusPoints</h2>
-          <p>
-            Trying to become a person of value, not success. Walked out of a
-            master’s degree in Innovation to work a 9-5 and have had a bad case
-            of the Mondays, ever since.
-          </p>
+          <p>Striving to become a person of value, rather than success.</p>
           <p>First NFT: blitmap</p>
         </Box>
         <Box marginTop="48px">
