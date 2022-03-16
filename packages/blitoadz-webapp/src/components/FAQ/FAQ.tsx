@@ -145,19 +145,27 @@ function FAQ() {
           <h2>Ok then... can I have some Linkz?</h2>
           <p>
             Twitter:{" "}
-            <a href="https://twitter.com/blitoadz" target="_blank">
+            <a
+              href="https://twitter.com/blitoadz"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://twitter.com/blitoadz
             </a>
           </p>
           <p>
             Discord:{" "}
-            <a href="https://discord.gg/Zqrp8kewuk" target="_blank">
+            <a
+              href="https://discord.gg/Zqrp8kewuk"
+              target="_blank"
+              rel="noreferrer"
+            >
               https://discord.gg/Zqrp8kewuk
             </a>
           </p>
           <p>
             Website:{" "}
-            <a href="https://Blitoadz.io" target="_blank">
+            <a href="https://Blitoadz.io" target="_blank" rel="noreferrer">
               https://Blitoadz.io
             </a>
           </p>
