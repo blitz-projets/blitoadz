@@ -1,0 +1,5 @@
+outs:
+- md5: 0d2bad8a05298a783d27157d5b510a05.dir
+  size: 739088
+  nfiles: 11
+  path: toadz_quantized_recoverd
