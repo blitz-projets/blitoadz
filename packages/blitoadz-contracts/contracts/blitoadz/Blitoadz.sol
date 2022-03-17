@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "erc721a/contracts/ERC721A.sol";
 import "../interfaces/IBlitoadzRenderer.sol";
+import "../interfaces/BlitoadzTypes.sol";
 
 contract OwnableDelegateProxy {}
 
@@ -22,7 +23,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     // Blitoadz states variables
     bool[BLITOADZ_COUNT] public blitoadzExist;
-    uint8[] public blitoadz;
+    BlitoadzTypes.Blitoadz[] public blitoadz;
 
     ////////////////////////////////////////////////////////////////////////
     ////////////////////////// Schedule ////////////////////////////////////
@@ -114,7 +115,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     function _mint(
         address to,
         uint256[] calldata toadzIds,
-        uint256[] calldata blitmapIds
+        uint256[] calldata blitmapIds,
+        uint256[] calldata paletteOrders
     ) internal {
         for (uint256 i = 0; i < toadzIds.length; i++) {
             uint256 toadzId = toadzIds[i];
@@ -125,8 +127,13 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
             );
             require(toadzId < TOADZ_COUNT, "Toadz id out of range");
             require(blitmapId < BLITMAP_COUNT, "Blitmap id out of range");
-            blitoadz.push(uint8(toadzId % type(uint8).max));
-            blitoadz.push(uint8(blitmapId % type(uint8).max));
+            blitoadz.push(
+                BlitoadzTypes.Blitoadz(
+                    uint8(toadzId % type(uint8).max),
+                    uint8(blitmapId % type(uint8).max),
+                    uint8(paletteOrders[i] % type(uint8).max)
+                )
+            );
             blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId] = true;
         }
 
@@ -135,7 +142,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     function mintPublicSale(
         uint256[] calldata toadzIds,
-        uint256[] calldata blitmapIds
+        uint256[] calldata blitmapIds,
+        uint256[] calldata paletteOrders
     ) external payable whenPublicSaleOpen nonReentrant {
         require(
             toadzIds.length == blitmapIds.length,
@@ -146,7 +154,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
             "Price does not match"
         );
 
-        _mint(_msgSender(), toadzIds, blitmapIds);
+        _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders);
     }
 
     function tokenURI(uint256 _tokenId)
@@ -161,9 +169,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
             return "";
         }
 
-        uint8 toadzId = blitoadz[2 * _tokenId];
-        uint8 blitmapId = blitoadz[2 * _tokenId + 1];
-        return renderer.tokenURI(toadzId, blitmapId);
+        return renderer.tokenURI(blitoadz[_tokenId]);
     }
 
     function exists(uint256 _tokenId) external view returns (bool) {
