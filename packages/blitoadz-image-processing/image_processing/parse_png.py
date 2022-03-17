@@ -10,6 +10,7 @@ from image_processing.constants import (
     TOADZ_COMPUTED_DIR,
     TOADZ_DIR,
     TOADZ_DOWNSCALED_DIR,
+    TOADZ_MANUAL_DIR,
     TOADZ_QUANTIZED_DIR,
     TOADZ_SELECTION_DIR,
 )
@@ -32,8 +33,14 @@ def generate_toadz_versions(png_path):
     image_downscaled.save(TOADZ_DOWNSCALED_DIR / png_path.name)
 
 
+def quantize_manual(png_path):
+    Image.open(png_path).convert("RGB").convert(
+        "P", palette=Image.ADAPTIVE, colors=4
+    ).save(TOADZ_MANUAL_DIR / png_path.name)
+
+
 def parse_png(png_path):
-    image = Image.open(png_path).convert("P", palette=Image.ADAPTIVE)
+    image = Image.open(png_path).convert("RGB").convert("P", palette=Image.ADAPTIVE)
     colors = (
         pd.Series(image.palette.colors)
         .sort_values()
@@ -64,6 +71,11 @@ def generate_svg(colors, indexes):
 toadz_list = []
 for file in TOADZ_DIR.glob("**/*.png"):
     generate_toadz_versions(file)
+
+#%% Quantize manual edits
+toadz_list = []
+for file in TOADZ_MANUAL_DIR.glob("**/*.png"):
+    quantize_manual(file)
 
 #%% Parse files
 toadz_list = []
