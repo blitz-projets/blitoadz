@@ -27,6 +27,7 @@ const config: EthSdkConfig = {
   rpc: {
     main: mainRpc,
   },
+  etherscanKey: process.env.REACT_APP_ETHERSCAN_API_KEY,
 };
 
 export default config;
