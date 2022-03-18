@@ -37,7 +37,7 @@
     "prebuild": "npm run generate-types",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "generate-types": "eth-sdk",
+    "generate-types": "retry -n 5 -- eth-sdk",
     "generate-types:local": "dotenv -e .env.local npm run generate-types"
   },
   "eslintConfig": {
@@ -62,14 +62,15 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "@types/react-typist": "^2.0.3",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/react-typist": "^2.0.3",
     "dotenv-cli": "^4.1.1",
     "prettier": "2.5.1",
     "react-app-rewired": "^2.1.11",
+    "retry-cli": "^0.6.0",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   }
