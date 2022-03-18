@@ -37,7 +37,8 @@
     "prebuild": "npm run generate-types",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "generate-types": "eth-sdk"
+    "generate-types": "eth-sdk",
+    "generate-types:local": "dotenv -e .env.local npm run generate-types"
   },
   "eslintConfig": {
     "extends": [

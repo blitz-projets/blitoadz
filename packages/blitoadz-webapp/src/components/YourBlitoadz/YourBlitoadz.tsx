@@ -44,11 +44,13 @@ function YourBlitoadzImage({ id }: YourBlitoadzImageProps) {
   const [image, setImage] = React.useState<string | null>(null);
 
   React.useEffect(() => {
-    extractOriginalIdsFromBlitoadzId(id).then(({ blitmapId, toadzId }) => {
-      if (blitmapId !== null && toadzId !== null) {
-        getSvg(blitmapId, toadzId).then(setImage);
+    extractOriginalIdsFromBlitoadzId(id).then(
+      ({ blitmapId, toadzId, paletteOrder }) => {
+        if (blitmapId !== null && toadzId !== null && paletteOrder !== null) {
+          getSvg(blitmapId, toadzId, paletteOrder).then(setImage);
+        }
       }
-    });
+    );
   }, [id, getSvg, extractOriginalIdsFromBlitoadzId]);
 
   return (

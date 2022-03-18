@@ -91,16 +91,25 @@ export const useBlitoadzContract = () => {
   );
 
   const mint = React.useCallback(
-    (toadzId: number, blitmapId: number): Promise<void> => {
+    (
+      toadzId: number,
+      blitmapId: number,
+      paletteOrder: number
+    ): Promise<void> => {
       return new Promise(async (resolve, reject) => {
         if (sdk && account) {
           try {
             const price = await sdk.Blitoadz.MINT_PUBLIC_PRICE();
             setIsMinting(true);
-            await sdk.Blitoadz.mintPublicSale([toadzId], [blitmapId], {
-              from: account,
-              value: price,
-            });
+            await sdk.Blitoadz.mintPublicSale(
+              [toadzId],
+              [blitmapId],
+              [paletteOrder],
+              {
+                from: account,
+                value: price,
+              }
+            );
             await waitForBlitoadzMint(toadzId, blitmapId);
             setMinted([...minted, toadzId * 100 + blitmapId]);
             await fetchUserBlitoadz();
@@ -127,18 +136,27 @@ export const useBlitoadzContract = () => {
   const extractOriginalIdsFromBlitoadzId = React.useCallback(
     async (id: number) => {
       if (sdk) {
-        const [toadzId, blitmapId] = await Promise.all([
-          sdk.Blitoadz.blitoadz(2 * id),
-          sdk.Blitoadz.blitoadz(2 * id + 1),
-        ]);
+        const { toadzId, blitmapId, paletteOrder } =
+          await sdk.Blitoadz.blitoadz(id);
 
-        return { toadzId, blitmapId };
+        return {
+          toadzId,
+          blitmapId,
+          paletteOrder,
+        };
       } else {
-        return { toadzId: null, blitmapId: null };
+        return { toadzId: null, blitmapId: null, paletteOrder: null };
       }
     },
     [sdk]
   );
+
+  const generateRandomPaletteOrder = React.useCallback(() => {
+    const colorArray = ["00", "01", "10", "11"];
+    const shuffledArray = colorArray.sort((a, b) => 0.5 - Math.random());
+
+    return parseInt(shuffledArray.join(""), 2);
+  }, []);
 
   return {
     address: sdk?.Blitoadz.address,
@@ -149,5 +167,6 @@ export const useBlitoadzContract = () => {
     userBlitoadzIds,
     fetchUserBlitoadz,
     extractOriginalIdsFromBlitoadzId,
+    generateRandomPaletteOrder,
   };
 };

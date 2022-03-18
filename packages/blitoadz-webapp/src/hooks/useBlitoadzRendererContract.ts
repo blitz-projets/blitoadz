@@ -8,13 +8,14 @@ export const useBlitoadzRendererContract = () => {
   const { setError } = React.useContext(SnackbarErrorContext);
 
   const getSvg = React.useCallback(
-    (toadzId: number, blitmapId: number): Promise<string> => {
+    (toadzId: number, blitmapId: number, palette: number): Promise<string> => {
       return new Promise(async (resolve, reject) => {
         if (sdk) {
           try {
             const svg = await sdk.BlitoadzRenderer.getBlitoadz(
               blitmapId,
-              toadzId
+              toadzId,
+              palette
             );
             resolve(svg);
           } catch (e: unknown) {

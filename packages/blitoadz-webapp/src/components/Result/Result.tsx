@@ -12,21 +12,28 @@ type ResultProps = {
 };
 
 function Result({ blitmapId, toadzId, sx }: ResultProps) {
-  const { mint, isMinting, hasBeenMinted, blitoadzExists } =
-    useBlitoadzContract();
+  const {
+    mint,
+    isMinting,
+    hasBeenMinted,
+    blitoadzExists,
+    generateRandomPaletteOrder,
+  } = useBlitoadzContract();
   const { getSvg } = useBlitoadzRendererContract();
 
   const [image, setImage] = React.useState<string | null>(null);
   const [exists, setExists] = React.useState<boolean>(false);
+  const [selectedPaletteOrder, setSelectedPaletteOrder] =
+    React.useState<number>(generateRandomPaletteOrder());
 
   React.useEffect(() => {
     if (blitmapId !== undefined && toadzId !== undefined) {
-      getSvg(blitmapId, toadzId).then(setImage);
+      getSvg(blitmapId, toadzId, selectedPaletteOrder).then(setImage);
       blitoadzExists(toadzId, blitmapId).then(setExists);
     } else {
       setImage(null);
     }
-  }, [blitmapId, toadzId, blitoadzExists, getSvg]);
+  }, [blitmapId, toadzId, blitoadzExists, getSvg, selectedPaletteOrder]);
 
   const minted = React.useMemo(
     () =>
@@ -108,27 +115,53 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
         {blitmapId !== undefined && toadzId !== undefined && (
           <Box sx={{ marginTop: "24px" }}>
             {!exists && !minted && (
-              <button
-                style={{
-                  fontFamily: '"Press Start 2P", "system-ui"',
-                  fontSize: "24px",
-                  fontWeight: 700,
-                  backgroundColor: "rgb(163,131,250)",
-                  background:
-                    "linear-gradient(90deg, rgba(163,131,250,1) 35%, rgba(158,203,250,1) 100%)",
-                  color: "white",
-                  boxShadow: "none",
-                  padding: "11px 24px",
-                  borderRadius: "4px",
-                  height: "60px",
-                  cursor: "pointer",
-                  width: "100%",
-                  border: "1px solid black",
-                }}
-                onClick={() => mint(toadzId, blitmapId)}
-              >
-                Mint
-              </button>
+              <>
+                <button
+                  style={{
+                    fontFamily: '"Press Start 2P", "system-ui"',
+                    fontSize: "24px",
+                    fontWeight: 700,
+                    backgroundColor: "rgb(163,131,250)",
+                    background:
+                      "linear-gradient(90deg, rgba(163,131,250,1) 35%, rgba(158,203,250,1) 100%)",
+                    color: "white",
+                    boxShadow: "none",
+                    padding: "11px 24px",
+                    borderRadius: "4px",
+                    height: "60px",
+                    cursor: "pointer",
+                    width: "100%",
+                    border: "1px solid black",
+                  }}
+                  onClick={() =>
+                    setSelectedPaletteOrder(generateRandomPaletteOrder())
+                  }
+                >
+                  Flip colors
+                </button>
+                <button
+                  style={{
+                    fontFamily: '"Press Start 2P", "system-ui"',
+                    fontSize: "24px",
+                    fontWeight: 700,
+                    backgroundColor: "rgb(163,131,250)",
+                    background:
+                      "linear-gradient(90deg, rgba(163,131,250,1) 35%, rgba(158,203,250,1) 100%)",
+                    color: "white",
+                    boxShadow: "none",
+                    padding: "11px 24px",
+                    borderRadius: "4px",
+                    height: "60px",
+                    cursor: "pointer",
+                    width: "100%",
+                    border: "1px solid black",
+                    marginTop: "12px",
+                  }}
+                  onClick={() => mint(toadzId, blitmapId, selectedPaletteOrder)}
+                >
+                  Mint
+                </button>
+              </>
             )}
             {exists && !minted && (
               <Box
