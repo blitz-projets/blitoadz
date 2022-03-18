@@ -2,8 +2,10 @@
 
 pragma solidity ^0.8.12;
 
+import "./BlitoadzTypes.sol";
+
 interface IBlitoadzRenderer {
-    function tokenURI(uint256 toadzId, uint256 blitmapId)
+    function tokenURI(BlitoadzTypes.Blitoadz calldata blitoadz)
         external
         view
         returns (string memory);

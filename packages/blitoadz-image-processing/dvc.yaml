@@ -5,6 +5,10 @@ stages:
     - data/toadz
     - image_processing/parse_png.py
     - image_processing/constants.py
+    - data/toadz_selection
+    - data/toadz_manual
     outs:
     - data/toadz_computed
+    - data/toadz_downscaled
+    - data/toadz_quantized
     - data/palettes.json

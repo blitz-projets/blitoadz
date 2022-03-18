@@ -10,6 +10,7 @@ import "solidity-bytes-utils/contracts/BytesLib.sol";
 
 import "../interfaces/IBlitoadzRenderer.sol";
 import "../interfaces/IBlitmap.sol";
+import "../interfaces/BlitoadzTypes.sol";
 import {Integers} from "../lib/Integers.sol";
 
 /*  @title Blitoadz Renderer
@@ -242,11 +243,11 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
     ////////////////////////////////////////////////////////////////////////////////
 
     /// @dev Decode the rect and returns it as a plain string to be used in the svg rect attribute.
-    function getBlitoadz(uint256 toadzId, uint256 blitmapId)
-        public
-        view
-        returns (string memory)
-    {
+    function getBlitoadz(
+        uint256 toadzId,
+        uint256 blitmapId,
+        uint8 paletteOrder
+    ) public view returns (string memory) {
         bytes memory toadzBytes = getToadzBytes(toadzId);
         bytes memory palette = BytesLib.slice(
             blitmap.tokenDataOf(blitmapId),
@@ -254,10 +255,10 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
             12
         );
         string[4] memory paletteHex = [
-            getFill(palette, 0),
-            getFill(palette, 1),
-            getFill(palette, 2),
-            getFill(palette, 3)
+            getFill(palette, paletteOrder >> 6),
+            getFill(palette, (paletteOrder >> 4) & 0x3),
+            getFill(palette, (paletteOrder >> 2) & 0x3),
+            getFill(palette, paletteOrder & 0x3)
         ];
         return
             string.concat(
@@ -267,19 +268,19 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
             );
     }
 
-    function getImageURI(uint256 toadzId, uint256 blitmapId)
-        public
-        view
-        returns (string memory)
-    {
+    function getImageURI(
+        uint256 toadzId,
+        uint256 blitmapId,
+        uint8 paletteOrder
+    ) public view returns (string memory) {
         return
             string.concat(
                 "data:image/svg+xml,",
-                getBlitoadz(toadzId, blitmapId)
+                getBlitoadz(toadzId, blitmapId, paletteOrder)
             );
     }
 
-    function tokenURI(uint256 toadzId, uint256 blitmapId)
+    function tokenURI(BlitoadzTypes.Blitoadz calldata blitoadz)
         public
         view
         returns (string memory)
@@ -288,7 +289,11 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
             string.concat(
                 "data:application/json,",
                 '{"image_data": "',
-                getImageURI(toadzId, blitmapId),
+                getImageURI(
+                    blitoadz.toadzId,
+                    blitoadz.blitmapId,
+                    blitoadz.paletteOrder
+                ),
                 '"',
                 ',"description": "Blitoadz, flipping the lost blitmaps."',
                 ',"name": "Blitoadz"}'

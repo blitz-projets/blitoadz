@@ -5,7 +5,6 @@ import {
   ethers,
   getNamedAccounts,
   getUnnamedAccounts,
-  network,
 } from "hardhat";
 import { solidity } from "ethereum-waffle";
 import { TAGS } from "../../utils/constants";
@@ -22,7 +21,6 @@ const setup = async () => {
   };
   const constants = {
     MINT_PUBLIC_PRICE: await contracts.Blitoadz.MINT_PUBLIC_PRICE(),
-    MAX_MINT_PER_ADDRESS: await contracts.Blitoadz.MAX_MINT_PER_ADDRESS(),
     TOADZ_COUNT: await contracts.Blitoadz.TOADZ_COUNT(),
     BLITMAP_COUNT: await contracts.Blitoadz.BLITMAP_COUNT(),
     BLITOADZ_COUNT: await contracts.Blitoadz.BLITOADZ_COUNT(),
@@ -49,40 +47,45 @@ describe("Blitoadz", function () {
     it("should revert when minting is not open", async () => {
       const { users } = await setup();
       await expect(
-        users[0].Blitoadz.mintPublicSale([0], [0])
+        users[0].Blitoadz.mintPublicSale([0], [0], [0])
       ).to.be.revertedWith("Public sale not open");
     });
     it("should revert when price is not good", async () => {
       const { users } = await publicSaleFixture();
       await expect(
-        users[0].Blitoadz.mintPublicSale([0], [0])
+        users[0].Blitoadz.mintPublicSale([0], [0], [0])
       ).to.be.revertedWith("Price does not match");
     });
     it("should revert when toadzIds and blitmapIds length do not match", async () => {
       const { users, MINT_PUBLIC_PRICE } = await publicSaleFixture();
       await expect(
-        users[0].Blitoadz.mintPublicSale([0], [0, 1], {
+        users[0].Blitoadz.mintPublicSale([0], [0, 1], [0], {
           value: MINT_PUBLIC_PRICE,
         })
       ).to.be.revertedWith("There should be one toadzId for each blitmapId");
     });
     it("should mint one blitoadz", async () => {
       const { users, Blitoadz, MINT_PUBLIC_PRICE } = await publicSaleFixture();
-      await users[0].Blitoadz.mintPublicSale([0], [0], {
+      await users[0].Blitoadz.mintPublicSale([0], [0], [27], {
         value: MINT_PUBLIC_PRICE,
       });
       const owner = await Blitoadz.ownerOf(0);
       expect(owner).to.eq(users[0].address);
-      const toadzId = await Blitoadz.blitoadz(0);
-      const blitmapId = await Blitoadz.blitoadz(1);
+      const { toadzId, blitmapId, paletteOrder } = await Blitoadz.blitoadz(0);
       expect(toadzId).to.eq(0);
       expect(blitmapId).to.eq(0);
+      expect(paletteOrder).to.eq(27); // default palette order 00 01 10 11
     });
     it("should batch mint blitoadz", async () => {
       const { users, Blitoadz, MINT_PUBLIC_PRICE } = await publicSaleFixture();
-      await users[0].Blitoadz.mintPublicSale([0, 1, 2], [10, 11, 12], {
-        value: MINT_PUBLIC_PRICE.mul(3),
-      });
+      await users[0].Blitoadz.mintPublicSale(
+        [0, 1, 2],
+        [10, 11, 12],
+        [27, 108, 228],
+        {
+          value: MINT_PUBLIC_PRICE.mul(3),
+        }
+      );
       const owners = await Promise.all(
         [...Array(3).keys()].map(
           async (tokenId) => await Blitoadz.ownerOf(tokenId)
@@ -93,11 +96,11 @@ describe("Blitoadz", function () {
     });
     it("should revert when trying to mint an existing combination", async () => {
       const { users, MINT_PUBLIC_PRICE } = await publicSaleFixture();
-      await users[0].Blitoadz.mintPublicSale([0], [0], {
+      await users[0].Blitoadz.mintPublicSale([0], [0], [0], {
         value: MINT_PUBLIC_PRICE,
       });
       await expect(
-        users[1].Blitoadz.mintPublicSale([0], [0], {
+        users[1].Blitoadz.mintPublicSale([0], [0], [0], {
           value: MINT_PUBLIC_PRICE,
         })
       ).to.be.revertedWith("Blitoadz already exists");

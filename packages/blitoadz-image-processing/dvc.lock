@@ -7,17 +7,33 @@ stages:
       md5: 9dbdd6f94c09628c3789ee98a0e41c02.dir
       size: 646883
       nfiles: 56
+    - path: data/toadz_manual
+      md5: ea765195a78f1c8fd1b274b032fcce89.dir
+      size: 14880
+      nfiles: 15
+    - path: data/toadz_selection
+      md5: 7072136e12bcf0124bea95442d835ab7.dir
+      size: 60612
+      nfiles: 57
     - path: image_processing/constants.py
-      md5: 30c5a96820282ff44adeb628eae53f27
-      size: 173
+      md5: f247e42796b8635505d9d52246cc9106
+      size: 373
     - path: image_processing/parse_png.py
-      md5: db735ff1c387a9626188ed47558352fa
-      size: 1942
+      md5: 2342a361b2b5e2a792db692c3238f833
+      size: 3309
     outs:
     - path: data/palettes.json
-      md5: 443ff095f7d5e9cae52805a11c7722f2
-      size: 675440
+      md5: 4be87bf6a18ed63134b10b99abd9c5ed
+      size: 664168
     - path: data/toadz_computed
-      md5: 282cfc7a7a385b9adfc75317db6ef19c.dir
-      size: 4174408
+      md5: 7d1cfe3c69ada2c86e4d2de4eaf1d1b9.dir
+      size: 4177040
+      nfiles: 56
+    - path: data/toadz_downscaled
+      md5: 60d4d17a1565db477903336e82e42b72.dir
+      size: 29773
+      nfiles: 56
+    - path: data/toadz_quantized
+      md5: a368b7c2a552791f2b31bae00158bb93.dir
+      size: 55838
       nfiles: 56
