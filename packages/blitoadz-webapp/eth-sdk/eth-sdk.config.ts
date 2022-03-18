@@ -1,6 +1,7 @@
 import type { EthSdkConfig } from "@dethcrypto/eth-sdk";
 import { extractContractAddresses } from "../scripts/extract-contract-addresses";
 
+console.log("process.env", process.env);
 const NETWORK = process.env.REACT_APP_NETWORK || "rinkeby";
 const contracts = extractContractAddresses(NETWORK);
 
