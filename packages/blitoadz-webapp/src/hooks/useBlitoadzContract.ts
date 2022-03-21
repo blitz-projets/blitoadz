@@ -2,7 +2,7 @@ import React from "react";
 import { useSdk } from "./useSdk";
 import { useEthers } from "@usedapp/core";
 import { SnackbarErrorContext } from "../contexts/SnackbarErrorContext";
-import { UserBlitoadzContext } from "../contexts/UserBlitoadzContext";
+import { BlitoadzContractContext } from "../contexts/BlitoadzContractContext";
 
 export const useBlitoadzContract = () => {
   const { account } = useEthers();
@@ -10,9 +10,36 @@ export const useBlitoadzContract = () => {
 
   const [isMinting, setIsMinting] = React.useState<boolean>(false);
   const [minted, setMinted] = React.useState<number[]>([]);
-  const { userBlitoadzIds, setUserBlitoadzIds } =
-    React.useContext(UserBlitoadzContext);
+  const {
+    userBlitoadzIds,
+    setUserBlitoadzIds,
+    setAlreadyMintedCount,
+    alreadyMintedCount,
+    totalSupply,
+    setTotalSupply,
+  } = React.useContext(BlitoadzContractContext);
   const { setError } = React.useContext(SnackbarErrorContext);
+
+  React.useEffect(() => {
+    if (totalSupply === null && sdk) {
+      sdk.Blitoadz.BLITOADZ_COUNT().then(setTotalSupply);
+    }
+  }, [sdk, setTotalSupply, totalSupply]);
+
+  const fetchAlreadyMintedCount = React.useCallback(async () => {
+    if (sdk) {
+      const value = await sdk.Blitoadz.totalSupply();
+      setAlreadyMintedCount(value.toNumber());
+
+      return value.toNumber();
+    }
+  }, [sdk, setAlreadyMintedCount]);
+
+  React.useEffect(() => {
+    if (alreadyMintedCount === null && sdk) {
+      fetchAlreadyMintedCount();
+    }
+  }, [alreadyMintedCount, fetchAlreadyMintedCount, sdk]);
 
   const fetchUserBlitoadz = React.useCallback(async () => {
     if (sdk && account) {
@@ -113,6 +140,7 @@ export const useBlitoadzContract = () => {
             await waitForBlitoadzMint(toadzId, blitmapId);
             setMinted([...minted, toadzId * 100 + blitmapId]);
             await fetchUserBlitoadz();
+            await fetchAlreadyMintedCount();
             setIsMinting(false);
           } catch (e: unknown) {
             setIsMinting(false);
@@ -168,5 +196,7 @@ export const useBlitoadzContract = () => {
     fetchUserBlitoadz,
     extractOriginalIdsFromBlitoadzId,
     generateRandomPaletteOrder,
+    totalSupply,
+    alreadyMintedCount,
   };
 };

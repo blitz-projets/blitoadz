@@ -4,7 +4,7 @@ import { Alert, Snackbar } from "@mui/material";
 import { SnackbarErrorContext } from "./contexts/SnackbarErrorContext";
 import Box from "@mui/material/Box";
 import Header from "./components/Header/Header";
-import { UserBlitoadzContextProvider } from "./contexts/UserBlitoadzContext";
+import { BlitoadzContractContextProvider } from "./contexts/BlitoadzContractContext";
 import background from "./background.png";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <SnackbarErrorContext.Provider
       value={{ error: snackbarError, setError: setSnackbarError }}
     >
-      <UserBlitoadzContextProvider>
+      <BlitoadzContractContextProvider>
         <Box
           sx={{
             backgroundImage: `url(${background})`,
@@ -42,7 +42,7 @@ function App() {
             {snackbarError}
           </Alert>
         </Snackbar>
-      </UserBlitoadzContextProvider>
+      </BlitoadzContractContextProvider>
     </SnackbarErrorContext.Provider>
   );
 }

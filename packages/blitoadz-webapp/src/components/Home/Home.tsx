@@ -12,7 +12,12 @@ import YourBlitoadz from "../YourBlitoadz/YourBlitoadz";
 function Home() {
   const isNarrow = useMediaQuery("(max-width:768px)");
   const { account } = useEthers();
-  const { userBlitoadzIds, fetchUserBlitoadz } = useBlitoadzContract();
+  const {
+    userBlitoadzIds,
+    fetchUserBlitoadz,
+    totalSupply,
+    alreadyMintedCount,
+  } = useBlitoadzContract();
   const [selectedBlitmapId, setSelectedBlitmapId] = React.useState<
     number | undefined
   >(undefined);
@@ -51,7 +56,7 @@ function Home() {
         </Box>
         <Box
           sx={{
-            marginBottom: "24px",
+            marginBottom: "16px",
             fontSize: isNarrow ? "32px" : "48px",
             lineHeight: "54px",
             fontWeight: 600,
@@ -60,6 +65,18 @@ function Home() {
           Enter the blitzverse
         </Box>
       </Box>
+      {totalSupply !== null && alreadyMintedCount !== null && (
+        <Box
+          sx={{
+            marginBottom: "24px",
+            fontSize: "24px",
+            lineHeight: "54px",
+            fontWeight: 600,
+          }}
+        >
+          {alreadyMintedCount}/{totalSupply} minted
+        </Box>
+      )}
       {!account && <WalletConnectSection />}
       {account && (
         <Box>
