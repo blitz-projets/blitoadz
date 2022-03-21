@@ -17,4 +17,5 @@ export type Blitmap = {
   attributes: Map<string, string>[];
   colors: Map<string, string>[][];
   data: string;
+  creator: string;
 };

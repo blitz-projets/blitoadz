@@ -7,23 +7,46 @@ import { TAGS } from "../utils/constants";
 const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deployments, getNamedAccounts, network } = hre;
   const { deploy, get } = deployments;
-  const { deployer } = await getNamedAccounts();
-  let openseaAddress;
-  let looksrareAddress;
-  let integersAddress;
-  let blitmapAddress;
+  const {
+    deployer,
+    focusPoint,
+    treasury,
+    gremplin,
+    gb,
+    clemlaflemme,
+    opensea,
+    looksrare,
+    integersLib,
+    blitmap,
+  } = await getNamedAccounts();
+  const founders = {
+    [focusPoint]: {
+      shares: 1680,
+      withdrawnAmount: 0,
+    },
+    [treasury]: {
+      shares: 1400,
+      withdrawnAmount: 0,
+    },
+    [gremplin]: {
+      shares: 312,
+      withdrawnAmount: 0,
+    },
+    [gb]: {
+      shares: 628,
+      withdrawnAmount: 0,
+    },
+    [clemlaflemme]: {
+      shares: 628,
+      withdrawnAmount: 0,
+    },
+  };
+  const blitmapCreatorShares = 952;
 
+  let blitmapAddress = blitmap;
   if (network.tags.staging) {
-    openseaAddress = "0xa5409ec958c83c3f309868babaca7c86dcb077c1";
-    looksrareAddress = "0xf42aa99f011a1fa7cda90e5e98b277e306bca83e";
-    integersAddress = "0x03abFda4e7cec3484D518848B5e6aa10965F91DD";
     const Blitmap = await get("Blitmap");
     blitmapAddress = Blitmap.address;
-  } else {
-    openseaAddress = "0xf57b2c51ded3a29e6891aba85459d600256cf317";
-    looksrareAddress = "0x3f65a762f15d01809cdc6b43d8849ff24949c86a";
-    integersAddress = "0xe5d03576716d2D66Becf01a3F3BC7B80eb05952E";
-    blitmapAddress = "0x8d04a8c79cEB0889Bdd12acdF3Fa9D207eD3Ff63";
   }
 
   // Deploy renderer
@@ -31,7 +54,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     from: deployer,
     log: true,
     args: [blitmapAddress],
-    libraries: { Integers: integersAddress },
+    libraries: { Integers: integersLib },
   });
 
   // Deploy token
@@ -42,8 +65,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
       "Blitoadz",
       "BLTZ",
       rendererTx.address,
-      openseaAddress,
-      looksrareAddress,
+      opensea,
+      looksrare,
+      Object.keys(founders),
+      Object.values(founders),
+      blitmapCreatorShares,
+      blitmapAddress,
     ],
   });
 };

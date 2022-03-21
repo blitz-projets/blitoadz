@@ -14,11 +14,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const blitmap = loadBlitmap();
   const tokenData =
     "0x" + blitmap.map((item) => item.data.slice(2, 2 + 12 * 2)).join("");
+  const creators = "0x" + blitmap.map((item) => item.creator.slice(2)).join("");
 
   await deploy("Blitmap", {
     from: deployer,
     log: true,
-    args: [tokenData],
+    args: [tokenData, creators],
   });
 };
 export default func;
