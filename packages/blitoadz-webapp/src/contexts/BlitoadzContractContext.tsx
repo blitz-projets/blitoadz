@@ -1,5 +1,4 @@
 import React, { PropsWithChildren } from "react";
-import { BigNumber } from "ethers";
 
 export const BlitoadzContractContext = React.createContext<{
   userBlitoadzIds: number[];

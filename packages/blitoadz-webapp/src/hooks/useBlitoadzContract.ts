@@ -152,7 +152,15 @@ export const useBlitoadzContract = () => {
         }
       });
     },
-    [sdk, account, waitForBlitoadzMint, minted, setError, fetchUserBlitoadz]
+    [
+      sdk,
+      account,
+      waitForBlitoadzMint,
+      minted,
+      setError,
+      fetchUserBlitoadz,
+      fetchAlreadyMintedCount,
+    ]
   );
 
   const hasBeenMinted = React.useCallback(
