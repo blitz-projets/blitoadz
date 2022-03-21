@@ -4,6 +4,7 @@ import { blitmap } from "../../blitmap";
 import { toadz } from "../../toadz";
 import { useBlitoadzContract } from "../../hooks/useBlitoadzContract";
 import { useBlitoadzRendererContract } from "../../hooks/useBlitoadzRendererContract";
+import { CircularProgress } from "@mui/material";
 
 type ResultProps = {
   toadzId?: number;
@@ -21,6 +22,7 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
   } = useBlitoadzContract();
   const { getSvg } = useBlitoadzRendererContract();
 
+  const [loadingImage, setLoadingImage] = React.useState<boolean>(false);
   const [image, setImage] = React.useState<string | null>(null);
   const [exists, setExists] = React.useState<boolean>(false);
   const [selectedPaletteOrder, setSelectedPaletteOrder] =
@@ -28,7 +30,10 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
 
   React.useEffect(() => {
     if (blitmapId !== undefined && toadzId !== undefined) {
-      getSvg(blitmapId, toadzId, selectedPaletteOrder).then(setImage);
+      setLoadingImage(true);
+      getSvg(blitmapId, toadzId, selectedPaletteOrder)
+        .then(setImage)
+        .finally(() => setLoadingImage(false));
       blitoadzExists(toadzId, blitmapId).then(setExists);
     } else {
       setImage(null);
@@ -199,23 +204,36 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
                 Congratulations! Your Blitoadz has been successfully minted
               </Box>
             )}
-            {image && (
-              <Box
-                sx={{
-                  marginTop: "32px",
+            <Box
+              sx={{
+                marginTop: "32px",
+                color: "rgb(163, 131, 250)",
 
-                  "& .result": {
-                    width: "100%",
-                  },
-                }}
-              >
+                "& .result": {
+                  width: "100%",
+                },
+              }}
+            >
+              {loadingImage && (
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    marginBottom: "24px",
+                  }}
+                >
+                  <CircularProgress color="inherit" />
+                </Box>
+              )}
+              {image && (
                 <img
                   className="result"
                   src={`data:image/svg+xml;utf8,${image}`}
                   alt="result"
                 />
-              </Box>
-            )}
+              )}
+            </Box>
           </Box>
         )}
       </Box>
