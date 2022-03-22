@@ -7,10 +7,16 @@ import "../interfaces/IBlitmap.sol";
 contract Blitmap is IBlitmap {
     bytes _tokenData;
     bytes _creators;
+    string[100] _names;
 
-    constructor(bytes memory tokenData, bytes memory creators) {
+    constructor(
+        bytes memory tokenData,
+        bytes memory creators,
+        string[100] memory names
+    ) {
         _tokenData = tokenData;
         _creators = creators;
+        _names = names;
     }
 
     function tokenDataOf(uint256 tokenId) public view returns (bytes memory) {
@@ -19,5 +25,9 @@ contract Blitmap is IBlitmap {
 
     function tokenCreatorOf(uint256 tokenId) public view returns (address) {
         return BytesLib.toAddress(_creators, tokenId * 20);
+    }
+
+    function tokenNameOf(uint256 tokenId) public view returns (string memory) {
+        return _names[tokenId];
     }
 }
