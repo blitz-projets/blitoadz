@@ -119,17 +119,22 @@ function FAQ() {
         <Box className="question">
           <h2>Can I try before I buy?</h2>
           <p>
-            You can! On our home page you will effectively be creating your
-            unique art piece before you mint the NFT. Steps:
+            You can! On our home page you will be creating your own unique art
+            piece before you mint the NFT. Just follow these simple steps:
           </p>
-          <ul>
+          <ol>
             <li>Choose one of the CrypToadz compositions on the left</li>
             <li>Click on a blitmap color palette on the right</li>
             <li>
-              Decide if it’s for you before minting... or repeating the steps.
-              Easy!
+              Use the 'Flip Colors' randomizer if you want to invert the colors
+              (you can do this multiple times)
             </li>
-          </ul>
+            <li>Mint! ...or.... repeat these steps. Easy!</li>
+          </ol>
+          <p>
+            Each composition and color palette combination can only be used once
+            - so please choose wisely.
+          </p>
         </Box>
         <Box className="question">
           <h2>When ToadMap?</h2>
@@ -177,7 +182,7 @@ function FAQ() {
             have one?
           </h2>
           <p>
-            We have a PDF doc if that helps! Feel free to peruse this for a
+            We have a PDF doc, if that helps? Feel free to peruse this for a
             little more info around the project as a whole. We are agile. Things
             will be constantly changing and evolving. Again, Discord and Twitter
             will be your best bet for updates.
