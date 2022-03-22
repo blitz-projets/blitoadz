@@ -12,8 +12,8 @@ stages:
       size: 14880
       nfiles: 15
     - path: data/toadz_selection
-      md5: 7072136e12bcf0124bea95442d835ab7.dir
-      size: 60612
+      md5: 32b7568833ddd66bc711742b4e49ad95.dir
+      size: 59775
       nfiles: 57
     - path: image_processing/constants.py
       md5: f247e42796b8635505d9d52246cc9106
@@ -23,10 +23,10 @@ stages:
       size: 3309
     outs:
     - path: data/palettes.json
-      md5: 4be87bf6a18ed63134b10b99abd9c5ed
-      size: 664168
+      md5: 1a4eb8b086c25faa83e5582e01fda092
+      size: 664216
     - path: data/toadz_computed
-      md5: 7d1cfe3c69ada2c86e4d2de4eaf1d1b9.dir
+      md5: b2e017a3b485b89389e2c3ecf7ff2f5f.dir
       size: 4177040
       nfiles: 56
     - path: data/toadz_downscaled

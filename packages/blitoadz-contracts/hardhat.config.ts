@@ -47,6 +47,41 @@ const config: HardhatUserConfig = {
     deployer: {
       default: 0,
     },
+    focusPoint: {
+      default: "0xD246882E05D7DdB2C8476607312279f592789Cd6",
+      hardhat: 1,
+    },
+    treasury: {
+      default: "0x0C3c184C2c5Fc99aED927cE3513141eb3Ce684FA",
+      hardhat: 2,
+    },
+    gremplin: {
+      default: "0x4298e663517593284ad4fe199b21815bd48a9969",
+      hardhat: 3,
+    },
+    gb: {
+      default: "0x8CdbFB113D01b9832E58b15Eb224c7404853bB3f",
+      hardhat: 4,
+    },
+    clemlaflemme: {
+      default: "0xFc7c18A7F0d53A924D6aF07814c47eEf0Fb4F7d7",
+      hardhat: 5,
+    },
+    opensea: {
+      default: "0xa5409ec958C83C3f309868babACA7c86DCB077c1",
+      rinkeby: "0xf57b2c51ded3a29e6891aba85459d600256cf317",
+    },
+    looksrare: {
+      default: "0xf42aa99f011a1fa7cda90e5e98b277e306bca83e",
+      rinkeby: "0x3f65a762f15d01809cdc6b43d8849ff24949c86a",
+    },
+    integersLib: {
+      default: "0xe5d03576716d2D66Becf01a3F3BC7B80eb05952E",
+      rinkeby: "0x03abFda4e7cec3484D518848B5e6aa10965F91DD",
+    },
+    blitmap: {
+      default: "0x8d04a8c79cEB0889Bdd12acdF3Fa9D207eD3Ff63",
+    },
   },
   networks: {
     mainnet: {

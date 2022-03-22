@@ -7,5 +7,6 @@ interface BlitoadzTypes {
         uint8 toadzId;
         uint8 blitmapId;
         uint8 paletteOrder;
+        bool withdrawn;
     }
 }

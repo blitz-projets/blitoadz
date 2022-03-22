@@ -27,6 +27,10 @@ task("fetch-blitmap", "Fetch the lost toadz metadata").setAction(
       tokenIds.map(async (tokenId) => await sdk.blitmap.tokenDataOf(tokenId))
     );
 
+    const tokenCreator = await Promise.all(
+      tokenIds.map(async (tokenId) => await sdk.blitmap.tokenCreatorOf(tokenId))
+    );
+
     await Promise.all(
       tokenMetadata.map(async (tokenMetadata, index) => {
         await fetch(tokenMetadata.image).then((res) =>
@@ -50,6 +54,7 @@ task("fetch-blitmap", "Fetch the lost toadz metadata").setAction(
           ...data,
           colors: tokenColors[index],
           data: tokenData[index],
+          creator: tokenCreator[index],
         })),
         null,
         2
