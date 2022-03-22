@@ -17,8 +17,18 @@ export const useBlitoadzContract = () => {
     alreadyMintedCount,
     totalSupply,
     setTotalSupply,
+    userShares,
+    setUserShares,
   } = React.useContext(BlitoadzContractContext);
   const { setError } = React.useContext(SnackbarErrorContext);
+
+  React.useEffect(() => {
+    if (userShares === null && sdk && account) {
+      sdk.Blitoadz.founders(account).then(({ shares }) =>
+        setUserShares(shares.toNumber())
+      );
+    }
+  }, [sdk, account, userShares, setUserShares]);
 
   React.useEffect(() => {
     if (totalSupply === null && sdk) {
@@ -194,6 +204,35 @@ export const useBlitoadzContract = () => {
     return parseInt(shuffledArray.join(""), 2);
   }, []);
 
+  const isFounder = React.useMemo(() => {
+    if (userShares === null) return false;
+
+    return userShares > 0;
+  }, [userShares]);
+
+  const withdrawFounder = React.useCallback(async () => {
+    if (sdk && account) {
+      try {
+        await sdk.Blitoadz.withdrawFounder();
+      } catch (e: unknown) {
+        setError((e as { error: Error }).error.message);
+      }
+    }
+  }, [sdk, account, setError]);
+
+  const withdrawBlitmapCreator = React.useCallback(
+    async (tokenIds: number[]) => {
+      if (sdk && account) {
+        try {
+          await sdk.Blitoadz.withdrawBlitmapCreator(tokenIds);
+        } catch (e: unknown) {
+          setError((e as { error: Error }).error.message);
+        }
+      }
+    },
+    [sdk, account, setError]
+  );
+
   return {
     address: sdk?.Blitoadz.address,
     mint,
@@ -206,5 +245,9 @@ export const useBlitoadzContract = () => {
     generateRandomPaletteOrder,
     totalSupply,
     alreadyMintedCount,
+    isFounder,
+    userShares,
+    withdrawFounder,
+    withdrawBlitmapCreator,
   };
 };
