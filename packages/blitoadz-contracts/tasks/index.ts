@@ -4,3 +4,4 @@ export * from "./gasUsed";
 export * from "./openMint";
 export * from "./fetchToadz";
 export * from "./fetchBlitmap";
+export * from "./generateBlitoadz";

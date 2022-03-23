@@ -1,10 +1,10 @@
-export type Toadz = {
+export type ToadzImage = {
   colors: string[];
   name: string;
   indexes: number[];
 };
 
-export type Palettes = Toadz[];
+export type Palettes = ToadzImage[];
 
 export type PalettesStorage = {
   toadz: string;
@@ -18,4 +18,12 @@ export type Blitmap = {
   colors: Map<string, string>[][];
   data: string;
   creator: string;
+};
+
+export type Toadz = {
+  description: string;
+  external_url: string;
+  image: string;
+  name: string;
+  attributes: Record<string, string>[];
 };

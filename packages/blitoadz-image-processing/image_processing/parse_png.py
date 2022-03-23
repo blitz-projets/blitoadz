@@ -68,12 +68,10 @@ def generate_svg(colors, indexes):
 
 
 #%% Generate toadz versions
-toadz_list = []
 for file in TOADZ_DIR.glob("**/*.png"):
     generate_toadz_versions(file)
 
 #%% Quantize manual edits
-toadz_list = []
 for file in TOADZ_MANUAL_DIR.glob("**/*.png"):
     quantize_manual(file)
 

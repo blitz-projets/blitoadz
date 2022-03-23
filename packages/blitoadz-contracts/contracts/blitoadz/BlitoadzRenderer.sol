@@ -37,6 +37,7 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
         "%3cstyle%3erect{shape-rendering:crispEdges}%3c/style%3e%3c/svg%3e";
 
     address public toadz; // 57 uint16 leading indexes followed by the actual 56 toadz images
+    address public toadzNames; // 57 uint16 leading indexes followed by the actual 56 toadz names
     IBlitmap blitmap;
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -51,6 +52,10 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
         toadz = SSTORE2.write(_toadz);
     }
 
+    function setToadzNames(bytes calldata _toadzNames) external onlyOwner {
+        toadzNames = SSTORE2.write(_toadzNames);
+    }
+
     function getToadzBytes(uint256 _index) public view returns (bytes memory) {
         uint16 start = BytesLib.toUint16(
             SSTORE2.read(toadz, 2 * _index, 2 * _index + 2),
@@ -61,6 +66,18 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
             0
         );
         return SSTORE2.read(toadz, start + 57 * 2, end + 57 * 2);
+    }
+
+    function getToadzName(uint256 _index) public view returns (string memory) {
+        uint16 start = BytesLib.toUint16(
+            SSTORE2.read(toadzNames, 2 * _index, 2 * _index + 2),
+            0
+        );
+        uint16 end = BytesLib.toUint16(
+            SSTORE2.read(toadzNames, 2 * _index + 2, 2 * _index + 4),
+            0
+        );
+        return string(SSTORE2.read(toadzNames, start + 57 * 2, end + 57 * 2));
     }
 
     /// @dev 3 bytes per color because svg does not handle alpha.
@@ -295,8 +312,12 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
                     blitoadz.paletteOrder
                 ),
                 '"',
-                ',"description": "Blitoadz, flipping the lost blitmaps."',
-                ',"name": "Blitoadz"}'
+                ',"description": "Blitoadz are a blitmap and CrypToadz cross-breed, paving the way toward a new blitzverse. Oh - and they\'re fully on-chain."',
+                ',"name": "',
+                getToadzName(blitoadz.toadzId),
+                " ",
+                blitmap.tokenNameOf(blitoadz.blitmapId),
+                '"}'
             );
     }
 }

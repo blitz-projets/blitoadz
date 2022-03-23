@@ -47,6 +47,12 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         uint128 shares;
     }
 
+    // Events
+    event PublicSaleOpened(uint256 timestamp);
+    event RendererChanged(address newRenderer);
+    event BlitmapCreatorWithdrawn(address account, uint256 amount);
+    event FounderWithdrawn(address account, uint256 amount);
+
     ////////////////////////////////////////////////////////////////////////
     ////////////////////////// Schedule ////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
@@ -70,6 +76,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     function openPublicSale() external onlyOwner whenPublicSaleClosed {
         publicSaleStartTimestamp = block.timestamp;
+        emit PublicSaleOpened(publicSaleStartTimestamp);
     }
 
     ////////////////////////////////////////////////////////////////////////
@@ -113,6 +120,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     {
         renderingContractAddress = _renderingContractAddress;
         renderer = IBlitoadzRenderer(renderingContractAddress);
+        emit RendererChanged(renderingContractAddress);
     }
 
     constructor(
@@ -193,6 +201,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         (bool success, ) = _msgSender().call{value: value}("");
         if (!success) revert WithdrawalFailed();
 
+        emit BlitmapCreatorWithdrawn(_msgSender(), value);
         return success;
     }
 
@@ -208,6 +217,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         );
         (bool success, ) = _msgSender().call{value: value}("");
         if (!success) revert WithdrawalFailed();
+
+        emit FounderWithdrawn(_msgSender(), value);
         return success;
     }
 
