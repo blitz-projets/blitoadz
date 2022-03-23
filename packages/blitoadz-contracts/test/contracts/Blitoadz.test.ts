@@ -10,17 +10,18 @@ import {
 import { solidity } from "ethereum-waffle";
 import { TAGS } from "../../utils/constants";
 import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
-import { Blitmap__factory } from "../../typechain";
+import { Blitmap__factory, Blitoadz } from "../../typechain";
 
 chai.use(jestSnapshotPlugin());
 chai.use(solidity);
 const { expect } = chai;
 
 const setup = async () => {
-  await deployments.fixture([TAGS.BLITOADZ, TAGS.BLITOADZ_PALETTES]);
-  const { deployer, blitmap, focusPoint } = await getNamedAccounts();
+  await deployments.fixture([TAGS.BLITOADZ]);
+  const { deployer, blitmap, focusPoint, gb, clemlaflemme } =
+    await getNamedAccounts();
   const contracts = {
-    Blitoadz: await ethers.getContract("Blitoadz"),
+    Blitoadz: (await ethers.getContract("Blitoadz")) as Blitoadz,
     Blitmap: Blitmap__factory.connect(
       blitmap,
       await ethers.getSigner(deployer)
@@ -40,6 +41,8 @@ const setup = async () => {
     ...constants,
     deployer: await setupUser(deployer, contracts),
     focusPoint: await setupUser(focusPoint, contracts),
+    gb: await setupUser(gb, contracts),
+    clemlaflemme: await setupUser(clemlaflemme, contracts),
   };
 };
 
@@ -113,6 +116,56 @@ describe("Blitoadz", function () {
         })
       ).to.be.revertedWith("BlitoadzExists");
     });
+    it("should mint out and pay out", async () => {
+      const {
+        users,
+        MINT_PUBLIC_PRICE,
+        Blitoadz,
+        focusPoint,
+        gb,
+        clemlaflemme,
+      } = await publicSaleFixture();
+      for (let toadzId = 0; toadzId < 56; toadzId++) {
+        await users[0].Blitoadz.mintPublicSale(
+          Array(100).fill(toadzId),
+          [...Array(100).keys()],
+          Array(100).fill(toadzId),
+          {
+            value: MINT_PUBLIC_PRICE.mul(100),
+          }
+        );
+      }
+      const totalSupply = await users[0].Blitoadz.totalSupply();
+      expect(totalSupply).to.eq(5_600);
+      await focusPoint.Blitoadz.withdrawFounder();
+      expect(
+        (await Blitoadz.founders(focusPoint.address)).withdrawnAmount
+      ).to.eq(MINT_PUBLIC_PRICE.mul(1680));
+      await gb.Blitoadz.withdrawFounder();
+      expect((await Blitoadz.founders(gb.address)).withdrawnAmount).to.eq(
+        MINT_PUBLIC_PRICE.mul(628)
+      );
+      await clemlaflemme.Blitoadz.withdrawFounder();
+      expect(
+        (await Blitoadz.founders(clemlaflemme.address)).withdrawnAmount
+      ).to.eq(MINT_PUBLIC_PRICE.mul(628));
+    });
+  });
+  describe("mintAllocation", async function () {
+    it("should mint up to given allocation and revert", async () => {
+      const { focusPoint, Blitoadz } = await publicSaleFixture();
+      let { remainingAllocation } = await Blitoadz.founders(focusPoint.address);
+      const tokenIds = [...Array(remainingAllocation).keys()];
+      await focusPoint.Blitoadz.mintAllocation(tokenIds, tokenIds, tokenIds);
+      const balance = await Blitoadz.balanceOf(focusPoint.address);
+      expect(balance).to.eq(remainingAllocation);
+      remainingAllocation = (await Blitoadz.founders(focusPoint.address))
+        .remainingAllocation;
+      expect(remainingAllocation).to.eq(0);
+      await expect(
+        focusPoint.Blitoadz.mintAllocation([0], [0], [27])
+      ).to.be.revertedWith("AllocationExceeded");
+    });
   });
   describe("withdrawBlitmapCreator", async function () {
     it("should revert when token does not exist", async () => {
@@ -182,6 +235,13 @@ describe("Blitoadz", function () {
     });
     it("should revert when no token has been minted", async () => {
       const { focusPoint } = await setup();
+      await expect(focusPoint.Blitoadz.withdrawFounder()).to.be.revertedWith(
+        "NothingToWithdraw"
+      );
+    });
+    it("should revert when minted token is founder allocation", async () => {
+      const { focusPoint } = await publicSaleFixture();
+      await focusPoint.Blitoadz.mintAllocation([0], [0], [0]);
       await expect(focusPoint.Blitoadz.withdrawFounder()).to.be.revertedWith(
         "NothingToWithdraw"
       );

@@ -82,6 +82,9 @@ const config: HardhatUserConfig = {
     blitmap: {
       default: "0x8d04a8c79cEB0889Bdd12acdF3Fa9D207eD3Ff63",
     },
+    dhof: {
+      default: "0xF296178d553C8Ec21A2fBD2c5dDa8CA9ac905A00",
+    },
   },
   networks: {
     mainnet: {
