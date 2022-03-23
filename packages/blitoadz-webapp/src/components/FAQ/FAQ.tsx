@@ -1,9 +1,12 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import { useMediaQuery } from "@mui/material";
+import { useBlitoadzContract } from "../../hooks/useBlitoadzContract";
+import config from "../../config";
 
 function FAQ() {
   const isNarrow = useMediaQuery("(max-width:768px)");
+  const { address } = useBlitoadzContract();
   return (
     <Box
       sx={{
@@ -174,6 +177,30 @@ function FAQ() {
               https://Blitoadz.io
             </a>
           </p>
+          {address && (
+            <p>
+              Etherscan:{" "}
+              <a
+                href={`${config.app.etherScanBaseUrl}/address/${address}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {`${config.app.etherScanBaseUrl}/address/${address}`}
+              </a>
+            </p>
+          )}
+          {process.env.REACT_APP_OPENSEA_URL && (
+            <p>
+              Opensea:{" "}
+              <a
+                href={process.env.REACT_APP_OPENSEA_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {process.env.REACT_APP_OPENSEA_URL}
+              </a>
+            </p>
+          )}
           <p>ENS: Blitoadz.ens</p>
         </Box>
         <Box className="question">
@@ -225,7 +252,17 @@ function FAQ() {
         </Box>
         <Box className="question">
           <h2>What's the contract address?</h2>
-          <p>Coming soon...</p>
+          {address && (
+            <p>
+              <a
+                href={`${config.app.etherScanBaseUrl}/address/${address}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {address}
+              </a>
+            </p>
+          )}
         </Box>
         <Box className="question">
           <h2>Any other forms of giving back or rewarding holders?</h2>

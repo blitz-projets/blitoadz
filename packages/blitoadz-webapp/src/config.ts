@@ -12,6 +12,7 @@ interface AppConfig {
   subgraphApiUri: string;
   enableHistory: boolean;
   openSeaBaseUrl: string;
+  etherScanBaseUrl: string;
 }
 
 type SupportedChains = ChainId.Rinkeby | ChainId.Mainnet | ChainId.Hardhat;
@@ -40,6 +41,7 @@ const app: Record<SupportedChains, AppConfig> = {
       "https://api.thegraph.com/subgraphs/name/nounsdao/nouns-subgraph-rinkeby-v4",
     enableHistory: process.env.REACT_APP_ENABLE_HISTORY === "true",
     openSeaBaseUrl: "https://testnets.opensea.io",
+    etherScanBaseUrl: "https://rinkeby.etherscan.io",
   },
   [ChainId.Mainnet]: {
     jsonRpcUri: createNetworkHttpUrl("mainnet"),
@@ -48,6 +50,7 @@ const app: Record<SupportedChains, AppConfig> = {
       "https://api.thegraph.com/subgraphs/name/nounsdao/nouns-subgraph",
     enableHistory: process.env.REACT_APP_ENABLE_HISTORY === "true",
     openSeaBaseUrl: "https://opensea.io",
+    etherScanBaseUrl: "https://etherscan.io",
   },
   [ChainId.Hardhat]: {
     jsonRpcUri: "http://localhost:8545",
@@ -55,6 +58,7 @@ const app: Record<SupportedChains, AppConfig> = {
     subgraphApiUri: "",
     enableHistory: false,
     openSeaBaseUrl: "https://testnets.opensea.io",
+    etherScanBaseUrl: "https://rinkeby.etherscan.io",
   },
 };
 
