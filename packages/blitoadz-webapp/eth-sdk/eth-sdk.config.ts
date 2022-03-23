@@ -14,6 +14,10 @@ const etherscanURL =
     ? "https://api-rinkeby.etherscan.io/api"
     : "https://api.etherscan.io/api";
 
+if (process.env.REACT_APP_BLITMAP_CONTRACT_ADDRESS) {
+  contracts.Blitmap = process.env.REACT_APP_BLITMAP_CONTRACT_ADDRESS;
+}
+
 const config: EthSdkConfig = {
   contracts: {
     main: contracts as Record<string, `0x${string}`>,
