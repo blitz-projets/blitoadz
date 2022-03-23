@@ -19,16 +19,29 @@ export const useBlitoadzContract = () => {
     setTotalSupply,
     userShares,
     setUserShares,
+    setUserRemainingAllocation,
+    userRemainingAllocation,
   } = React.useContext(BlitoadzContractContext);
   const { setError } = React.useContext(SnackbarErrorContext);
 
-  React.useEffect(() => {
-    if (userShares === null && sdk && account) {
-      sdk.Blitoadz.founders(account).then(({ shares }) =>
-        setUserShares(shares.toNumber())
-      );
+  const fetchUserData = React.useCallback(() => {
+    if (sdk && account) {
+      sdk.Blitoadz.founders(account).then(({ shares, remainingAllocation }) => {
+        setUserShares(shares);
+        setUserRemainingAllocation(remainingAllocation);
+      });
     }
-  }, [sdk, account, userShares, setUserShares]);
+  }, [sdk, account, setUserShares, setUserRemainingAllocation]);
+
+  React.useEffect(() => {
+    if (
+      (userShares === null || userRemainingAllocation === null) &&
+      sdk &&
+      account
+    ) {
+      fetchUserData();
+    }
+  }, [sdk, account, fetchUserData, userRemainingAllocation, userShares]);
 
   React.useEffect(() => {
     if (totalSupply === null && sdk) {
@@ -134,19 +147,32 @@ export const useBlitoadzContract = () => {
       paletteOrder: number
     ): Promise<void> => {
       return new Promise(async (resolve, reject) => {
-        if (sdk && account) {
+        if (sdk && account && userRemainingAllocation) {
           try {
             const price = await sdk.Blitoadz.MINT_PUBLIC_PRICE();
             setIsMinting(true);
-            await sdk.Blitoadz.mintPublicSale(
-              [toadzId],
-              [blitmapId],
-              [paletteOrder],
-              {
-                from: account,
-                value: price,
-              }
-            );
+
+            if (userRemainingAllocation > 0) {
+              await sdk.Blitoadz.mintAllocation(
+                [toadzId],
+                [blitmapId],
+                [paletteOrder],
+                {
+                  from: account,
+                }
+              );
+              await fetchUserData();
+            } else {
+              await sdk.Blitoadz.mintPublicSale(
+                [toadzId],
+                [blitmapId],
+                [paletteOrder],
+                {
+                  from: account,
+                  value: price,
+                }
+              );
+            }
             await waitForBlitoadzMint(toadzId, blitmapId);
             setMinted([...minted, toadzId * 100 + blitmapId]);
             await fetchUserBlitoadz();
@@ -170,6 +196,8 @@ export const useBlitoadzContract = () => {
       setError,
       fetchUserBlitoadz,
       fetchAlreadyMintedCount,
+      userRemainingAllocation,
+      fetchUserData,
     ]
   );
 

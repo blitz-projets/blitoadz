@@ -10,4 +10,4 @@
   environment = { REACT_APP_CHAIN_ID = "1", REACT_APP_NETWORK = "mainnet", REACT_APP_BLITMAP_CONTRACT_ADDRESS = "0x8d04a8c79cEB0889Bdd12acdF3Fa9D207eD3Ff63" }
 
 [context.staging]
-  environment = { REACT_APP_CHAIN_ID = "4", REACT_APP_NETWORK = "rinkeby", REACT_APP_BLITMAP_CONTRACT_ADDRESS = "0xa99e9FffeCB444e6d77634fBF3c10A56a085d393", REACT_APP_OPENSEA_URL = "https://testnets.opensea.io/collection/blitoadz-v3" }
+  environment = { REACT_APP_CHAIN_ID = "4", REACT_APP_NETWORK = "rinkeby", REACT_APP_OPENSEA_URL = "https://testnets.opensea.io/collection/blitoadz-v3" }

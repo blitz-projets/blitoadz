@@ -9,6 +9,8 @@ export const BlitoadzContractContext = React.createContext<{
   setAlreadyMintedCount: (value: number) => void;
   userShares: number | null;
   setUserShares: (value: number) => void;
+  userRemainingAllocation: number | null;
+  setUserRemainingAllocation: (value: number) => void;
 }>({
   userBlitoadzIds: [],
   setUserBlitoadzIds: () => {},
@@ -18,6 +20,8 @@ export const BlitoadzContractContext = React.createContext<{
   setAlreadyMintedCount: () => {},
   userShares: null,
   setUserShares: () => {},
+  userRemainingAllocation: null,
+  setUserRemainingAllocation: () => {},
 });
 
 export const BlitoadzContractContextProvider = ({
@@ -29,6 +33,9 @@ export const BlitoadzContractContextProvider = ({
     number | null
   >(null);
   const [userShares, setUserShares] = React.useState<number | null>(null);
+  const [userRemainingAllocation, setUserRemainingAllocation] = React.useState<
+    number | null
+  >(null);
 
   return (
     <BlitoadzContractContext.Provider
@@ -41,6 +48,8 @@ export const BlitoadzContractContextProvider = ({
         setAlreadyMintedCount,
         userShares,
         setUserShares,
+        userRemainingAllocation,
+        setUserRemainingAllocation,
       }}
     >
       {children}

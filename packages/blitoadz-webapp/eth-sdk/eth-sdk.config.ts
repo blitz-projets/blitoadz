@@ -1,7 +1,11 @@
 import type { EthSdkConfig } from "@dethcrypto/eth-sdk";
 import { extractContractAddresses } from "../scripts/extract-contract-addresses";
+import { extractContractAbis } from "../scripts/extract-contract-abis";
 
 const NETWORK = process.env.REACT_APP_NETWORK || "rinkeby";
+const CONTRACT_INPUT_NAME = "main";
+
+extractContractAbis(NETWORK, CONTRACT_INPUT_NAME);
 const contracts = extractContractAddresses(NETWORK);
 
 const mainRpc =
@@ -20,16 +24,16 @@ if (process.env.REACT_APP_BLITMAP_CONTRACT_ADDRESS) {
 
 const config: EthSdkConfig = {
   contracts: {
-    main: contracts as Record<string, `0x${string}`>,
+    [CONTRACT_INPUT_NAME]: contracts as Record<string, `0x${string}`>,
   },
   etherscanURLs:
     NETWORK !== "localhost"
       ? {
-          main: etherscanURL,
+          [CONTRACT_INPUT_NAME]: etherscanURL,
         }
       : undefined,
   rpc: {
-    main: mainRpc,
+    [CONTRACT_INPUT_NAME]: mainRpc,
   },
   etherscanKey: process.env.REACT_APP_ETHERSCAN_API_KEY,
 };
