@@ -60,7 +60,7 @@ const config: HardhatUserConfig = {
       hardhat: 3,
     },
     gb: {
-      default: "0x8CdbFB113D01b9832E58b15Eb224c7404853bB3f",
+      default: "0xCADb5Aba304867FD2658f11c2EE41ed3A83f13D5",
       hardhat: 4,
     },
     clemlaflemme: {

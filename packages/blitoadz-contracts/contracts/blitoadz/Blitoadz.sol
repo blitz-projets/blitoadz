@@ -84,35 +84,6 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     }
 
     ////////////////////////////////////////////////////////////////////////
-    ////////////////////////// Marketplaces ////////////////////////////////
-    ////////////////////////////////////////////////////////////////////////
-    address public opensea;
-    address public looksrare;
-
-    /// @notice Set opensea to `opensea_`.
-    function setOpensea(address opensea_) external onlyOwner {
-        opensea = opensea_;
-    }
-
-    /// @notice Set looksrare to `looksrare_`.
-    function setLooksrare(address looksrare_) external onlyOwner {
-        looksrare = looksrare_;
-    }
-
-    /// @dev Modified for opensea and looksrare pre-approve.
-    function isApprovedForAll(address owner, address operator)
-        public
-        view
-        override(ERC721A)
-        returns (bool)
-    {
-        return
-            operator == address(ProxyRegistry(opensea).proxies(owner)) ||
-            operator == looksrare ||
-            super.isApprovedForAll(owner, operator);
-    }
-
-    ////////////////////////////////////////////////////////////////////////
     ////////////////////////// Token ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
     address public renderingContractAddress;
@@ -131,16 +102,12 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         string memory name_,
         string memory symbol_,
         address _rendererAddress,
-        address _opensea,
-        address _looksrare,
         address[] memory _founders,
         Founder[] memory _foundersData,
         uint256 _blitmapCreatorShares,
         address _blitmap
     ) ERC721A(name_, symbol_) {
         setRenderingContractAddress(_rendererAddress);
-        opensea = _opensea;
-        looksrare = _looksrare;
 
         for (uint256 i = 0; i < _founders.length; i++) {
             founders[_founders[i]] = _foundersData[i];
