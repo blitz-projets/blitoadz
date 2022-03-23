@@ -25,6 +25,8 @@ error WithdrawalFailed();
 error ToadzAndBlitmapLengthMismatch();
 error IncorrectPrice();
 error WithdrawalQueryForNonexistentToken();
+error AllocationExceeded();
+error BlitoadzDoesNotExist();
 
 contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     // Constants
@@ -37,6 +39,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     // Blitoadz states variables
     bool[BLITOADZ_COUNT] public blitoadzExist;
     BlitoadzTypes.Blitoadz[] public blitoadz;
+    uint256 receivedAmount;
 
     // Blitoadz funds split
     uint256 public blitmapCreatorShares;
@@ -44,7 +47,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     struct Founder {
         uint128 withdrawnAmount;
-        uint128 shares;
+        uint16 shares;
+        uint8 remainingAllocation;
     }
 
     // Events
@@ -150,7 +154,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         address to,
         uint256[] calldata toadzIds,
         uint256[] calldata blitmapIds,
-        uint256[] calldata paletteOrders
+        uint256[] calldata paletteOrders,
+        bool isBlitoadzPayable
     ) internal {
         for (uint256 i = 0; i < toadzIds.length; i++) {
             uint256 toadzId = toadzIds[i];
@@ -164,13 +169,42 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
                     uint8(toadzId % type(uint8).max),
                     uint8(blitmapId % type(uint8).max),
                     uint8(paletteOrders[i] % type(uint8).max),
-                    false
+                    !isBlitoadzPayable
                 )
             );
             blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId] = true;
         }
 
         _safeMint(to, toadzIds.length);
+    }
+
+    function mintPublicSale(
+        uint256[] calldata toadzIds,
+        uint256[] calldata blitmapIds,
+        uint256[] calldata paletteOrders
+    ) external payable whenPublicSaleOpen nonReentrant {
+        if (toadzIds.length != blitmapIds.length)
+            revert ToadzAndBlitmapLengthMismatch();
+        if (msg.value != MINT_PUBLIC_PRICE * toadzIds.length)
+            revert IncorrectPrice();
+
+        _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders, true);
+        receivedAmount += MINT_PUBLIC_PRICE * toadzIds.length;
+    }
+
+    function mintAllocation(
+        uint256[] calldata toadzIds,
+        uint256[] calldata blitmapIds,
+        uint256[] calldata paletteOrders
+    ) external nonReentrant {
+        if (toadzIds.length != blitmapIds.length)
+            revert ToadzAndBlitmapLengthMismatch();
+        if (founders[_msgSender()].remainingAllocation < toadzIds.length)
+            revert AllocationExceeded();
+        founders[_msgSender()].remainingAllocation -= uint8(
+            toadzIds.length % type(uint8).max
+        );
+        _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders, false);
     }
 
     function withdrawBlitmapCreator(uint256[] calldata tokenIds)
@@ -206,9 +240,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     }
 
     function withdrawFounder() external nonReentrant returns (bool) {
-        uint256 value = (totalSupply() *
-            MINT_PUBLIC_PRICE *
-            founders[_msgSender()].shares) /
+        uint256 value = (receivedAmount * founders[_msgSender()].shares) /
             BLITOADZ_COUNT -
             founders[_msgSender()].withdrawnAmount;
         if (value == 0) revert NothingToWithdraw();
@@ -222,17 +254,20 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         return success;
     }
 
-    function mintPublicSale(
-        uint256[] calldata toadzIds,
-        uint256[] calldata blitmapIds,
-        uint256[] calldata paletteOrders
-    ) external payable whenPublicSaleOpen nonReentrant {
-        if (toadzIds.length != blitmapIds.length)
-            revert ToadzAndBlitmapLengthMismatch();
-        if (msg.value != MINT_PUBLIC_PRICE * toadzIds.length)
-            revert IncorrectPrice();
-
-        _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders);
+    function tokenURI(uint8 toadzId, uint8 blitmapId)
+        external
+        view
+        returns (string memory)
+    {
+        for (uint256 i = 0; i < blitoadz.length; i++) {
+            if (
+                blitoadz[i].toadzId == toadzId &&
+                blitoadz[i].blitmapId == blitmapId
+            ) {
+                return tokenURI(i);
+            }
+        }
+        revert BlitoadzDoesNotExist();
     }
 
     function tokenURI(uint256 _tokenId)

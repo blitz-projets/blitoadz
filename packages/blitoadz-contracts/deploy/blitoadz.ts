@@ -18,27 +18,38 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     looksrare,
     integersLib,
     blitmap,
+    dhof,
   } = await getNamedAccounts();
   const founders = {
     [focusPoint]: {
       shares: 1680,
       withdrawnAmount: 0,
+      remainingAllocation: 5,
     },
     [treasury]: {
       shares: 1400,
       withdrawnAmount: 0,
-    },
-    [gremplin]: {
-      shares: 312,
-      withdrawnAmount: 0,
+      remainingAllocation: 12,
     },
     [gb]: {
       shares: 628,
       withdrawnAmount: 0,
+      remainingAllocation: 5,
     },
     [clemlaflemme]: {
       shares: 628,
       withdrawnAmount: 0,
+      remainingAllocation: 5,
+    },
+    [gremplin]: {
+      shares: 312,
+      withdrawnAmount: 0,
+      remainingAllocation: 2,
+    },
+    [dhof]: {
+      shares: 0,
+      withdrawnAmount: 0,
+      remainingAllocation: 1,
     },
   };
   const blitmapCreatorShares = 952;
