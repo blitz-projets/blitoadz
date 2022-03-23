@@ -1,15 +1,19 @@
 import { task } from "hardhat/config";
 import fs from "fs";
 import path from "path";
-import { start } from "repl";
+import { MultiBar } from "cli-progress";
 
 task("generate-blitoadz", "Open public sale")
   .addOptionalParam("start", "Slice start index for toadz", "0")
   .addOptionalParam("end", "Slice end index for toadz", "56")
   .setAction(async ({ start, end }, { deployments }) => {
     const { read } = deployments;
+    const bar = new MultiBar({});
+    const blitmapBar = bar.create(100, 0);
+    const toadzBar = bar.create(end - start, 0);
 
     for (const blitmapId of [...Array(100).keys()]) {
+      toadzBar.update(0, { blitmapId });
       for (const toadzId of [...Array(56).keys()].slice(
         parseInt(start),
         parseInt(end)
@@ -42,6 +46,9 @@ task("generate-blitoadz", "Open public sale")
             );
           })
         );
+        toadzBar.increment();
       }
+      blitmapBar.increment();
     }
+    bar.stop();
   });
