@@ -9,7 +9,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   if (!network.tags.staging) {
     return;
   }
-  const { deploy } = deployments;
+  const { deploy, execute } = deployments;
   const { deployer } = await getNamedAccounts();
   const blitmap = loadBlitmap();
   const tokenData =
@@ -20,8 +20,17 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   await deploy("Blitmap", {
     from: deployer,
     log: true,
-    args: [tokenData, creators, names],
+    args: [tokenData, creators],
   });
+  await execute(
+    "Blitmap",
+    {
+      from: deployer,
+      log: true,
+    },
+    "setNames",
+    names
+  );
 };
 export default func;
 func.tags = [TAGS.BLITMAP];

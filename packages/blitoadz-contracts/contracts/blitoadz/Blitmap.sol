@@ -9,13 +9,12 @@ contract Blitmap is IBlitmap {
     bytes _creators;
     string[100] _names;
 
-    constructor(
-        bytes memory tokenData,
-        bytes memory creators,
-        string[100] memory names
-    ) {
+    constructor(bytes memory tokenData, bytes memory creators) {
         _tokenData = tokenData;
         _creators = creators;
+    }
+
+    function setNames(string[100] memory names) public {
         _names = names;
     }
 
