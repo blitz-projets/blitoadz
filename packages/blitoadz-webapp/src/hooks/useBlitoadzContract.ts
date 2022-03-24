@@ -236,7 +236,9 @@ export const useBlitoadzContract = () => {
   const withdrawFounder = React.useCallback(async () => {
     if (sdk && account) {
       try {
-        await sdk.Blitoadz.withdrawFounder();
+        await sdk.Blitoadz.withdrawFounder({
+          from: account,
+        });
       } catch (e: unknown) {
         setError((e as { error: Error }).error.message);
       }
@@ -247,7 +249,9 @@ export const useBlitoadzContract = () => {
     async (tokenIds: number[]) => {
       if (sdk && account) {
         try {
-          await sdk.Blitoadz.withdrawBlitmapCreator(tokenIds);
+          await sdk.Blitoadz.withdrawBlitmapCreator(tokenIds, {
+            from: account,
+          });
         } catch (e: unknown) {
           setError((e as { error: Error }).error.message);
         }
