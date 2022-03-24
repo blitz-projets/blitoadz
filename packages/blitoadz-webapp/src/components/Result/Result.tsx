@@ -141,7 +141,7 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
                     setSelectedPaletteOrder(generateRandomPaletteOrder())
                   }
                 >
-                  Re-blitz this Toad (flip colors)
+                  Re-blitz this Toad
                 </button>
                 <button
                   style={{
