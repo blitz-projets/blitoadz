@@ -16,7 +16,7 @@ function Header() {
     }
 
     if (currentUserCreatedTokenIds.length > 0) {
-      return withdrawBlitmapCreator(currentUserCreatedTokenIds);
+      return withdrawBlitmapCreator();
     }
 
     return;

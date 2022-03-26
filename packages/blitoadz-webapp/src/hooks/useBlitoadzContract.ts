@@ -202,19 +202,18 @@ export const useBlitoadzContract = () => {
     [minted]
   );
 
-  const extractOriginalIdsFromBlitoadzId = React.useCallback(
+  const getSvg = React.useCallback(
     async (id: number) => {
       if (sdk) {
-        const { toadzId, blitmapId, paletteOrder } =
-          await sdk.Blitoadz.blitoadz(id);
-
-        return {
-          toadzId,
-          blitmapId,
-          paletteOrder,
-        };
+        const data = JSON.parse(
+          (await sdk.Blitoadz["tokenURI(uint256)"](id)).replace(
+            "data:application/json,",
+            ""
+          )
+        );
+        return data.image_data;
       } else {
-        return { toadzId: null, blitmapId: null, paletteOrder: null };
+        return null;
       }
     },
     [sdk]
@@ -236,29 +235,22 @@ export const useBlitoadzContract = () => {
   const withdrawFounder = React.useCallback(async () => {
     if (sdk && account) {
       try {
-        await sdk.Blitoadz.withdrawFounder({
-          from: account,
-        });
+        await sdk.Blitoadz.withdrawFounder();
       } catch (e: unknown) {
         setError((e as { error: Error }).error.message);
       }
     }
   }, [sdk, account, setError]);
 
-  const withdrawBlitmapCreator = React.useCallback(
-    async (tokenIds: number[]) => {
-      if (sdk && account) {
-        try {
-          await sdk.Blitoadz.withdrawBlitmapCreator(tokenIds, {
-            from: account,
-          });
-        } catch (e: unknown) {
-          setError((e as { error: Error }).error.message);
-        }
+  const withdrawBlitmapCreator = React.useCallback(async () => {
+    if (sdk && account) {
+      try {
+        await sdk.Blitoadz.withdrawBlitmapCreator();
+      } catch (e: unknown) {
+        setError((e as { error: Error }).error.message);
       }
-    },
-    [sdk, account, setError]
-  );
+    }
+  }, [sdk, account, setError]);
 
   return {
     address: sdk?.Blitoadz.address,
@@ -268,7 +260,7 @@ export const useBlitoadzContract = () => {
     hasBeenMinted,
     userBlitoadzIds,
     fetchUserBlitoadz,
-    extractOriginalIdsFromBlitoadzId,
+    getSvg,
     generateRandomPaletteOrder,
     totalSupply,
     alreadyMintedCount,

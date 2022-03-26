@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { useBlitoadzRendererContract } from "../../hooks/useBlitoadzRendererContract";
 import { useBlitoadzContract } from "../../hooks/useBlitoadzContract";
 
 const OPENSEA_ADDRESS =
@@ -39,19 +38,12 @@ type YourBlitoadzImageProps = {
 };
 
 function YourBlitoadzImage({ id }: YourBlitoadzImageProps) {
-  const { address, extractOriginalIdsFromBlitoadzId } = useBlitoadzContract();
-  const { getSvg } = useBlitoadzRendererContract();
+  const { address, getSvg } = useBlitoadzContract();
   const [image, setImage] = React.useState<string | null>(null);
 
   React.useEffect(() => {
-    extractOriginalIdsFromBlitoadzId(id).then(
-      ({ blitmapId, toadzId, paletteOrder }) => {
-        if (blitmapId !== null && toadzId !== null && paletteOrder !== null) {
-          getSvg(blitmapId, toadzId, paletteOrder).then(setImage);
-        }
-      }
-    );
-  }, [id, getSvg, extractOriginalIdsFromBlitoadzId]);
+    getSvg(id).then(setImage);
+  }, [id, getSvg]);
 
   return (
     <Box
@@ -88,13 +80,7 @@ function YourBlitoadzImage({ id }: YourBlitoadzImageProps) {
         rel="noreferrer"
         className="link"
       >
-        {image && (
-          <img
-            className="image"
-            src={`data:image/svg+xml;utf8,${image}`}
-            alt="result"
-          />
-        )}
+        {image && <img className="image" src={image} alt="result" />}
         <Box sx={{ fontSize: "16px", fontWeight: 600, marginTop: "4px" }}>
           #{id}
         </Box>
