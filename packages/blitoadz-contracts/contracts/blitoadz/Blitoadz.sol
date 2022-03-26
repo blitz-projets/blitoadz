@@ -24,9 +24,11 @@ error NothingToWithdraw();
 error WithdrawalFailed();
 error ToadzAndBlitmapLengthMismatch();
 error IncorrectPrice();
-error WithdrawalQueryForNonexistentToken();
 error AllocationExceeded();
 error BlitoadzDoesNotExist();
+error WithdrawalQueryForNonexistentToken();
+error WithdrawalQueryForTokenNotOwnedByCreator();
+error WithdrawalQueryForTokenAlreadyWithdrawn();
 
 contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     // Constants
@@ -40,6 +42,14 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     bool[BLITOADZ_COUNT] public blitoadzExist;
     BlitoadzTypes.Blitoadz[] public blitoadz;
     uint256 receivedAmount;
+
+    function getBlitoadz()
+        external
+        view
+        returns (BlitoadzTypes.Blitoadz[] memory)
+    {
+        return blitoadz;
+    }
 
     // Blitoadz funds split
     uint256 public blitmapCreatorShares;
@@ -174,30 +184,73 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders, false);
     }
 
+    function getUnclaimedBlitoadzForCreator(address creator)
+        external
+        view
+        returns (uint256[] memory)
+    {
+        uint256 count = 0;
+        for (uint256 i = 0; i < blitoadz.length; i++) {
+            if (
+                blitmap.tokenCreatorOf(blitoadz[i].blitmapId) == creator &&
+                !blitoadz[i].withdrawn
+            ) {
+                count++;
+            }
+        }
+        uint256[] memory result = new uint256[](count);
+        for (uint256 i = 0; i < blitoadz.length; i++) {
+            if (
+                blitmap.tokenCreatorOf(blitoadz[i].blitmapId) == creator &&
+                !blitoadz[i].withdrawn
+            ) {
+                result[count - 1] = blitoadz[i].toadzId;
+                count--;
+            }
+        }
+        return result;
+    }
+
     function withdrawBlitmapCreator(uint256[] calldata tokenIds)
         external
         nonReentrant
         returns (bool)
     {
-        uint256 value = 0;
         for (uint256 i = 0; i < tokenIds.length; i++) {
-            if (!_exists(tokenIds[i]))
-                revert WithdrawalQueryForNonexistentToken();
             if (
                 blitmap.tokenCreatorOf(blitoadz[tokenIds[i]].blitmapId) !=
                 _msgSender()
             ) {
-                continue;
+                revert WithdrawalQueryForTokenNotOwnedByCreator();
             }
             if (blitoadz[tokenIds[i]].withdrawn) {
-                continue;
+                revert WithdrawalQueryForTokenAlreadyWithdrawn();
             }
-            value++;
             blitoadz[tokenIds[i]].withdrawn = true;
         }
-        if (value == 0) revert NothingToWithdraw();
-        value =
-            (value * MINT_PUBLIC_PRICE * blitmapCreatorShares) /
+        uint256 value = (tokenIds.length *
+            MINT_PUBLIC_PRICE *
+            blitmapCreatorShares) / BLITOADZ_COUNT;
+        (bool success, ) = _msgSender().call{value: value}("");
+        if (!success) revert WithdrawalFailed();
+
+        emit BlitmapCreatorWithdrawn(_msgSender(), value);
+        return success;
+    }
+
+    function withdrawBlitmapCreator() external nonReentrant returns (bool) {
+        uint256 count = 0;
+        for (uint256 i = 0; i < blitoadz.length; i++) {
+            if (
+                blitmap.tokenCreatorOf(blitoadz[i].blitmapId) == _msgSender() &&
+                !blitoadz[i].withdrawn
+            ) {
+                count++;
+                blitoadz[i].withdrawn = true;
+            }
+        }
+        if (count == 0) revert NothingToWithdraw();
+        uint256 value = (count * MINT_PUBLIC_PRICE * blitmapCreatorShares) /
             BLITOADZ_COUNT;
         (bool success, ) = _msgSender().call{value: value}("");
         if (!success) revert WithdrawalFailed();
