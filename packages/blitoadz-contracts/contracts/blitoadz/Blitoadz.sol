@@ -6,7 +6,6 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "erc721a/contracts/ERC721A.sol";
 import "../interfaces/IBlitoadzRenderer.sol";
-import "../interfaces/BlitoadzTypes.sol";
 import "../interfaces/IBlitmap.sol";
 
 contract OwnableDelegateProxy {}
@@ -26,9 +25,6 @@ error ToadzAndBlitmapLengthMismatch();
 error IncorrectPrice();
 error AllocationExceeded();
 error BlitoadzDoesNotExist();
-error WithdrawalQueryForNonexistentToken();
-error WithdrawalQueryForTokenNotOwnedByCreator();
-error WithdrawalQueryForTokenAlreadyWithdrawn();
 
 contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     // Constants
@@ -40,20 +36,15 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     // Blitoadz states variables
     bool[BLITOADZ_COUNT] public blitoadzExist;
-    BlitoadzTypes.Blitoadz[] public blitoadz;
-    uint256 receivedAmount;
-
-    function getBlitoadz()
-        external
-        view
-        returns (BlitoadzTypes.Blitoadz[] memory)
-    {
-        return blitoadz;
-    }
+    uint8[] public toadzIds;
+    uint8[] public blitmapIds;
+    uint8[] public palettes;
 
     // Blitoadz funds split
     uint256 public blitmapCreatorShares;
     mapping(address => Founder) public founders;
+    mapping(address => uint16) creatorAvailableAmount;
+    uint256 receivedAmount;
 
     struct Founder {
         uint128 withdrawnAmount;
@@ -127,138 +118,94 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         blitmap = IBlitmap(_blitmap);
     }
 
+    /// @notice Free mint for addresses with an allocation. Lengths should match; at a given index the combination
+    ///         toadzId, blitmapId and paletteOrder will be used to define the given blitoadz
+    /// @param _toadzIds the list of toadzIds to use, 0 based indexes. On etherscan, this could be e.g. 12,53,1
+    /// @param _blitmapIds the list of blitmapIds to use, 0 based indexes. On etherscan, this could be e.g. 99,23,87
+    /// @param _paletteOrders the order of the mapping for the blitmap color palette. This uint8 is parsed as 4 uint2
+    ///        and there are consequently only 24 relevant values, any permutation of 0, 1,  2, 3
+    /// @param isBlitoadzPayable should this blitoadz be counted for founders and creator claims
     function _mint(
         address to,
-        uint256[] calldata toadzIds,
-        uint256[] calldata blitmapIds,
-        uint256[] calldata paletteOrders,
+        uint256[] calldata _toadzIds,
+        uint256[] calldata _blitmapIds,
+        uint256[] calldata _paletteOrders,
         bool isBlitoadzPayable
     ) internal {
-        for (uint256 i = 0; i < toadzIds.length; i++) {
-            uint256 toadzId = toadzIds[i];
-            uint256 blitmapId = blitmapIds[i];
+        for (uint256 i = 0; i < _toadzIds.length; i++) {
+            uint256 toadzId = _toadzIds[i];
+            uint256 blitmapId = _blitmapIds[i];
             if (blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId])
                 revert BlitoadzExists();
             if (toadzId > TOADZ_COUNT - 1) revert ToadzIndexOutOfBounds();
             if (blitmapId > BLITMAP_COUNT - 1) revert BlitmapIndexOutOfBounds();
-            blitoadz.push(
-                BlitoadzTypes.Blitoadz(
-                    uint8(toadzId % type(uint8).max),
-                    uint8(blitmapId % type(uint8).max),
-                    uint8(paletteOrders[i] % type(uint8).max),
-                    !isBlitoadzPayable
-                )
-            );
+            toadzIds.push(uint8(toadzId % type(uint8).max));
+            blitmapIds.push(uint8(blitmapId % type(uint8).max));
+            palettes.push(uint8(_paletteOrders[i] % type(uint8).max));
             blitoadzExist[toadzId * BLITMAP_COUNT + blitmapId] = true;
+            if (isBlitoadzPayable)
+                creatorAvailableAmount[blitmap.tokenCreatorOf(blitmapId)]++;
         }
 
-        _safeMint(to, toadzIds.length);
+        _safeMint(to, _toadzIds.length);
     }
 
+    /// @notice Free mint for addresses with an allocation. Lengths should match; at a given index the combination
+    ///         toadzId, blitmapId and paletteOrder will be used to define the given blitoadz
+    /// @param _toadzIds the list of toadzIds to use, 0 based indexes. On etherscan, this could be e.g. 12,53,1
+    /// @param _blitmapIds the list of blitmapIds to use, 0 based indexes. On etherscan, this could be e.g. 99,23,87
+    /// @param _paletteOrders the order of the mapping for the blitmap color palette. This uint8 is parsed as 4 uint2
+    ///        and there are consequently only 24 relevant values, any permutation of 0, 1,  2, 3
     function mintPublicSale(
-        uint256[] calldata toadzIds,
-        uint256[] calldata blitmapIds,
-        uint256[] calldata paletteOrders
+        uint256[] calldata _toadzIds,
+        uint256[] calldata _blitmapIds,
+        uint256[] calldata _paletteOrders
     ) external payable whenPublicSaleOpen nonReentrant {
-        if (toadzIds.length != blitmapIds.length)
+        if (_toadzIds.length != _blitmapIds.length)
             revert ToadzAndBlitmapLengthMismatch();
-        if (msg.value != MINT_PUBLIC_PRICE * toadzIds.length)
+        if (msg.value != MINT_PUBLIC_PRICE * _toadzIds.length)
             revert IncorrectPrice();
 
-        _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders, true);
-        receivedAmount += MINT_PUBLIC_PRICE * toadzIds.length;
+        _mint(_msgSender(), _toadzIds, _blitmapIds, _paletteOrders, true);
+        receivedAmount += MINT_PUBLIC_PRICE * _toadzIds.length;
     }
 
+    /// @notice Free mint for addresses with an allocation. Lengths should match; at a given index the combination
+    ///         toadzId, blitmapId and paletteOrder will be used to define the given blitoadz
+    /// @param _toadzIds the list of toadzIds to use, 0 based indexes. On etherscan, this could be e.g. 12,53,1
+    /// @param _blitmapIds the list of blitmapIds to use, 0 based indexes. On etherscan, this could be e.g. 99,23,87
+    /// @param _paletteOrders the order of the mapping for the blitmap color palette. This uint8 is parsed as 4 uint2
+    ///        and there are consequently only 24 relevant values, any permutation of 0, 1,  2, 3
     function mintAllocation(
-        uint256[] calldata toadzIds,
-        uint256[] calldata blitmapIds,
-        uint256[] calldata paletteOrders
+        uint256[] calldata _toadzIds,
+        uint256[] calldata _blitmapIds,
+        uint256[] calldata _paletteOrders
     ) external nonReentrant {
-        if (toadzIds.length != blitmapIds.length)
+        if (_toadzIds.length != _blitmapIds.length)
             revert ToadzAndBlitmapLengthMismatch();
-        if (founders[_msgSender()].remainingAllocation < toadzIds.length)
+        if (founders[_msgSender()].remainingAllocation < _toadzIds.length)
             revert AllocationExceeded();
         founders[_msgSender()].remainingAllocation -= uint8(
-            toadzIds.length % type(uint8).max
+            _toadzIds.length % type(uint8).max
         );
-        _mint(_msgSender(), toadzIds, blitmapIds, paletteOrders, false);
+        _mint(_msgSender(), _toadzIds, _blitmapIds, _paletteOrders, false);
     }
 
-    function getUnclaimedBlitoadzForCreator(address creator)
-        external
-        view
-        returns (uint256[] memory)
-    {
-        uint256 count = 0;
-        for (uint256 i = 0; i < blitoadz.length; i++) {
-            if (
-                blitmap.tokenCreatorOf(blitoadz[i].blitmapId) == creator &&
-                !blitoadz[i].withdrawn
-            ) {
-                count++;
-            }
-        }
-        uint256[] memory result = new uint256[](count);
-        for (uint256 i = 0; i < blitoadz.length; i++) {
-            if (
-                blitmap.tokenCreatorOf(blitoadz[i].blitmapId) == creator &&
-                !blitoadz[i].withdrawn
-            ) {
-                result[count - 1] = blitoadz[i].toadzId;
-                count--;
-            }
-        }
-        return result;
-    }
-
-    function withdrawBlitmapCreator(uint256[] calldata tokenIds)
-        external
-        nonReentrant
-        returns (bool)
-    {
-        for (uint256 i = 0; i < tokenIds.length; i++) {
-            if (
-                blitmap.tokenCreatorOf(blitoadz[tokenIds[i]].blitmapId) !=
-                _msgSender()
-            ) {
-                revert WithdrawalQueryForTokenNotOwnedByCreator();
-            }
-            if (blitoadz[tokenIds[i]].withdrawn) {
-                revert WithdrawalQueryForTokenAlreadyWithdrawn();
-            }
-            blitoadz[tokenIds[i]].withdrawn = true;
-        }
-        uint256 value = (tokenIds.length *
-            MINT_PUBLIC_PRICE *
+    /// @notice Withdraw available funds for blitmap creator
+    function withdrawBlitmapCreator() external nonReentrant returns (bool) {
+        if (creatorAvailableAmount[_msgSender()] == 0)
+            revert NothingToWithdraw();
+        uint256 value = (MINT_PUBLIC_PRICE *
+            creatorAvailableAmount[_msgSender()] *
             blitmapCreatorShares) / BLITOADZ_COUNT;
         (bool success, ) = _msgSender().call{value: value}("");
         if (!success) revert WithdrawalFailed();
-
         emit BlitmapCreatorWithdrawn(_msgSender(), value);
+        creatorAvailableAmount[_msgSender()] = 0;
         return success;
     }
 
-    function withdrawBlitmapCreator() external nonReentrant returns (bool) {
-        uint256 count = 0;
-        for (uint256 i = 0; i < blitoadz.length; i++) {
-            if (
-                blitmap.tokenCreatorOf(blitoadz[i].blitmapId) == _msgSender() &&
-                !blitoadz[i].withdrawn
-            ) {
-                count++;
-                blitoadz[i].withdrawn = true;
-            }
-        }
-        if (count == 0) revert NothingToWithdraw();
-        uint256 value = (count * MINT_PUBLIC_PRICE * blitmapCreatorShares) /
-            BLITOADZ_COUNT;
-        (bool success, ) = _msgSender().call{value: value}("");
-        if (!success) revert WithdrawalFailed();
-
-        emit BlitmapCreatorWithdrawn(_msgSender(), value);
-        return success;
-    }
-
+    /// @notice Withdraw available funds for blitoadz and toadz creators
     function withdrawFounder() external nonReentrant returns (bool) {
         uint256 value = (receivedAmount * founders[_msgSender()].shares) /
             BLITOADZ_COUNT -
@@ -274,16 +221,14 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         return success;
     }
 
+    /// @notice Retrieve a tokenURI from the combination toadzId, blitmapId
     function tokenURI(uint8 toadzId, uint8 blitmapId)
         external
         view
         returns (string memory)
     {
-        for (uint256 i = 0; i < blitoadz.length; i++) {
-            if (
-                blitoadz[i].toadzId == toadzId &&
-                blitoadz[i].blitmapId == blitmapId
-            ) {
+        for (uint256 i = 0; i < toadzIds.length; i++) {
+            if (toadzIds[i] == toadzId && blitmapIds[i] == blitmapId) {
                 return tokenURI(i);
             }
         }
@@ -302,7 +247,12 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
             return "";
         }
 
-        return renderer.tokenURI(blitoadz[_tokenId]);
+        return
+            renderer.tokenURI(
+                toadzIds[_tokenId],
+                blitmapIds[_tokenId],
+                palettes[_tokenId]
+            );
     }
 
     function exists(uint256 _tokenId) external view returns (bool) {

@@ -10,7 +10,7 @@ import "solidity-bytes-utils/contracts/BytesLib.sol";
 
 import "../interfaces/IBlitoadzRenderer.sol";
 import "../interfaces/IBlitmap.sol";
-import "../interfaces/BlitoadzTypes.sol";
+
 import {Integers} from "../lib/Integers.sol";
 
 /*  @title Blitoadz Renderer
@@ -297,26 +297,22 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
             );
     }
 
-    function tokenURI(BlitoadzTypes.Blitoadz calldata blitoadz)
-        public
-        view
-        returns (string memory)
-    {
+    function tokenURI(
+        uint256 toadzId,
+        uint256 blitmapId,
+        uint8 paletteOrder
+    ) public view returns (string memory) {
         return
             string.concat(
                 "data:application/json,",
                 '{"image_data": "',
-                getImageURI(
-                    blitoadz.toadzId,
-                    blitoadz.blitmapId,
-                    blitoadz.paletteOrder
-                ),
+                getImageURI(toadzId, blitmapId, paletteOrder),
                 '"',
                 ',"description": "Blitoadz are a blitmap and CrypToadz cross-breed, paving the way toward a new blitzverse. Oh - and they\'re fully on-chain."',
                 ',"name": "',
-                getToadzName(blitoadz.toadzId),
+                getToadzName(toadzId),
                 " ",
-                blitmap.tokenNameOf(blitoadz.blitmapId),
+                blitmap.tokenNameOf(blitmapId),
                 '"}'
             );
     }

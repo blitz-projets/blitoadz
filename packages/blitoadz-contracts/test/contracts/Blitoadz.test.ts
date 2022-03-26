@@ -99,7 +99,9 @@ describe("Blitoadz", function () {
       });
       const owner = await Blitoadz.ownerOf(0);
       expect(owner).to.eq(users[0].address);
-      const { toadzId, blitmapId, paletteOrder } = await Blitoadz.blitoadz(0);
+      const toadzId = await Blitoadz.toadzIds(0);
+      const blitmapId = await Blitoadz.blitmapIds(0);
+      const paletteOrder = await Blitoadz.palettes(0);
       expect(toadzId).to.eq(0);
       expect(blitmapId).to.eq(0);
       expect(paletteOrder).to.eq(27); // default palette order 00 01 10 11
@@ -150,75 +152,6 @@ describe("Blitoadz", function () {
       ).to.be.revertedWith("AllocationExceeded");
     });
   });
-  describe("withdrawBlitmapCreator(uint256[])", async function () {
-    it("should revert when caller is not the Blitmap creator", async () => {
-      const { users, MINT_PUBLIC_PRICE } = await publicSaleFixture();
-      await users[0].Blitoadz.mintPublicSale([0], [0], [0], {
-        value: MINT_PUBLIC_PRICE,
-      });
-      await expect(
-        users[0].Blitoadz.functions["withdrawBlitmapCreator(uint256[])"]([0])
-      ).to.be.revertedWith("WithdrawalQueryForTokenNotOwnedByCreator");
-    });
-    it("should withdraw and revert second withdraw when caller is a Blitmap creator", async () => {
-      const {
-        users,
-        MINT_PUBLIC_PRICE,
-        BLITOADZ_COUNT,
-        Blitoadz,
-        blitmapCreatorShares,
-      } = await mintedOutFixture();
-      const blitmaps = loadBlitmap();
-      const creator = blitmaps[0].creator;
-      const creatorBlitmaps = blitmaps
-        .map((blitmap, index) => ({
-          ...blitmap,
-          index,
-        }))
-        .filter((blitmap) => blitmap.creator === creator)
-        .map((blitmap) => blitmap.index);
-      const tokenIds = (
-        await Promise.all(
-          [...Array(BLITOADZ_COUNT).keys()].map(
-            async (tokenId) => await Blitoadz.blitoadz(tokenId)
-          )
-        )
-      )
-        .map((blitoadz, index) => ({ ...blitoadz, index }))
-        .filter((blitoadz) => creatorBlitmaps.includes(blitoadz.blitmapId))
-        .map((blitoadz) => blitoadz.index);
-      console.log(tokenIds.length);
-      await network.provider.request({
-        method: "hardhat_impersonateAccount",
-        params: [creator],
-      });
-      await (
-        await ethers.getSigner(users[0].address)
-      ).sendTransaction({
-        to: creator,
-        value: ethers.utils.parseEther("100"),
-      });
-      const balancePrev = await ethers.provider.getBalance(creator);
-      const CreatorBlitoadz = await Blitoadz.connect(
-        await ethers.getSigner(creator)
-      );
-      const tx = await CreatorBlitoadz.functions[
-        "withdrawBlitmapCreator(uint256[])"
-      ](tokenIds);
-      const receipt = await tx.wait();
-      console.log(receipt.gasUsed.toString());
-      const paidFees = receipt.gasUsed.mul(receipt.effectiveGasPrice);
-      const balanceNew = await ethers.provider.getBalance(creator);
-      expect(balanceNew.add(paidFees).sub(balancePrev)).to.eq(
-        MINT_PUBLIC_PRICE.mul(blitmapCreatorShares)
-          .div(BLITOADZ_COUNT)
-          .mul(tokenIds.length)
-      );
-      await expect(
-        CreatorBlitoadz.functions["withdrawBlitmapCreator(uint256[])"](tokenIds)
-      ).to.be.revertedWith("WithdrawalQueryForTokenAlreadyWithdrawn");
-    });
-  });
   describe("withdrawBlitmapCreator()", async () => {
     it("should withdraw and revert second withdraw when caller is a Blitmap creator", async () => {
       const {
@@ -248,9 +181,8 @@ describe("Blitoadz", function () {
       const CreatorBlitoadz = await Blitoadz.connect(
         await ethers.getSigner(creator)
       );
-      const tx = await CreatorBlitoadz.functions["withdrawBlitmapCreator()"]();
+      const tx = await CreatorBlitoadz.withdrawBlitmapCreator();
       const receipt = await tx.wait();
-      console.log(receipt.gasUsed.toString());
       const paidFees = receipt.gasUsed.mul(receipt.effectiveGasPrice);
       const balanceNew = await ethers.provider.getBalance(creator);
       expect(balanceNew.add(paidFees).sub(balancePrev)).to.eq(
@@ -258,9 +190,9 @@ describe("Blitoadz", function () {
           .div(BLITOADZ_COUNT)
           .mul(creatorTokenCounts * TOADZ_COUNT)
       );
-      await expect(
-        CreatorBlitoadz.functions["withdrawBlitmapCreator()"]()
-      ).to.be.revertedWith("NothingToWithdraw");
+      await expect(CreatorBlitoadz.withdrawBlitmapCreator()).to.be.revertedWith(
+        "NothingToWithdraw"
+      );
     });
   });
   describe("withdrawFounder", async function () {
@@ -301,8 +233,6 @@ describe("Blitoadz", function () {
       expect(balanceNew.add(paidFees).sub(balancePrev)).to.eq(
         MINT_PUBLIC_PRICE.mul(founderShares).div(BLITOADZ_COUNT)
       );
-      const blitoadz = await Blitoadz.blitoadz(0);
-      expect(blitoadz.withdrawn).to.be.false;
       await expect(focusPoint.Blitoadz.withdrawFounder()).to.be.revertedWith(
         "NothingToWithdraw"
       );
@@ -322,22 +252,6 @@ describe("Blitoadz", function () {
       expect(
         (await Blitoadz.founders(clemlaflemme.address)).withdrawnAmount
       ).to.eq(MINT_PUBLIC_PRICE.mul(628));
-    });
-  });
-  describe("getBlitoadzForCreator", async function () {
-    it("should return the blitoadz for the creator", async () => {
-      const { Blitoadz, TOADZ_COUNT } = await mintedOutFixture();
-      const creators = Array.from(
-        new Set(loadBlitmap().map((blitmap) => blitmap.creator))
-      );
-      const tokenIds = await Blitoadz.getUnclaimedBlitoadzForCreator(
-        creators[0]
-      );
-      expect(tokenIds.length).to.eq(
-        loadBlitmap().filter(({ creator }) => {
-          return creator === creators[0];
-        }).length * TOADZ_COUNT
-      );
     });
   });
 });
