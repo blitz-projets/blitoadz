@@ -85,6 +85,9 @@ const config: HardhatUserConfig = {
     dhof: {
       default: "0xF296178d553C8Ec21A2fBD2c5dDa8CA9ac905A00",
     },
+    numo: {
+      default: "0xd42bd96B117dd6BD63280620EA981BF967A7aD2B",
+    },
   },
   networks: {
     mainnet: {
