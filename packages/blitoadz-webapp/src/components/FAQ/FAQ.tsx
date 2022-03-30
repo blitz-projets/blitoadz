@@ -69,7 +69,7 @@ function FAQ() {
         <Box className="question">
           <h2>What are blitoadz?</h2>
           <p>
-            Blitoadz are an on-chain collection of 5,600 unique NFTs. They are,
+            Blitoadz is an on-chain collection of 5,600 unique NFTs. They are,
             effectively, blitzed CrypToadz – the offspring of the 100 OG
             blitmaps and the 56 customized 1/1 CrypToadz.
           </p>
