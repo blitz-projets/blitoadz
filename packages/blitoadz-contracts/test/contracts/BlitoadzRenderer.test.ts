@@ -24,11 +24,11 @@ describe("BlitoadzRenderer", async function () {
             const BlitoadzRenderer = await ethers.getContract(
               "BlitoadzRenderer"
             );
-            const res = await BlitoadzRenderer.tokenURI({
+            const res = await BlitoadzRenderer.tokenURI(
               toadzId,
               blitmapId,
-              paletteOrder,
-            });
+              paletteOrder
+            );
             const fileName = `toadz_${toadzId}_blitmap_${blitmapId}_palette_${paletteOrder}`;
             let outputFile = `./test/contracts/__snapshots__/TOKENS/${fileName}.json`;
             fs.mkdirSync(path.dirname(outputFile), { recursive: true });

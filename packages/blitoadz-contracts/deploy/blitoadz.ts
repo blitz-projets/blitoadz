@@ -18,6 +18,8 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     blitmap,
     dhof,
     numo,
+    cdt,
+    matsnft,
   } = await getNamedAccounts();
   const founders = {
     [focusPoint]: {
@@ -28,7 +30,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     [treasury]: {
       shares: 1400,
       withdrawnAmount: 0,
-      remainingAllocation: 11,
+      remainingAllocation: 9,
     },
     [gb]: {
       shares: 628,
@@ -51,6 +53,16 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
       remainingAllocation: 1,
     },
     [numo]: {
+      shares: 0,
+      withdrawnAmount: 0,
+      remainingAllocation: 1,
+    },
+    [cdt]: {
+      shares: 0,
+      withdrawnAmount: 0,
+      remainingAllocation: 1,
+    },
+    [matsnft]: {
       shares: 0,
       withdrawnAmount: 0,
       remainingAllocation: 1,
