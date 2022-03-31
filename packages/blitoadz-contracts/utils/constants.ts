@@ -53,4 +53,6 @@ export const TAGS = {
   BLITOADZ_RENDERER_V2: "BlitoadzRendererV2",
   BLITOADZ_PALETTES: "BlitoadzPalettes",
   BLITMAP: "Blitmap",
+  PALETTE_RENDERER: "PaletteRenderer",
+  STRINGS: "Strings",
 };

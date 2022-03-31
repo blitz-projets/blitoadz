@@ -76,12 +76,18 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     blitmapAddress = Blitmap.address;
   }
 
+  const PaletteRenderer = await get("PaletteRenderer");
+  const Strings = await get("Strings");
+
   // Deploy renderer
   const rendererTx = await deploy("BlitoadzRenderer", {
     from: deployer,
     log: true,
     args: [blitmapAddress],
-    libraries: { Integers: integersLib },
+    libraries: {
+      PaletteRenderer: PaletteRenderer.address,
+      Strings: Strings.address,
+    },
   });
 
   // Deploy token
@@ -101,4 +107,4 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 };
 export default func;
 func.tags = [TAGS.BLITOADZ];
-func.dependencies = [TAGS.BLITMAP];
+func.dependencies = [TAGS.BLITMAP, TAGS.PALETTE_RENDERER, TAGS.STRINGS];

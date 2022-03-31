@@ -6,7 +6,7 @@ import { jestSnapshotPlugin } from "mocha-chai-jest-snapshot";
 import * as path from "path";
 import fs from "fs";
 import { TAGS } from "../../utils/constants";
-
+import { BlitoadzRenderer } from "../../typechain";
 chai.use(jestSnapshotPlugin());
 chai.use(solidity);
 const { expect } = chai;
@@ -21,9 +21,9 @@ describe("BlitoadzRenderer", async function () {
         [27, 108].map((paletteOrder) => {
           it(`Toadz #${toadzId} and Blitmap #${blitmapId} with palette ${paletteOrder} should match snapshot`, async function () {
             await deployments.fixture(TAGS.BLITOADZ_PALETTES);
-            const BlitoadzRenderer = await ethers.getContract(
+            const BlitoadzRenderer = (await ethers.getContract(
               "BlitoadzRenderer"
-            );
+            )) as BlitoadzRenderer;
             const res = await BlitoadzRenderer.tokenURI(
               toadzId,
               blitmapId,
