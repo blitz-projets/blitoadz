@@ -211,7 +211,7 @@ export const useBlitoadzContract = () => {
             ""
           )
         );
-        return data.image_data;
+        return data.image;
       } else {
         return null;
       }
@@ -228,7 +228,7 @@ export const useBlitoadzContract = () => {
           ).replace("data:application/json,", "")
         );
 
-        return data.image_data.replace("data:image/svg+xml,", "");
+        return data.image.replace("data:image/svg+xml,", "");
       } else {
         return null;
       }
