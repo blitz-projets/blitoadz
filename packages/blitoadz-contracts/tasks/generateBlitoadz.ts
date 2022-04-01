@@ -23,11 +23,13 @@ task("generate-blitoadz", "Open public sale")
         // 27 = 00 01 10 11 = 0, 1, 2, 3 and 108 = 01 10 11 00 = 1, 2, 3, 0
         await Promise.all(
           [27, 108].map(async (paletteOrder) => {
-            const tokenURI = await read("BlitoadzRenderer", "tokenURI", {
+            const tokenURI = await read(
+              "BlitoadzRendererV2",
+              "tokenURI",
               blitmapId,
               toadzId,
-              paletteOrder,
-            });
+              paletteOrder
+            );
             const fileName = `toadz_${toadzId}_blitmap_${blitmapId}_palette_${paletteOrder}`;
             let outputFile = `./data/blitoadz/${fileName}.json`;
             fs.mkdirSync(path.dirname(outputFile), { recursive: true });
@@ -40,7 +42,7 @@ task("generate-blitoadz", "Open public sale")
               outputFile,
               decodeURI(
                 JSON.parse(tokenURI.split(",").slice(1).join(","))
-                  ["image_data"].split(",")[1]
+                  ["image"].split(",")[1]
                   .replace(/%23/g, "#")
               )
             );
