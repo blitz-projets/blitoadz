@@ -201,7 +201,7 @@ function FAQ() {
               </a>
             </p>
           )}
-          <p>ENS: Blitoadz.ens</p>
+          <p>ENS: blitoadz.eth</p>
         </Box>
         <Box className="question">
           <h2>
