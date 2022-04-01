@@ -219,6 +219,23 @@ export const useBlitoadzContract = () => {
     [sdk]
   );
 
+  const getSvgByToadzIdBlitmapId = React.useCallback(
+    async (toadzId: number, blitmapId: number) => {
+      if (sdk) {
+        const data = JSON.parse(
+          (
+            await sdk.Blitoadz["tokenURI(uint8,uint8)"](toadzId, blitmapId)
+          ).replace("data:application/json,", "")
+        );
+
+        return data.image_data.replace("data:image/svg+xml,", "");
+      } else {
+        return null;
+      }
+    },
+    [sdk]
+  );
+
   const generateRandomPaletteOrder = React.useCallback(() => {
     const colorArray = ["00", "01", "10", "11"];
     const shuffledArray = colorArray.sort((a, b) => 0.5 - Math.random());
@@ -261,6 +278,7 @@ export const useBlitoadzContract = () => {
     userBlitoadzIds,
     fetchUserBlitoadz,
     getSvg,
+    getSvgByToadzIdBlitmapId,
     generateRandomPaletteOrder,
     totalSupply,
     alreadyMintedCount,

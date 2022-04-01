@@ -19,6 +19,7 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
     hasBeenMinted,
     blitoadzExists,
     generateRandomPaletteOrder,
+    getSvgByToadzIdBlitmapId,
   } = useBlitoadzContract();
   const { getSvg } = useBlitoadzRendererContract();
 
@@ -31,14 +32,30 @@ function Result({ blitmapId, toadzId, sx }: ResultProps) {
   React.useEffect(() => {
     if (blitmapId !== undefined && toadzId !== undefined) {
       setLoadingImage(true);
-      getSvg(blitmapId, toadzId, selectedPaletteOrder)
-        .then(setImage)
-        .finally(() => setLoadingImage(false));
-      blitoadzExists(toadzId, blitmapId).then(setExists);
+      blitoadzExists(toadzId, blitmapId).then((e) => {
+        setExists(e);
+
+        if (e) {
+          return getSvgByToadzIdBlitmapId(toadzId, blitmapId)
+            .then(setImage)
+            .finally(() => setLoadingImage(false));
+        }
+
+        return getSvg(blitmapId, toadzId, selectedPaletteOrder)
+          .then(setImage)
+          .finally(() => setLoadingImage(false));
+      });
     } else {
       setImage(null);
     }
-  }, [blitmapId, toadzId, blitoadzExists, getSvg, selectedPaletteOrder]);
+  }, [
+    blitmapId,
+    toadzId,
+    blitoadzExists,
+    getSvg,
+    selectedPaletteOrder,
+    getSvgByToadzIdBlitmapId,
+  ]);
 
   const minted = React.useMemo(
     () =>
