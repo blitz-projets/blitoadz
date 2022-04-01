@@ -22,6 +22,7 @@ function App() {
               backgroundImage: `url(${background})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "contain",
+              height: "100%",
             }}
           >
             <Header />

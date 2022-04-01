@@ -1,5 +1,6 @@
 html {
   font-family: "Inter", "system-ui";
+  height: 100%;
 }
 
 @supports (font-variation-settings: normal) {
@@ -14,6 +15,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #fff4f4;
   color: black;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 code {
