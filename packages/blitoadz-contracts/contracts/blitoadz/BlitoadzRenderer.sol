@@ -61,7 +61,7 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
         uint256 rowIndex,
         bytes memory _row,
         string[] memory palette
-    ) internal pure returns (string memory) {
+    ) internal view returns (string memory) {
         string[] memory row = new string[](IMAGE_WIDTH / 4);
         for (uint256 i = 0; i < IMAGE_WIDTH; i += 4) {
             row[i / 4] = PaletteRenderer.decode1ByteTo4Pixels(
@@ -76,7 +76,7 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
 
     function decodeImage(bytes memory _image, string[] memory palette)
         internal
-        pure
+        view
         returns (string memory)
     {
         string[] memory image = new string[](IMAGE_WIDTH);
