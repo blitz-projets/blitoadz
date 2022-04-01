@@ -85,6 +85,15 @@ const config: HardhatUserConfig = {
     dhof: {
       default: "0xF296178d553C8Ec21A2fBD2c5dDa8CA9ac905A00",
     },
+    numo: {
+      default: "0xd42bd96B117dd6BD63280620EA981BF967A7aD2B",
+    },
+    cdt: {
+      default: "0xd19bf5f0b785c6f1f6228c72a8a31c9f383a49c4",
+    },
+    matsnft: {
+      default: "0xb7b78c45036d5a089ff85d39a0e0836037d1dc52",
+    },
   },
   networks: {
     mainnet: {
@@ -102,7 +111,7 @@ const config: HardhatUserConfig = {
       blockGasLimit: 10 * 50_000_000, // Geth new default is 50M, increased here for tests
       forking: {
         url: node_url("mainnet"),
-        blockNumber: 12543632,
+        blockNumber: 14_499_156,
       },
       accounts: {
         count: 501,
