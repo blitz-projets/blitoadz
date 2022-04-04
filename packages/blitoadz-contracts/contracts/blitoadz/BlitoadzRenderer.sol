@@ -11,7 +11,7 @@ import "../interfaces/IBlitoadzRenderer.sol";
 import "../interfaces/IBlitmap.sol";
 
 import {PaletteRenderer} from "../lib/PaletteRenderer.sol";
-import {Strings} from "../lib/Strings.sol";
+import {Array} from "../lib/Array.sol";
 
 /*  @title Blitoadz Renderer
     @author Clement Walter
@@ -28,7 +28,8 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
 
     address public toadz; // 57 uint16 leading indexes followed by the actual 56 toadz images
     address public toadzNames; // 57 uint16 leading indexes followed by the actual 56 toadz names
-    IBlitmap blitmap;
+    IBlitmap private blitmap;
+    using Array for string[];
 
     ////////////////////////////////////////////////////////////////////////////////
     ////////////////////////////  Rendering mechanics  /////////////////////////////
@@ -61,7 +62,7 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
         uint256 rowIndex,
         bytes memory _row,
         string[] memory palette
-    ) internal view returns (string memory) {
+    ) internal pure returns (string memory) {
         string[] memory row = new string[](IMAGE_WIDTH / 4);
         for (uint256 i = 0; i < IMAGE_WIDTH; i += 4) {
             row[i / 4] = PaletteRenderer.decode1ByteTo4Pixels(
@@ -71,12 +72,12 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
                 IMAGE_WIDTH
             );
         }
-        return Strings.join(row);
+        return row.join();
     }
 
     function decodeImage(bytes memory _image, string[] memory palette)
         internal
-        view
+        pure
         returns (string memory)
     {
         string[] memory image = new string[](IMAGE_WIDTH);
@@ -93,7 +94,7 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
             );
             start += (BITS_PER_FILL_INDEX * IMAGE_WIDTH) / 8;
         }
-        return Strings.join(image);
+        return image.join();
     }
 
     ////////////////////////////////////////////////////////////////////////////////
@@ -155,10 +156,11 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
         uint256 blitmapId,
         uint8 paletteOrder
     ) public view returns (string memory) {
+        /* solhint-disable quotes */
         return
             string.concat(
                 "data:application/json,",
-                '{"image_data": "',
+                '{"image": "',
                 getImageURI(toadzId, blitmapId, paletteOrder),
                 '"',
                 ',"description": "Blitoadz are a blitmap and CrypToadz cross-breed, paving the way toward a new blitzverse. Oh - and they\'re fully on-chain."',
@@ -168,5 +170,6 @@ contract BlitoadzRenderer is Ownable, ReentrancyGuard, IBlitoadzRenderer {
                 blitmap.tokenNameOf(blitmapId),
                 '"}'
             );
+        /* solhint-enable quotes */
     }
 }

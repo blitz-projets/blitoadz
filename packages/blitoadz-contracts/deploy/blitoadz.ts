@@ -14,7 +14,6 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     gremplin,
     gb,
     clemlaflemme,
-    integersLib,
     blitmap,
     dhof,
     numo,
@@ -77,7 +76,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   }
 
   const PaletteRenderer = await get("PaletteRenderer");
-  const Strings = await get("Strings");
+  const Array = await get("Array");
 
   // Deploy renderer
   const rendererTx = await deploy("BlitoadzRenderer", {
@@ -86,7 +85,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     args: [blitmapAddress],
     libraries: {
       PaletteRenderer: PaletteRenderer.address,
-      Strings: Strings.address,
+      Array: Array.address,
     },
   });
 
@@ -107,4 +106,4 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 };
 export default func;
 func.tags = [TAGS.BLITOADZ];
-func.dependencies = [TAGS.BLITMAP, TAGS.PALETTE_RENDERER, TAGS.STRINGS];
+func.dependencies = [TAGS.BLITMAP, TAGS.PALETTE_RENDERER, TAGS.ARRAY];

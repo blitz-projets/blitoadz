@@ -9,11 +9,11 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
 
-  await deploy("Strings", {
+  await deploy("Array", {
     from: deployer,
     log: true,
-    contract: "contracts/lib/Strings.sol:Strings",
+    contract: "contracts/lib/Array.sol:Array",
   });
 };
 export default func;
-func.tags = [TAGS.STRINGS];
+func.tags = [TAGS.ARRAY];

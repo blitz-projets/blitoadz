@@ -38,7 +38,7 @@ describe("BlitoadzRenderer", async function () {
               outputFile,
               decodeURI(
                 JSON.parse(res.split(",").slice(1).join(","))
-                  ["image_data"].split(",")[1]
+                  ["image"].split(",")[1]
                   .replace(/%23/g, "#")
               )
             );

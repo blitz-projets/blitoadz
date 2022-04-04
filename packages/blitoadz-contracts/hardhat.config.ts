@@ -11,6 +11,7 @@ import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import "solidity-coverage";
 import "hardhat-spdx-license-identifier";
+
 import { removeConsoleLog } from "hardhat-preprocessor";
 import "./tasks";
 import { accounts, node_url } from "./utils/network";
@@ -42,6 +43,8 @@ const config: HardhatUserConfig = {
   gasReporter: {
     enabled: process.env.REPORT_GAS !== undefined,
     currency: "USD",
+    showTimeSpent: true,
+    showMethodSig: true,
   },
   namedAccounts: {
     deployer: {

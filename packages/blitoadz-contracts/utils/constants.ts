@@ -50,9 +50,8 @@ export const loadToadz = (): Toadz[] => {
 // Deploy constants
 export const TAGS = {
   BLITOADZ: "Blitoadz",
-  BLITOADZ_RENDERER_V2: "BlitoadzRendererV2",
   BLITOADZ_PALETTES: "BlitoadzPalettes",
   BLITMAP: "Blitmap",
   PALETTE_RENDERER: "PaletteRenderer",
-  STRINGS: "Strings",
+  ARRAY: "Array",
 };
