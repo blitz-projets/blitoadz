@@ -8,12 +8,6 @@ import "erc721a/contracts/ERC721A.sol";
 import "../interfaces/IBlitoadzRenderer.sol";
 import "../interfaces/IBlitmap.sol";
 
-contract OwnableDelegateProxy {}
-
-contract ProxyRegistry {
-    mapping(address => OwnableDelegateProxy) public proxies;
-}
-
 error PublicSaleOpen();
 error PublicSaleNotOpen();
 error BlitoadzExists();
@@ -43,8 +37,8 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     // Blitoadz funds split
     uint256 public blitmapCreatorShares;
     mapping(address => Founder) public founders;
-    mapping(address => uint16) creatorAvailableAmount;
-    uint256 receivedAmount;
+    mapping(address => uint16) public creatorAvailableAmount;
+    uint256 public receivedAmount;
 
     struct Founder {
         uint128 withdrawnAmount;
@@ -65,6 +59,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
 
     function isPublicSaleOpen() public view returns (bool) {
         return
+            // solhint-disable-next-line not-rely-on-time
             block.timestamp > publicSaleStartTimestamp &&
             publicSaleStartTimestamp != 0;
     }
@@ -80,6 +75,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     }
 
     function openPublicSale() external onlyOwner whenPublicSaleClosed {
+        // solhint-disable-next-line not-rely-on-time
         publicSaleStartTimestamp = block.timestamp;
         emit PublicSaleOpened(publicSaleStartTimestamp);
     }
@@ -88,7 +84,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
     ////////////////////////// Token ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
     address public renderingContractAddress;
-    IBlitoadzRenderer renderer;
+    IBlitoadzRenderer private renderer;
 
     function setRenderingContractAddress(address _renderingContractAddress)
         public
@@ -198,6 +194,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         uint256 value = (MINT_PUBLIC_PRICE *
             creatorAvailableAmount[_msgSender()] *
             blitmapCreatorShares) / BLITOADZ_COUNT;
+        // solhint-disable-next-line avoid-low-level-calls
         (bool success, ) = _msgSender().call{value: value}("");
         if (!success) revert WithdrawalFailed();
         emit BlitmapCreatorWithdrawn(_msgSender(), value);
@@ -214,6 +211,7 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         founders[_msgSender()].withdrawnAmount += uint128(
             value % type(uint128).max
         );
+        // solhint-disable-next-line avoid-low-level-calls
         (bool success, ) = _msgSender().call{value: value}("");
         if (!success) revert WithdrawalFailed();
 
@@ -259,5 +257,6 @@ contract Blitoadz is ERC721A, Ownable, ReentrancyGuard {
         return _exists(_tokenId);
     }
 
+    // solhint-disable-next-line no-empty-blocks
     receive() external payable {}
 }

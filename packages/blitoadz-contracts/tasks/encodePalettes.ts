@@ -36,14 +36,7 @@ task(
         )
         .join("")
     );
-    let toadz = "0x";
-    const toadzIndexes = [];
-    for (let i = 0; i < indexes.length; i++) {
-      toadzIndexes.push(hexDataLength(toadz).toString(16).padStart(4, "0"));
-      toadz += indexes[i];
-    }
-    toadzIndexes.push(hexDataLength(toadz).toString(16).padStart(4, "0"));
-    toadz = "0x" + toadzIndexes.join("") + toadz.slice(2);
+    const toadz = "0x" + indexes.join("");
 
     if (hexDataLength(toadz) > MAX_CONTRACT_SIZE) {
       throw new Error(
