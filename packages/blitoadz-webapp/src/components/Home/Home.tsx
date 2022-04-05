@@ -68,7 +68,7 @@ function Home() {
       {totalSupply !== null && alreadyMintedCount !== null && (
         <Box
           sx={{
-            marginBottom: "24px",
+            marginBottom: "8px",
             fontSize: "24px",
             lineHeight: "54px",
             fontWeight: 600,
@@ -77,6 +77,7 @@ function Home() {
           {alreadyMintedCount}/{totalSupply} minted
         </Box>
       )}
+      <Box sx={{ marginBottom: "24px", fontSize: "18px" }}>0.56 ETH each</Box>
       {!account && <WalletConnectSection />}
       {account && (
         <Box>
