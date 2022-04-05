@@ -5,9 +5,9 @@ import "solidity-bytes-utils/contracts/BytesLib.sol";
 import "../interfaces/IBlitmap.sol";
 
 contract Blitmap is IBlitmap {
-    bytes _tokenData;
-    bytes _creators;
-    string[100] _names;
+    bytes private _tokenData;
+    bytes private _creators;
+    string[100] private _names;
 
     constructor(bytes memory tokenData, bytes memory creators) {
         _tokenData = tokenData;

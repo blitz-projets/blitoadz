@@ -24,7 +24,7 @@ task("generate-blitoadz", "Open public sale")
         await Promise.all(
           [27, 108].map(async (paletteOrder) => {
             const tokenURI = await read(
-              "BlitoadzRendererV2",
+              "BlitoadzRenderer",
               "tokenURI",
               blitmapId,
               toadzId,
